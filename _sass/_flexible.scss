@@ -1,0 +1,23 @@
+@mixin breakpoint($size) {
+    @if $size==medium {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+
+    @else if $size==large {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else {
+        @error "error";
+    }
+}
+
+@mixin mobile-only {
+    @media (max-width: 769px - 1) {
+        @content;
+    }
+}
