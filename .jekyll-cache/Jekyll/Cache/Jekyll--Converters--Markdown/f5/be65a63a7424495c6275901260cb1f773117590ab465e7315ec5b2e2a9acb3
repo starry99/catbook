@@ -1,0 +1,43 @@
+I"�<p>This is a sample post.<br />
+<dfn info="You can add extra information">Hover</dfn> me.</p>
+
+<h2 id="header">Header</h2>
+
+<h1 id="head-1-">Head 1: ‘#’</h1>
+<h2 id="head-2-">Head 2: ‘##’</h2>
+<h3 id="head-3-">Head 3: ‘###’</h3>
+
+<h2 id="code-block">Code block</h2>
+<p>A Python Example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">quote</span><span class="p">():</span>
+    <span class="c1"># Socrates
+</span>    <span class="k">print</span><span class="p">(</span><span class="s">'The only true wisdom is in knowing you know nothing.'</span><span class="p">)</span>
+    
+</code></pre></div></div>
+<p>A HTML Example:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>quote<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- Maya Angelou --&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Try to be a rainbow in someone's cloud.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>A C Example:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// Confucius</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Everything has beauty, but not everyone sees it.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET
