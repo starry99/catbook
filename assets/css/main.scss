@@ -157,7 +157,7 @@ img {
 
     @include mobile-only {
         padding-top: 16rem;
-        min-height: 100%;
+        min-height: 75%;
     }
 }
 
@@ -173,6 +173,11 @@ img {
     @include breakpoint(medium) {
         max-width: 30rem;
         margin-top: 5.5rem;
+
+        img {
+            float: left;
+        }
+    }
     }
 
     @include mobile-only {
@@ -181,10 +186,7 @@ img {
         margin-right: 1rem;
     }
 
-    img {
-        float: left;
-    }
-}
+    
 
 ::-webkit-scrollbar {
     width: 8px;
