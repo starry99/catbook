@@ -131,7 +131,7 @@ a {
 }
 
 img {
-    display: block;
+    // display: block;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -142,7 +142,6 @@ img {
     z-index: 0;
     background: var(--content_bg);
     position: relative;
-    max-width: 92%;
     min-height: 85%;
     border-radius: 15px;
     box-shadow: 0 0 2px 2px var(--shadow_color);
@@ -158,6 +157,7 @@ img {
     @include mobile-only {
         padding-top: 16rem;
         min-height: 75%;
+        max-width: 92%;
     }
 }
 
@@ -175,7 +175,7 @@ img {
         margin-top: 5.5rem;
 
         img {
-            float: left;
+            float: none;
         }
     }
     }
@@ -289,11 +289,11 @@ img {
     z-index: 1;
     position: absolute;
     top: 0;
-    width: 100%;
     border-radius: var(--border_radius);
     box-shadow: 0 0 2px 2px var(--shadow_color);
 
     @include mobile-only {
+        width: 100%;
         height: 9rem;
     }
 

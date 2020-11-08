@@ -8,7 +8,7 @@ CATbook is a CATegory-centric Jekyll theme for bloggers. There is a switch butto
 ![SCREENSHOT](https://starry99.github.io/catbook/assets/img/lmode.jpg)
 ![SCREENSHOT](https://starry99.github.io/catbook/assets/img/dmode.jpg)
 
-### Setup
+## Setup
 
 ```sh
 $ git clone https://github.com/starry99/catbook
@@ -17,6 +17,18 @@ $ jekyll serve
 # Now you can start customization!
 ```
 
+## Make it yours
+
+If you want to create a new category, you need to create `*name*.html` in the `categories` folder. And add the following content:
+```html
+---
+layout: page
+type: *name*
+---
+
+{% include archive.html %}
+```
+Then the number of pages in the category will be displayed.
 
 ## License
 
