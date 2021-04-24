@@ -2,18 +2,27 @@
 
 <div id='disqus_thread'></div>
 
+ <div class="show-comments">
+    <button id="show-comments-button" onclick="disqus();return false;">Disqus Comment</button>
+</div>
+
 <script>
-  var disqus_config = function () {
-    this.page.url = '{{ page.url | absolute_url }}';
-    this.page.identifier = '{{ page.url | absolute_url }}';
-  };
-  (function () {
-    var d = document,
-      s = d.createElement('script');
-    s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
+var disqus_loaded = false;
+var disqus_shortname = 'your_disqus_shortname'
+function disqus() {
+    if (!disqus_loaded)  {
+        disqus_loaded = true;
+        var e = document.createElement("script");
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0])
+        .appendChild(e);
+        //Hide the button after opening
+        document.getElementById("show-comments-button").style.display = "none";
+    }
+}
 </script>
 <noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript'>comments powered by
     Disqus.</a></noscript>
