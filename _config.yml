@@ -16,6 +16,8 @@ favicon: /assets/img/favicon.ico
 
 google_analytics: #UA—XXXXXXXX-X
 disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
 
 user:
   name: Catbook
