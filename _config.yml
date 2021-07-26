@@ -20,7 +20,7 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: li_hyel
+  name: LI_HYEL
   pic: /assets/img/92.jpg
   picAlt: "catbook"
   job: 개발세발 코린이의 개발일지
