@@ -24,7 +24,7 @@ user:
   pic: /assets/img/92.jpg
   picAlt: "catbook"
   job: 개발세발 코린이의 개발일지
-  #aboutme: true # comment this out if you don't need the 'about' page.
+  aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
   - README.md
