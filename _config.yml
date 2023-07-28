@@ -20,7 +20,7 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: W.H.Y.
+  name: W.H.Y
   pic: /assets/img/IMG_8589.jpeg
   picAlt: "An Exhibition of A Hunger Artist"
   job: Muss es sein? Es muss sein!
