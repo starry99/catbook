@@ -1,4 +1,3 @@
-
 title: An Exhibition of A Hunger Artist #Your awesome title
 email: annabellee123456@outlook.com
 description: > # this means to ignore newlines until "baseurl"
@@ -20,7 +19,7 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: W.H.Y
+  name: WHY
   pic: /assets/img/IMG_8589.jpeg
   picAlt: "An Exhibition of A Hunger Artist"
   job: Muss es sein? Es muss sein!
