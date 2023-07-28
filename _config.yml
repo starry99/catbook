@@ -1,13 +1,13 @@
 
-title: Ein Hungerkünstler #Your awesome title
+title: An Exhibition of A Hunger Artist #Your awesome title
 email: annabellee123456@outlook.com
 description: > # this means to ignore newlines until "baseurl"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-baseurl: # the subpath of the site
-url: http://starry99.github.io/catbook # the base hostname & protocol for your site
+baseurl: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the subpath of the site
+url: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
 timezone: GMT+1
