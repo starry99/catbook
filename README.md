@@ -10,7 +10,7 @@ Here is the blog of WHY: [https://einhungerkuenstler.github.io](https://einhunge
 
 ## Rationale
 
-I start to have the idea to have a personal webpage since four mouths ago. After the final exam and during the summer vacation, I finally get the time to make my personal webpage. This main purpose of this webpage is to use to put some notes of mathematics and physics written by me. Besides, I also share some personal favour on music, literature, philosophy, and so on. I will also share some life or thoughts on this website(If I am not so lazy!).
+In March 2023, I had an idea to create my own personal webpage. Finally, after finishing my exams and during the summer vacation, I found the time to complete it. The main purpose of this webpage is to share some notes I've written on mathematics and physics. Additionally, I'll be sharing my interests in music, literature, philosophy, and more. If I'm not feeling too lazy, I might also share some thoughts and experiences on this website!
 ##  theme-and-style
 
 I use the theme [catbook](https://github.com/starry99/catbook)
