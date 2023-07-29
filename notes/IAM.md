@@ -183,5 +183,10 @@ $$
 
 ## 19. Important relation in complex analysis
 
-- $\log (z)=\log |z|+i arg (z)$
-- $z \bar{z}=|z|^{2}$
+$$
+\log (z)=\log |z|+i \arg (z)
+$$
+
+$$
+z \bar{z}=|z|^2
+$$
