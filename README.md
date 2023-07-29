@@ -6,6 +6,7 @@ Here is the blog of WHY: [https://einhungerkuenstler.github.io](https://einhunge
 
 - [Theme and Style](#theme-and-style)
       - [Maths](#maths)
+- [License](#license)
 
 ## Rationale
 
@@ -17,6 +18,7 @@ I use the theme [catbook](https://github.com/starry99/catbook)
 I have not change any style of this theme, at least for now.
 
 ### maths
+
   I decide to use MathJax to render my maths. To get it to work, I just added the following html into my `head.html` file under my `_includes/` folder:
 
 ```html
@@ -31,6 +33,6 @@ I have not change any style of this theme, at least for now.
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ```
-## License
+## license
 
 [MIT License](https://opensource.org/licenses/MIT)
