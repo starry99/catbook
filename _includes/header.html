@@ -29,6 +29,13 @@
         </li>
       </ul>
       {% endfor %}
+      {% for page in site.additional_pages %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          {{ page.name }}
+        </li>
+      </ul>
+      {% endfor %}
     </nav>
   </div>
 

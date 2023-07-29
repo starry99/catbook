@@ -38,6 +38,10 @@ defaults:
       layout: post
       comment: true   
 
+collections:
+  additional_pages:
+    output: true
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown 
 
