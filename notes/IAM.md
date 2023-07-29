@@ -1,6 +1,9 @@
 ---
 layout: simple
+title: Introduction to Applied Mathematics
 ---
+
+
 
 ## 1. Part I Graphs
 
