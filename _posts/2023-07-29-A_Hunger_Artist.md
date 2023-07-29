@@ -41,7 +41,7 @@ He lived this way, taking small regular breaks, for many years, apparently in th
 From there he would move on to speak about the equally hard to understand claim of the hunger artist that he could go on fasting for much longer than he was doing. He would praise the lofty striving, the good will, and the great self-denial no doubt contained in this claim, but then would try to contradict it simply by producing photographs, which were also on sale, for in the pictures one could see the hunger artist on the fortieth day of his fast, in bed, almost dead from exhaustion. Although the hunger artist was very familiar with this perversion of the truth, it always strained his nerves again and was too much for him. What was a result of the premature ending of the fast people were now proposing as its cause! It was impossible to fight against this lack of understanding, against this world of misunderstanding. In good faith he always listened eagerly to the impresario at the bars of his cage, but each time, once the photographs came out, he would let go of the bars and, with a sigh, sink back into the straw, and a reassured public could come up again and view him.
 
 <div  align="center"> 
-<img src="/assets/img/itwasimpossible.jpeg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:60%">
+<img src="/assets/img/itwasimpossible.jpeg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:30%">
 </div>
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">It was impossible to fight against this lack of understanding </center>
 
