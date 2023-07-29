@@ -2,8 +2,6 @@
 layout: simple
 ---
 
-# Applied Mathematics Dense Sheet 
-
 ## 1. Part I Graphs
 
 ### 1.1. Graphs
