@@ -3,8 +3,6 @@ layout: simple
 title: Introduction to Applied Mathematics
 ---
 
-
-
 ## 1. Part I Graphs
 
 ### 1.1. Graphs
@@ -29,7 +27,7 @@ For an $m \times n$ incidence matrix $A$, we have
 
 ### 4.1. Circuits
 
-The vector of potential differences
+#### The vector of potential differences
 
 $\mathbf{e}=\mathbf{A x}$
 
@@ -185,5 +183,5 @@ $$
 
 ## 19. Important relation in complex analysis
 
-- $\log (z)=\log |z|+i \arg (z)$
+- $\log (z)=\log |z|+i arg (z)$
 - $z \bar{z}=|z|^{2}$
