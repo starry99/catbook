@@ -4,6 +4,9 @@ categories: [Literature]
 comments: true
 ---
 
+### Erzählung von
+### FRANZ KAFKA
+
 In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Während es sich früher gut lohnte, große derartige Vorführungen in eigener Regie zu veranstalten, ist dies heute völlig unmöglich. Es waren andere Zeiten. Damals beschäftigte sich die ganze Stadt mit dem Hungerkünstler; von Hungertag zu Hungertag stieg die Teilnahme; jeder wollte den Hungerkünstler zumindest einmal täglich sehn; an den spätern Tagen gab es Abonnenten, welche tagelang vor dem kleinen Gitterkäfig saßen; auch in der Nacht fanden Besichtigungen statt, zur Erhöhung der Wirkung bei Fackelschein; an schönen Tagen wurde der Käfig ins Freie getragen, und nun waren es besonders die Kinder, denen der Hungerkünstler gezeigt wurde; während er für die Erwachsenen oft nur ein Spaß war, an dem sie der Mode halber teilnahmen, sahen die Kinder staunend, mit offenem Mund, der Sicherheit halber einander bei der Hand haltend, zu, wie er bleich, im schwarzen Trikot, mit mächtig vortretenden Rippen, sogar einen Sessel verschmähend, auf hingestreutem Stroh saß, einmal höflich nickend, angestrengt lächelnd Fragen beantwortete, auch durch 984das Gitter den Arm streckte, um seine Magerkeit befühlen zu lassen, dann aber wieder ganz in sich selbst versank, um niemanden sich kümmerte, nicht einmal um den für ihn so wichtigen Schlag der Uhr, die das einzige Möbelstück des Käfigs war, sondern nur vor sich hinsah mit fast geschlossenen Augen und hie und da aus einem winzigen Gläschen Wasser nippte, um sich die Lippen zu feuchten.
 
 <div  align="center"> 
