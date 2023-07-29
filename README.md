@@ -1,35 +1,36 @@
-# Catbook
-CATbook is a CATegory-centric Jekyll theme for bloggers. There is a switch button to toggle between dark mode and light mode. This theme is originally inspired from [Book](https://github.com/kkninjae/book).
+# An Exhibition of a Hunger Artist
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-1.0-green.svg)
+Here is the blog of WHY: [https://einhungerkuenstler.github.io](https://einhungerkuenstler.github.io)
 
-**Demo:** https://starry99.github.io/catbook/
+## Contents
 
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/lmode.jpg)
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/dmode.jpg)
+- [Theme and Style](#theme-and-style)
+      - [Maths](#maths)
 
-## Setup
+## Rationale
 
-```sh
-$ git clone https://github.com/starry99/catbook
-$ jekyll serve
+I start to have the idea to have a personal webpage since four mouths ago. After the final exam and during the summer vacation, I finally get the time to make my personal webpage. This main purpose of this webpage is to use to put some notes of mathematics and physics written by me. Besides, I also share some personal favour on music, literature, philosophy, and so on. I will also share some life or thoughts on this website(If I am not so lazy!).
+##  theme-and-style
 
-# Now you can start customization!
-```
+I use the theme [catbook](https://github.com/starry99/catbook)
+ 
+I have not change any style of this theme, at least for now.
 
-## Make it yours
+### maths
+  I decide to use MathJax to render my maths. To get it to work, I just added the following html into my `head.html` file under my `_includes/` folder:
 
-If you want to create a new category, you need to create `*name*.html` in the `categories` folder. And add the following content:
 ```html
----
-layout: page
-type: *name*
----
-
-{% include archive.html %}
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+	tex2jax: {
+	  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	  processEscapes: true
+	}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ```
-Then the number of pages in the category will be displayed.
-
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
