@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 # Applied Mathematics Dense Sheet 
 
 ## 1. Part I Graphs
