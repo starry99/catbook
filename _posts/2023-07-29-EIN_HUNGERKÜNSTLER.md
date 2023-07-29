@@ -31,6 +31,6 @@ Doch vergingen wieder viele Tage, und auch das nahm ein Ende. Einmal fiel einem 
 »Nun macht aber Ordnung!«, sagte der Aufseher, und man begrub den Hungerkünstler samt dem Stroh. In den Käfig aber gab man einen jungen Panther. Es war eine selbst dem stumpfsten Sinn fühlbare Erholung, in dem so lange öden Käfig dieses wilde Tier sich herumwerfen zu sehn. Ihm fehlte nichts. Die Nahrung, die ihm schmeckte, brachten ihm ohne langes Nachdenken die Wächter; nicht einmal die Freiheit schien er zu vermissen; dieser edle, mit allem Nötigen bis knapp zum Zerreißen ausgestattete Körper schien auch die Freiheit mit sich herumzutragen; irgendwo im Gebiß schien sie zu stecken; und die Freude am Leben kam mit derart starker Glut aus seinem Rachen, daß es für die Zuschauer nicht leicht war, ihr standzuhalten. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren.
 
 <div  align="center"> 
-<img src="/assets/img/hungerartistlast.jpeg" style="zoom:10%">
+<img src="/assets/img/hungerartistlast.jpeg" style="zoom:7.5%">
 </div>
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Der Hungerkünstler und der Panther</center>
