@@ -15,7 +15,7 @@ In March 2023, I had an idea to create my own personal webpage. Finally, after f
 
 I use the theme [catbook](https://github.com/starry99/catbook)
  
-I have not change any style of this theme, at least for now.
+I have not changed any style of this theme, at least for now.
 
 ### Maths
 
