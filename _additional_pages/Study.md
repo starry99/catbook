@@ -1,9 +1,9 @@
 ---
 title: Study
 layout: simple
-order: 2
+order: 1
 ---
 
-### [Imperial](https://www.imperial.ac.uk/)
-### [Notes](/notes/Some_notes)
-### [Introduction to Applied Mathematics](/notes/IAM)
+## Surviving the mathematical major at Imperial College London
+### Year 1
+ - [Introduction to Applied Mathematics](/notes/IAM)
