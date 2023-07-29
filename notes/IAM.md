@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: simple
 ---
 
 # Applied Mathematics Dense Sheet 
