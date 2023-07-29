@@ -8,7 +8,10 @@ comments: true
 
 #### Translation by Ian Johnston
 
-![ijiangtao](/assets/img/hungerartistlast.jpeg)
+<div  align="center"> 
+<img src="/assets/img/hungerartistfirst.jpeg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:50%">
+</div>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Figure. 2 Osculating Circle </center>
 
 
 In the last decades interest in hunger artists has declined considerably. Whereas in earlier days there was good money to be earned putting on major productions of this sort under one’s own management, nowadays that is totally impossible. Those were different times. Back then the hunger artist captured the attention of the entire city. From day to day while the fasting lasted, participation increased. Everyone wanted to see the hunger artist at least daily. During the final days there were people with subscription tickets who sat all day in front of the small barred cage. And there were even viewing hours at night, their impact heightened by torchlight. On fine days the cage was dragged out into the open air, and then the hunger artist was put on display particularly for the children. While for grown-ups the hunger artist was often merely a joke, something they participated in because it was fashionable, the children looked on amazed, their mouths open, holding each other’s hands for safety, as he sat there on scattered straw—spurning a chair—in a black tights, looking pale, with his ribs sticking out prominently, sometimes nodding politely, answering questions with a forced smile, even sticking his arm out through the bars to let people feel how emaciated he was, but then completely sinking back into himself, so that he paid no attention to anything, not even to what was so important to him, the striking of the clock, which was the single furnishing in the cage, merely looking out in front of him with his eyes almost shut and now and then sipping from a tiny glass of water to moisten his lips.
