@@ -8,6 +8,7 @@ layout: page
     <p class="post_title">{{ page.title }}</p>
     {% endif %}
   </div>
+  {% if page.date or page.categories %}
   <div class="post_data">
     {% if page.date %}
     <span class="post_date">{{ page.date | date: "%b %-d, %Y" }}</span>
@@ -20,6 +21,7 @@ layout: page
     </span>
     {% endif %}
   </div>
+  {% endif %}
   <div class="post_content">
     {{ content }}
   </div>

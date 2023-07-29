@@ -1,7 +1,5 @@
 ---
-title: Back
-layout: page
+title: Something else
+layout: post
 order: 3
 ---
-
-# Something else

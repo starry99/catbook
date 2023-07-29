@@ -1,9 +1,7 @@
 ---
 title: Study
-layout: page
+layout: post
 order: 2
 ---
-
-# Study
 
 ### [Imperial](https://www.imperial.ac.uk/)
