@@ -27,13 +27,22 @@ For an $m \times n$ incidence matrix $A$, we have
 
 ### 4.1. Circuits
 
-#### The vector of potential differences
+The vector of potential differences
 
 $\mathbf{e}=\mathbf{A x}$
 
-The vector of edge fluxeslcurrents (Ohm's law) $\mathbf{w}=-C \mathbf{A} \mathbf{x}$, where $C$ is the diagonal matrix of edge conductances.
+The vector of edge fluxeslcurrents (Ohm's law)
 
-The vector of fluxes out of each node(divergence) of fluxes at each node $\mathbf{f}=-\mathbf{A}^{\mathrm{T}} \mathbf{w}=\mathbf{A}^{\mathrm{T}} \mathbf{C A \mathbf { x }}$
+$$
+\mathbf{w}=-C \mathbf{A} \mathbf{x}
+$$
+, where $C$ is the diagonal matrix of edge conductances.
+
+The vector of fluxes out of each node(divergence) of fluxes at each node
+ 
+$$
+\mathbf{f}=-\mathbf{A}^{\mathrm{T}} \mathbf{w}=\mathbf{A}^{\mathrm{T}} \mathbf{C A \mathbf { x }}
+$$
 
 ## 5. If the conductance is unit
 
