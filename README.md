@@ -4,20 +4,20 @@ Here is the blog of WHY: [https://einhungerkuenstler.github.io](https://einhunge
 
 ## Contents
 
-- [Theme and Style](#theme-and-style)
+- [Theme and Style](#Theme_and_Style)
       - [Maths](#maths)
 - [License](#license)
 
 ## Rationale
 
 In March 2023, I had an idea to create my own personal webpage. Finally, after finishing my exams and during the summer vacation, I found the time to complete it. The main purpose of this webpage is to share some notes I've written on mathematics and physics. Additionally, I'll be sharing my interests in music, literature, philosophy, and more. If I'm not feeling too lazy, I might also share some thoughts and experiences on this website!
-##  theme-and-style
+##  Theme_and_Style
 
 I use the theme [catbook](https://github.com/starry99/catbook)
  
 I have not change any style of this theme, at least for now.
 
-### maths
+### Maths
 
   I decide to use MathJax to render my maths. To get it to work, I just added the following html into my `head.html` file under my `_includes/` folder:
 
