@@ -5,7 +5,7 @@ Here is the blog of WHY: [https://einhungerkuenstler.github.io](https://einhunge
 ## Contents
 
 - [Theme and Style](#Theme_and_Style)
-      - [Maths](#maths)
+  - [Maths](#Maths)
 - [License](#license)
 
 ## Rationale
