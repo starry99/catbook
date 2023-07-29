@@ -1,5 +1,6 @@
 ---
 title: A Hunger Artist
+layout: page
 ---
 
 #### by Franz Kafka
