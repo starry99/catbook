@@ -18,7 +18,7 @@ In the last decades interest in hunger artists has declined considerably. Wherea
 <div  align="center"> 
 <img src="/assets/img/hungerartistfirst.jpeg?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:75%">
 </div>
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">The Hunger Artist is performing surrounded by many visitors </center>
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">Der Hungerkünstler tritt umgeben von vielen Besuchern auf </center>
 
 Apart from the changing groups of spectators there were also constant observers chosen by the public—strangely enough they were usually butchers—who, always three at a time, were given the task of observing the hunger artist day and night, so that he didn’t get something to eat in some secret manner. It was, however, merely a formality, introduced to reassure the masses, for those who understood knew well enough that during the period of fasting the hunger artist would never, under any circumstances, have eaten the slightest thing, not even if compelled by force. The honour of his art forbade it. Naturally, none of the watchers understood that. Sometimes there were nightly groups of watchers who carried out their vigil very laxly, deliberately sitting together in a distant corner and putting all their attention into playing cards there, clearly intending to allow the hunger artist a small refreshment, which, according to their way of thinking, he could get from some secret supplies. Nothing was more excruciating to the hunger artist than such watchers. They depressed him. They made his fasting terribly difficult.
 
