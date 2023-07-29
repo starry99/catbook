@@ -1,5 +1,5 @@
 ---
 title: Something else
-layout: post
+layout: simple
 order: 3
 ---

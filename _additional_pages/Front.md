@@ -1,5 +1,5 @@
 ---
 title: Something
-layout: post
+layout: simple
 order: 1
 ---

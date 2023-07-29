@@ -1,6 +1,6 @@
 ---
 title: Study
-layout: post
+layout: simple
 order: 2
 ---
 
