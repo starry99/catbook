@@ -19,7 +19,7 @@ I have not changed any style of this theme, at least for now.
 
 ### Maths
 
-  I decide to use MathJax to render my maths. To get it to work, I just added the following html into my `head.html` file under my `_includes/` folder:
+  I decide to use Katex to render my maths. To get it to work, I just added the following html into my `head.html` file under my `_includes/` folder:
 
 ```html
 <!-- Katex -->
