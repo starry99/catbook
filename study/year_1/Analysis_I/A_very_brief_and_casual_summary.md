@@ -251,9 +251,17 @@ $$
 
 (I) Fix $$\epsilon>0$$.
 
-(II) Calculate $$|a_{n} - a|$$.
+(II) Calculate
 
-(II') Find a good estimate $$|a_{n}-a| \leq b_{n}$$.
+$$ 
+|a_n - a| 
+$$
+
+(II') Find a good estimate of 
+
+$$
+|a_{n}-a| \leq b_{n}
+$$
 
 (III) Try to solve $$b_{n}<\epsilon$$
 
@@ -265,7 +273,9 @@ $$
 
 We say that $$a_{n}$$ converges if and only if $$\exists a \in \mathbb{R}$$ such that $$ a_{n} \Longrightarrow a $$, i.e.
 
-$$\exists a$$ such that $$\forall \epsilon>0 \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \rightarrow |a_{n}-a|<\epsilon$$
+$$
+\exists a \text{ such that } \forall \epsilon>0 \exists N \in \mathbb{N}_{>0} \text{ such that } n \geq N \rightarrow |a_{n}-a|<\epsilon
+$$
 
 #### Definition （ Divergence ）
 
