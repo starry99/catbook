@@ -7,7 +7,7 @@ title: A Very Brief and Casual Summary
 
 #### Definition 1.1 ( Injective )
 
-A function $$f: A \rightarrow B$$ is injective if for all $$a_1, a_2 \in A$$, $$f(a_1) = f(a_2)$$ implies $$$$a_1 = a_2$$$$.
+A function $$f: A \rightarrow B$$ is injective if for all $$a_1, a_2 \in A$$, $$f(a_1) = f(a_2)$$ implies $$a_1 = a_2$$.
 
 #### Definition 1.2 ( Surjective )
 
@@ -28,10 +28,10 @@ A function $$f: A \rightarrow B$$ is bijective if it is both injective and surje
 3. $$a + (b + c) = (a + b) + c$$
 4. $$a \times (b \times c) = (a \times b) \times c$$
 5. $$a \times (b + c) = a \times b + a \times c$$
-6. $$\exists 0 \in \mathbb{Q}: a+0 = a$$
-7. $$\exists 1 \in \mathbb{Q}: 0 \neq 1, a \times 1 = a$$
-8. $$\forall a \in \mathbb{Q}, \exists (-a) \in \mathbb{Q}$$ such that $$a+(-a) = 0$$
-9. $$\forall a \in \mathbb{Q} \backslash\{0\} \exists a^{-1} \in \mathbb{Q}$$ such that $$a \times (a^{-1})=1$$
+6. $$\exist 0 \in \mathbb{Q}: a+0 = a$$
+7. $$\exist 1 \in \mathbb{Q}: 0 \neq 1, a \times 1 = a$$
+8. $$\forall a \in \mathbb{Q}, \exist (-a) \in \mathbb{Q}$$ such that $$a+(-a) = 0$$
+9. $$\forall a \in \mathbb{Q} \backslash\{0\} \exists a^{-1} \in \mathbb{Q}$$ such that $$a \times\left(a^{-1}\right)=1$$
 
 #### Axioms 2.2
 
@@ -52,17 +52,21 @@ $$x=a_{0} . a_{1} \ldots a_{i} \overline{a_{i+1} a_{i+2} \ldots a_{j}} \quad\lef
 #### Proposition 2.14
 
 If $$x \in \mathbb{Q}$$ has two different decimal expansions then they are of the form
-$$$$
+
+$$
 \begin{aligned}
 x & =a_{0} \cdot a_{1} a_{2} \ldots a_{n} \overline{9} \\
 & =a_{0} \cdot a_{1} a_{2} \ldots\left(a_{n}+1\right) \quad \text { with } a_{n} \in\{0,1, \ldots, 8\} .
 \end{aligned}
-$$$$
+$$
 
+#### Definiton 2.1 (Arbitrary decimals: the real numbers)
+
+$$\mathbb{R}:=\left\{a_{0} \cdot a_{1} a_{2} \ldots: a_{0} \in \mathbb{Z}, a_{i \geq 1} \in\{0,1, \ldots, 9\}, \nexists N\right.$$ such that $$\left.a_{i}=9 \forall i \geq N\right\}$$
 
 ### 2.3 Countability
 
-#### Definition 2.1 ( Countable set )
+#### Definition 2.1 (Countable set)
 
 A set $$S$$ is countably infinite if and only if there exists a bijection $$f: \mathbb{N}_{>0} \rightarrow S$$
 
@@ -79,10 +83,11 @@ $$\mathbb{Z}$$ is countable infinite.
 
 ![](https://cdn.mathpix.com/cropped/2023_05_01_eeb01ef285d7843830f2g-13.jpg?height=206&width=948&top_left_y=2230&top_left_x=540)
 Proof : Formally, define a bijection $$f: \mathbb{N} \rightarrow \mathbb{Z}$$ by declaring, for $$k \geq 1$$,
-$$$$
+
+$$
 f(2 k-1)  :=-(k-1), \quad
 f(2 k)  :=k
-$$$$
+$$
 
 #### Exercise 2.18
 
@@ -103,15 +108,16 @@ Proof : (Cantor's Diagonal Argument)
 
 $$\emptyset \neq S \subset \mathbb{R}$$ is bounded above if and only if
 
-$$$$
+$$
 \exists M \in \mathbb{R} \text { such that } \forall x \in S, x \leq M
-$$$$
+$$
 
 Such an $$M$$ is called an upper bound for $$S$$.
 $$S$$ is bounded below if and only if
-$$$$
+
+$$
 \exists M \in \mathbb{R} \text { such that } \forall x \in S, M \leq x
-$$$$
+$$
 
 Such an $$M$$ is called a lower bound.
 $$S$$ is bounded if and only if $$S$$ is bounded above and below.
@@ -120,15 +126,15 @@ $$S$$ is bounded if and only if $$S$$ is bounded above and below.
 
 $$S$$ is bounded if and only if
 
-$$$$
+$$
 \exists R>0 \text { such that } \forall x \in S,-R \leq x \leq R
-$$$$
+$$
 
 or equivalently
 
-$$$$
+$$
 \exists R>0 \text { such that } \forall x \in S,|x| \leq R
-$$$$
+$$
 
 #### Definition (Supremum and infimum)
 
@@ -162,9 +168,9 @@ We say a nonempty subset $$S \subset \mathbb{Q}$$ is a Dedekind cut if it satisf
 
 #### Definition ( $$\mathbb{R}$$ as Dedekind cuts )
 
-$$$$
+$$
 \mathbb{R}:=\{\text { Dedekind cuts } S \subset \mathbb{Q}\}
-$$$$
+$$
 
 ### 2.6 Triangle inequalities
 
@@ -172,40 +178,29 @@ $$$$
 
 For all $$a, b \in \mathbb{R}$$ we have
 
-$$$$
+$$
 |a+b| \leq|a|+|b|
-$$$$
-$$$$
-|x+y| \leq|x|+|y|
-$$$$
-$$$$
-|x| \leq|y|+|x-y|
-$$$$ 
-$$$$
-|x+y| \geq|x|-|y|
-$$$$
-$$$$
-|x| \geq|y|-|x-y|
-$$$$
-$$$$
-|x+y| \geq|y|-|x|
-$$$$
-$$$$
-|x-y| \leq|x-z|+|y-z|
-$$$$
-$$$$
-|x-y| \geq|| x|-| y||
-$$$$
+$$
+
+(a) $$|x+y| \leq|x|+|y|$$
+(e) $$|x| \leq|y|+|x-y|$$
+(b) $$|x+y| \geq|x|-|y|$$
+(f) $$|x| \geq|y|-|x-y|$$
+(c) $$|x+y| \geq|y|-|x|$$
+(g) $$|x-y| \leq|x-z|+|y-z|$$
+(d) $$|x-y| \geq|| x|-| y||$$
 
 #### Exercise 2.46
 
-$$$$
+$$
 \forall \epsilon>0,|x-a|<\epsilon
-$$$$
+$$
+
 is equivalent to
-$$$$
+
+$$
 x = a
-$$$$
+$$
 
 ## 3 Sequences
 
@@ -220,32 +215,54 @@ Any sequence $$\left(a_{n}\right)$$ can be written as a series $$a_{n}=\sum_{i=1
 ### 3.1 Convergence of Sequences
 
 We say that $$a_{n} \rightarrow a$$ as $$n \rightarrow \infty$$ if and only if
-$$$$
+
+$$
 \forall \epsilon>0 \exists N \in \mathbb{N} \text { such that } \forall n \geq N,\left|a_{n}-a\right|<\epsilon
-$$$$
+$$
 
 #### Remark 3.5
 
 $$N$$ depends on $$\epsilon$$ ! For a while we will sometimes denote it $$N_{\epsilon}$$, as a reminder.
 
+#### How to prove $$a_{n} \rightarrow a$$
+
+$$
+\forall \epsilon>0 \exists N_{\epsilon} \in \mathbb{N}_{>0} \text { such that }\left|a_{n}-a\right|<\epsilon \forall n \geq N
+$$
+
+(I) $$\operatorname{Fix} \epsilon>0$$.
+
+(II) Calculate $$\left|a_{n}-a\right|$$.
+
+(II') Find a good estimate $$\left|a_{n}-a\right| \leq b_{n}$$.
+
+(III) Try to solve $$b_{n}<\epsilon$$
+
+(IV) Find $$N_{\epsilon} \in \mathbb{N}_{>0}$$ such that $$(*)$$ holds whenever $$n \geq N_{\epsilon}$$.
+
+(V) Put everything together into a logical proof.
 
 #### Definition （ Convergence ）
 
 We say that $$a_{n}$$ converges if and only if $$\exists a \in \mathbb{R}$$ such that $$a_{n} \rightarrow a$$, i.e.
-$$$$
-\exists a \text{ such that } \forall \epsilon>0 \exists N \in \mathbb{N}_{>0}
-\text{ such that } n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon
-$$$$
+
+$$\exists a$$ such that $$\forall \epsilon>0 \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$$
 
 #### Definition （ Divergence ）
 
 We say that $$a_{n}$$ diverges if and only if $$a_{n}$$ does not converge( to any $$a \in \mathbb{R}$$ ),i.e.
 
-$$$$
+$$
 \forall a \exists \epsilon>0 \text { such that } \forall N \in \mathbb{N}_{>0}, \exists n \geq N \text { such that }\left|a_{n}-a\right| \geq \epsilon
-$$$$
+$$
 
-#### Theorem 3.14 ( Uniqueness of limits )
+#### Definition （ Convergence for complex sequences ）
+
+$$a_{n} \in \mathbb{C}, \forall n \geq 1$$. We say $$a_{n} \rightarrow a \in \mathbb{C}$$ if and only if
+
+$$\forall \epsilon>0, \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$$
+
+##### Theorem 3.14 ( Uniqueness of limits )
 
 Limits are unique. If $$a_{n} \rightarrow a$$ and $$a_{n} \rightarrow b$$, then $$a=b$$
 
@@ -263,13 +280,9 @@ If $$a_{n} \rightarrow a$$ and $$b_{n} \rightarrow b$$ then:
 
 3. $$\frac{a_{n}}{b_{n}} \rightarrow \frac{a}{b}$$ if $$b \neq 0$$
 
-#### Theorem 3.21 ( Bounded and monotonic sequences must be convergent )
+#### Theorem 3.21 ( Bounded and monotonic sequences must be convergent)
 
-If $$\left(a_{n}\right)$$ is bounded above and monotonically increasing then $$a_{n}$$ converges to 
-
-$$$$
-a:=\sup \left\{a_{i}: i \in \mathbb{N}_{>0}\right\}
-$$$$
+If $$\left(a_{n}\right)$$ is bounded above and monotonically increasing then $$a_{n}$$ converges to $$a:=\sup \left\{a_{i}: i \in \mathbb{N}_{>0}\right\}$$. We write $$a_{n} \uparrow a$$.
 
 #### Example 3.22
 
@@ -279,9 +292,9 @@ Suppose that $$\left(a_{n}\right)$$ and $$\left(b_{n}\right)$$ are sequences of 
 
 If
 
-$$$$
+$$
 \left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow L<1
-$$$$
+$$
 
 then $$a_{n} \rightarrow 0$$
 
@@ -291,9 +304,9 @@ then $$a_{n} \rightarrow 0$$
 
 $$\left(a_{n}\right)_{n \geq 1}$$ is called a Cauchy sequence if and only if
 
-$$$$
+$$
 \forall \epsilon>0 \exists N \in \mathbb{N}_{>0} \text { such that } \forall n, m \geq N,\left|a_{n}-a_{m}\right|<\epsilon
-$$$$
+$$
 
 #### Proposition 3.25
 
@@ -319,6 +332,8 @@ $$\left(a_{n}\right)$$ Cauchy $$\Longleftrightarrow\left(a_{n}\right)$$ converge
 
 A subsequence of $$\left(a_{n}\right)$$ is a new sequence $$b_{i}=a_{n(i)} \forall i \in \mathbb{N}_{>0}$$, where  $$n(1)<n(2)<\cdots<n(i)<\ldots \forall i$$.
 
+Formally $$n(\cdot)$$ is a function $$\mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$$ sending $$i \mapsto n(i)$$ which is strictly monotonically increasing.
+
 #### Theorem 3.34 ( Bolzano-Weierstrass )
 
 If $$\left(a_{n}\right)$$ is a bounded sequence of real numbers then it has a convergent subsequence.
@@ -329,15 +344,19 @@ If $$a_{n} \rightarrow a$$ then any subsequence $$a_{n(i)} \rightarrow a$$ as $$
 
 #### Lemma 3.40
 
-Fix $$c>0$$. Then $$a_{n} \rightarrow a$$ if and only if $$$$
+Fix $$c>0$$. Then $$a_{n} \rightarrow a$$ if and only if 
+
+$$
 \forall \epsilon>0 \exists N_{\epsilon} \in \mathbb{N}_{>0} \text { such that } n \geq N_{\epsilon} \Longrightarrow\left|a_{n}-a\right|<c \epsilon
-$$$$
+$$
 
-#### Definition ( Convergent to $$\pm \infty$$ )
+#### Definition (Convergent to $$\pm \infty$$)
 
-We say $$a_{n} \rightarrow+\infty$$ if and only if $$$$
+We say $$a_{n} \rightarrow+\infty$$ if and only if
+
+$$
 \forall R>0 \exists N \in \mathbb{N} \text { such that } a_{n}>R \forall n \geq N
-$$$$
+$$
 
 #### Exercise 3.42
 
@@ -348,16 +367,20 @@ Suppose $$a_{n}>0 \forall n$$.$$a_{n} \rightarrow 0 \Longleftrightarrow \frac{1}
 #### Definition ( Series )
 
 An (infinite) series is an expression
-$$$$
+
+$$
 \sum_{n=1}^{\infty} a_{n} \quad \text { or } a_{1}+a_{2}+a_{3}+\ldots
-$$$$
+$$
+
 where $$\left(a_{i}\right)_{i \geq 1}$$ is a sequence.
 
 #### Definition ( Partial sum )
 
-Given a sequence $$a_{n}$$ we get a series (formal expression!) $$\sum_{n=1}^{\infty} a_{n}$$ and another sequence of partial sums$$$$
+Given a sequence $$a_{n}$$ we get a series (formal expression!) $$\sum_{n=1}^{\infty} a_{n}$$ and another sequence of partial sums
+
+$$
 s_{n}:=\sum_{i=1}^{n} a_{i}
-$$$$
+$$
 
 ### 4.1 Convergence of Series
 
@@ -365,15 +388,41 @@ $$$$
 
 We say that the series $$\sum a_{n}$$ "converges to $$A \in \mathbb{R}$$ " if and only if the sequence of partial sums converges to $$A$$ :
 
-$$$$
+$$
 \sum_{n=1}^{\infty} a_{n}=A \Longleftrightarrow s_{n} \longrightarrow A .
-$$$$
+$$
 
 #### Theorem 4.2 ( Convergence of series implies convergence of sequence )
 
-$$$$
+$$
 \sum_{n=0}^{\infty} a_{n} \text { is convergent } \Longrightarrow a_{n} \rightarrow 0
-$$$$
+$$
+
+#### Example 4.4
+
+$$\sum_{n=1}^{\infty} \frac{1}{n}$$ is not convergent.
+Proof. Uses a slight trick. Arrange the partial sum as follows:
+
+$$
+\begin{aligned}
+1+\frac{1}{2}+\frac{1}{3}+\ldots= & +\left(\frac{1}{2}+\frac{1}{3}\right)+\left(\frac{1}{4}+\cdots+\frac{1}{7}\right) \\
+& +\left(\frac{1}{8}+\cdots+\frac{1}{15}\right)+\left(\frac{1}{16}+\cdots+\frac{1}{31}\right)+\ldots
+\end{aligned}
+$$
+
+We can bound the $$k$$ th bracketed term from below:
+
+$$
+\left(\frac{1}{2^{k}}+\cdots+\frac{1}{\left(2^{k+1}-1\right)}\right)>\frac{1}{2^{k+1}}+\cdots+\frac{1}{2^{k+1}}=\frac{2^{k}}{2^{k+1}}=\frac{1}{2} .
+$$
+
+In particular then
+
+$$
+s_{2^{k+1}-1}>1+\underbrace{\frac{1}{2}+\cdots+\frac{1}{2}}_{k \text { terms }}=1+\frac{k}{2}
+$$
+
+is arbitrarily large. But if $$s_{n}$$ converged, it would be bounded: $$\left|s_{n}\right| \leq C \;\forall n$$. So we get the contradiction (to the Archimedean property) $$1+\frac{k}{2} \leq C \; \forall k \in \mathbb{N}$$.
 
 #### Proposition 4.6
 
@@ -395,36 +444,27 @@ Moreover, $$0 \leq \sum_{n=1}^{\infty} a_{n} \leq \sum_{n=1}^{\infty} b_{n}$$.
 
  If $$\sum a_{n}, \sum b_{n}$$ are convergent then so is $$\sum\left(\lambda a_{n}+\mu b_{n}\right)$$, to
 
-$$$$
+$$
 \sum_{n=1}^{\infty}\left(\lambda a_{n}+\mu b_{n}\right)=\lambda \sum_{n=1}^{\infty} a_{n}+\mu \sum_{n=1}^{\infty} b_{n}
-$$$$
+$$
 
 ### 4.2 Absolute Convergence
 
 #### Definition ( Absolute convergence )
 
-For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is absolutely convergent if and only if the series 
+For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is absolutely convergent if and only if the series $$\sum_{n=1}^{\infty}\left|a_{n}\right|$$ is convergent.
 
-$$$$
-\sum_{n=1}^{\infty}|a_n|
-$$$$ 
+#### Definition
 
-is convergent
+For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is conditionally convergent if and only if the series $$\sum_{n=1}^{\infty} a_{n}$$ is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}\left|a_{n}\right|$$ diverges to infinity).
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
-Let 
-$$$$
-\left(a_{n}\right)_{n \geq 0}
-$$$$
- be a real or complex sequence. If
+Let $$\left(a_{n}\right)_{n \geq 0}$$ be a real or complex sequence. If $$\sum a_{n}$$ is absolutely convergent, then it is convergent.
 
-$$$$
-\sum a_{n}
-$$$$
- 
-is absolutely convergent, then it is convergent.
+#### Example 4.15
 
+ For $$z \in \mathbb{C}$$ the power series $$\sum_{n=1}^{\infty} z^{n}$$ is absolutely convergent for $$|z|<1$$ and divergent for $$|z| \geq 1$$.
 
 ### 4.3 Test for convergence
 
@@ -438,64 +478,32 @@ Then $$\sum a_{n}$$ is convergent.
 
 If $$\frac{a_{n}}{b_{n}} \rightarrow L \in \mathbb{R}$$ and $$\sum b_{n}$$ is absolutely convergent, then $$\sum a_{n}$$ is absolutely convergent.
 
+#### Exercise 4.19
+
+Fix $$N \in \mathbb{N}_{>0}$$. Then $$\sum_{n \geq N} c_{n}$$ is convergent if and only if $$\sum_{n \geq 1} c_{n}$$ is convergent.
+
 #### Theorem 4.20 ( Alternating series test )
 
-Suppose
+Suppose $$a_{n}$$ is alternating with $$\left|a_{n}\right| \downarrow 0$$. Then $$\sum a_{n}$$ converges.
 
-$$$$
-a_{n}
-$$$$ 
+#### Exercise 4.22
 
-is alternating with
-
-$$$$
-|a_{n}| \downarrow 0
-$$$$ 
-
-Then $$\sum a_{n}$$ converges.
+The alternating sequence $$a_{n}=\left\{\begin{array}{cc}\frac{1}{n^{2}}+\frac{1}{n} & n \text { even, } \\ -\frac{1}{n^{2}} & n \text { odd, }\end{array}\right.$$ has sum $$\sum a_{n}$$ which is divergent to $$+\infty$$.
+It is alternating but $$\left|a_{n}\right|$$ is not monotonically decreasing, so the alternating series test does not apply.
 
 #### Theorem 4.23 ( Ratio test )
 
-If $$a_{n}$$ is a sequence such that 
-
-$$$$
-|\frac{a_{n+1}}{a_{n}}| \rightarrow r<1
-$$$$
-
-then $$\sum a_{n}$$ is absolutely convergent.
+If $$a_{n}$$ is a sequence such that $$\left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
 
 #### Theorem 4.24 ( Root test )
 
-If $$|a_{n}|^{1 / n} \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
+If $$\left|a_{n}\right|^{1 / n} \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
 
 ### 4.4 Rearrangement of Series
 
-#### Definition (Rearrangement of a sequence)
+#### Definition
 
- Given a bijection 
- 
-$$$$
-n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}
-$$$$
- 
-define 
-
-$$$$
-b_{i}:=a_{n(i)}
-
-$$$$
-
-Then 
-
-$$$$
-(b_{i})_{i \geq 1}
-$$$$ 
-
-is a rearrangement or reordering of 
-
-$$$$
-(a_{n})_{n \geq 1}
-$$$$
+Definition (Rearrangement of a sequence) Given a bijection $$n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$$, define $$b_{i}:=a_{n(i)}$$. Then $$\left(b_{i}\right)_{i \geq 1}$$ is a rearrangement or reordering of $$\left(a_{n}\right)_{n \geq 1}$$.
 
 #### Example 4.31
 
@@ -512,9 +520,9 @@ Pick your favourite number; call it $$\pi$$ say. Then reorder the sum as follows
 We can do each step because $$\sum a_{2 n+1} \rightarrow+\infty$$ and $$\sum a_{2 n} \rightarrow-\infty$$.
 Finally we sketch the proof that this reordered sum converges to $$\pi$$. Since $$a_{n} \rightarrow 0$$,
 
-$$$$
+$$
 \forall \epsilon>0 \exists N \in \mathbb{N}_{>0} \text { such that } n \geq N \Longrightarrow\left|a_{n}\right|<\epsilon
-$$$$
+$$
 
 Then the method of Example 4.31 shows that if $$\left(a_{n}\right)$$ is any sequence such that
 
@@ -536,7 +544,7 @@ If $$\left(a_{n}\right)$$ is a sequence such that
 - $$\sum_{n: a_{n}<0} a_{n}$$ converges,
 then any reordering of $$\sum a_{n}$$ will diverge to $$+\infty$$.
 
-#### Theorem 4.34 ( Riemann's Rearrangement Theorem )
+#### Theorem 4.34 (Riemann's Rearrangement Theorem)
 
 $$\sum a_{n}$$ is absolutely convergent $$\Longleftrightarrow(1)+(2) \Longrightarrow(3)+(4)$$, where
 
@@ -557,16 +565,18 @@ Fix a real or complex series $$\left(a_{n}\right)$$ and consider the series $$\s
 
 Then $$\exists R \in[0, \infty]$$ such that
 
-- $$$$
-|z|<R \Longrightarrow \sum a_{n} z^{n}
-$$$$ is absolutely convergent, and
+- $$|z|<R \Longrightarrow \sum a_{n} z^{n}$$ is absolutely convergent, and
 
-- $$$$
-|z|>R \Longrightarrow \sum a_{n} z^{n}
-$$$$ 
+- $$|z|>R \Longrightarrow \sum a_{n} z^{n}$$ is divergent.
+Proof. Let $$S=\left\{|z|: a_{n} z^{n} \rightarrow 0\right\}$$, nonempty since $$0 \in S$$. Then define
 
-is divergent.
+$$
+R= \begin{cases}\sup S & \text { if } S \text { bounded }, \\ \infty & \text { if } S \text { unbounded }\end{cases}
+$$
 
+#### Exercise 4.38
+
+Suppose $$\left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow a \in[0, \infty]$$ as $$n \rightarrow \infty$$, then $$R=\frac{1}{a}$$ is the radius of convergence of $$\sum a_{n} z^{n}$$.
 
 ### 4.5.1 Products of Power Series
 
@@ -580,11 +590,7 @@ If $$\sum a_{n}, \sum b_{n}$$ are absolutely convergent, then their Cauchy produ
 
 #### Corollary 4.40
 
-If $$\sum a_{n} z^{n}$$ and $$\sum b_{n} z^{n}$$ have radius of convergence $$R_{A}$$ and $$R_{B}$$ respectively, then $$\sum c_{n} z^{n}$$ has radius of convergence
-
-$$$$
-R_{C} \geq \min \{R_{A}, R_{B}\}
-$$$$
+If $$\sum a_{n} z^{n}$$ and $$\sum b_{n} z^{n}$$ have radius of convergence $$R_{A}$$ and $$R_{B}$$ respectively, then $$\sum c_{n} z^{n}$$ has radius of convergence $$R_{C} \geq \min \left\{R_{A}, R_{B}\right\}$$.
 
 #### Exercise 4.41
 
@@ -598,12 +604,13 @@ Fix $$\alpha, \beta \in \mathbb{R}$$. Prove that if $$[x<\alpha \Longrightarrow 
 
 Given $$a<x_0<b$$ and $$f:(a,b)-\{x_0\} \rightarrow \mathbb{R}$$, we define
 
-$$$$
+$$
 \lim _{x \rightarrow x_{0}} f(x)=y \Longleftrightarrow \forall \epsilon>0 \exists \delta>0 \text { such that } 0<|x-x_{0}|<\delta \Longrightarrow|f(x)-y|<\epsilon
-$$$$
+$$
 
+as for every $$\epsilon >0 $$, there exists a $$\delta = \delta(\epsilon) > 0$$ such that $$|x - x_0|<\delta$$ and $$x \neq x_0$$ implies $$|f(x) - y|<\epsilon$$.
 
-#### Proposition ( Limits keep sign )
+#### Proposition (Limits keep sign)
 
 If $$\lim _{x \to x_0} f(x) = y > 0$$, then there exists $$\delta > 0$$, such that $$x \in (x_0-\delta, x_0+\delta)-\{x_0\}$$ such that $$f(x) > 0$$.
 
@@ -613,22 +620,22 @@ If $$\lim_{x \to x_0} f(x)$$ exists then there is an open interval $$I$$ contain
 
 #### Proposition ( Uniqueness of limits )
 
-If $$\lim_{x \to x_0} f(x) = a$$ and $$\lim_{x \to x_0} f(x) = b$$, then $$a = b$$.
+If $$\lim _{x \to x_0} f(x) = a$$ and $$\lim_{x \to x_0} f(x) = b$$, then $$a = b$$.
 
 #### Proposition (Squeeze theorem)
 
 Let $$f, g$$ and $$h$$ be functions defined on
-$$$$
+$$
 (a, b)-\{x_{0}\}
-$$$$
+$$
 where $$a<x_{0}<b$$. Assume for all $$x \in (a,b)-\{x_0\}$$
-$$$$
+$$
 f(x) \leq g(x) \leq h(x)
-$$$$
+$$
 If the limits $$\lim_{x \to x_0} f(x)$$ and $$\lim{ x \to x_0} h(x)$$ exist and coincide, then $$\lim_{x \to x_0} g(x)$$ exists and
-$$$$
+$$
 \lim _{x \to x_0} f(x)=\lim_{x \to x_0} g(x)=\lim _{x \to x_0} h(x)
-$$$$
+$$
 
 #### Exercise ( Limits of functions and sequences )
 
@@ -640,18 +647,21 @@ $$$$
 - $$\lim_{x \to x_0} (f(x) + g(x)) = \lim_{x \to x_0} f(x) + \lim_{x \to x_0} g(x)$$
 - $$\lim_{x \to x_0} (f(x) \cdot g(x)) = \lim_{x \to x_0} f(x) \cdot \lim_{x \to x_0} g(x)$$
 - If $$\lim_{x \to x_0} {g(x)} \neq 0$$, then
-$$$$
-\lim_{x \to x_0}\frac{f(x)}{g(x)} = \frac{\lim_{x \to x_0}f(x)}{\lim_{x \to x_0}g(x)}
-$$$$.
+ $$
+ \lim_{x \to x_0}\frac{f(x)}{g(x)} = \frac{\lim_{x \to x_0}f(x)}{\lim_{x \to x_0}g(x)}
+ $$.
 
 ### 5.2 Continuity
 
 #### Definition ( Continuous at a point )
 
 We say that $$f: I \rightarrow \mathbb{R} $$ is continuous at $$x_0$$ if continous at $$a \in I$$ if
-$$$$
+$$
 \lim _{x \to a} f(x)=f(a)
-$$$$
+$$
+which means, $$f: I \to \mathbb{R}$$ is continuous at $$a$$ if:
+
+for every $$\epsilon > 0$$, there exists $$\delta = \delta(\epsilon) > 0$$ such that $$|x - a| < \delta$$ implies $$|f(x) - f(a)| < \epsilon$$.
 
 #### Theorem ( Algebra of continuous functions )
 
@@ -683,15 +693,20 @@ Let $$f: I \to \mathbb{R}$$ be continuous at $$a \in I$$. If $$f(a) > 0$$, then 
 
 We say that $$f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the right if
 
-$$$$
+For all $$\epsilon > 0$$, there exists $$\delta > 0$$ such that $$a < x  <a+ \delta$$ implies $$|f(x) - L| < \epsilon$$.
+
+In this case, we write:
+$$
 \lim _{x \to a^{+}} f(x)=L
-$$$$
+$$
 
 Similarly, we say that $$f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the left if
+For all $$\epsilon > 0$$, there exists $$\delta > 0$$ such that $$a - \delta < x  <a$$ implies $$|f(x) - L| < \epsilon$$.
 
-$$$$
+In this case, we write:
+$$
 \lim _{x \to a^{-}} f(x)=L
-$$$$
+$$
 
 #### Definition ( Continuity on closed intervals )
 
@@ -704,9 +719,9 @@ We say that $$f: [a, b] \to \mathbb{R}$$ is continuous on $$[a,b]$$ if
 #### Theorem ( Bolzano's theorem )
 
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous on $$[a,b]$$ and assume
-$$$$
+$$
 f(a)<0<f(b)
-$$$$
+$$
 Then there exists $$x \in (a,b)$$ such that $$f(x) = 0$$.
 
 #### Corollary ( Intermediate value theorem )
@@ -730,9 +745,9 @@ The empty set $$\emptyset$$ and the whole set $$\mathbb{R}$$ are both open and c
 #### Exercise
 
 A set $$B$$ is closed if and only if
-$$$$
+$$
 \forall \{x_n\} \subset B \;\text{and}\; \lim_{n \to \infty} x_n = exists \implies \lim_{n \to \infty}x_n \in B
-$$$$
+$$
 
 #### Definition ( Compact sets )
 
@@ -751,9 +766,9 @@ Let $$f: [a, b] \to \mathbb{R}$$ be continuous on $$[a,b]$$. Then $$f$$ is bound
 #### Corollary ( Extreme value theorem )
 
 Let $$f:[a,b] \to \mathbb{R}$$ be continous on $$[a,b]$$. Then there exists $$x \in [a,b]$$ such that
-$$$$
+$$
 f(x) \geq f(t) \quad \forall t \in [a,b]
-$$$$
+$$
 
 #### Exercise
 
@@ -764,9 +779,9 @@ If $$f: X \subset \mathbb{R} \to \mathbb{R}$$ is continous and $$X$$ is compact,
 #### Definition ( Uniform continuity )
 
 We say that $$f: X \subset \mathbb{R} \to \mathbb{R}$$ is uniformly continuous on $$X$$ if
-$$$$
+$$
 \forall \epsilon > 0, \exists \delta > 0 \;\text{such that}\; \forall x,y \in X,\;|x-y| < \delta \implies |f(x) - f(y)| < \epsilon
-$$$$
+$$
 
 #### Exercise
 
@@ -775,6 +790,10 @@ Let $$f: X \subset \mathbb{R} \to \mathbb{R}$$ be continuous on $$X$$, then
 - If $$X = [a,b]$$, then $$f$$ is uniformly continuous on $$X$$.
 - If $$X$$ is compact, then $$f$$ is uniformly continuous on $$X$$.
 
+#### Exercise
+
+We say that $$\lim_{x \to a} = \infty$$ if for all $$N > 0$$, there exists a $$\delta > 0$$ such that $$f(x) > N$$ for all $$|x-a|<\delta$$. Then, if $$f:(a,b) \to \mathbb{R}$$ is continous on $$(a,b)$$ and $$\lim_{x \to a^+}f(x) = \lim_{x \to b^-}f(x) = \infty$$, then $$f$$ attains a minimum on $$(a,b)$$.
+
 ## 6. Differentiation
 
 ### 6.1 The derivative
@@ -782,9 +801,9 @@ Let $$f: X \subset \mathbb{R} \to \mathbb{R}$$ be continuous on $$X$$, then
 #### Definition ( Derivative and differentiability )
 
 We say that $$f$$ is differertiable at $$x_0$$ if $$\lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ exists. In this case we use the notation:
-$$$$
+$$
 f'(x_0) = \frac{df}{dx}(x_0) = \lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0} = \lim_{h \to 0}\frac{f(x_0+h)-f(x_0)}{h}
-$$$$
+$$
 and we call $$f'(x_0)$$ the derivative of $$f$$ at $$x_0$$.
 
 #### Remark Differertiability is a stronger condition than continuity
@@ -798,63 +817,73 @@ If $$f$$ is differentiable at $$a \in \mathbb{R} $$, then $$f$$ is continuous at
 #### Definition ( Higher order derivatives )
 
 If $$f$$ is differentiable at $$x_0$$, then we can consider the derivative of $$f'$$ at $$x_0$$:
-$$$$
+$$
 f''(x_0) = \frac{d^2f}{dx^2}(x_0) = \frac{d}{dx}\left(\frac{df}{dx}(x_0)\right)
-$$$$
+$$
 and we call $$f''(x_0)$$ the second derivative of $$f$$ at $$x_0$$. We can continue this process and define the $$n$$-th derivative of $$f$$ at $$x_0$$ as
 
-$$$$
+$$
 f^{(k)}(x_0) = \frac{d^kf}{dx^k}(x_0)
-$$$$
+$$
 
 ### 6.3 Properties of the derivative
 
 #### Proposition ( Linearity of the derivative )
 
 If $$f$$ and $$g$$ are differentiable at $$x \in \mathbb{R}$$, then $$f+g$$ is differentiable at $$x$$ and
-$$$$
+$$
 (f+g)'(x) = f'(x) + g'(x)
-$$$$
+$$
 
 #### Proposition ( Leibniz rule )
 
 If $$f$$ and $$g$$ are differentiable at $$x \in \mathbb{R}$$, then $$fg$$ is differentiable at $$x$$ and
-$$$$
+$$
 (fg)'(x) = f'(x)g(x) + f(x)g'(x)
-$$$$
+$$
 
 #### Proposition
 
 Assume $$g$$ is differential at $$a \in \mathbb{R}$$ and $$g(a) \neq 0$$. Then the function
-$$$$
+$$
 f(x) = \frac{1}{g(x)}
-$$$$
+$$
 is differentiable at $$a$$ and
-$$$$
+$$
 (\frac{d}{dx}\frac{1}{g})(a) = -\frac{g'(a)}{g(a)^2}
-$$$$
+$$
 
 #### Corollary
 
 If $$f$$ and $$g$$ are differentiable at $$a \in \mathbb{R}$$, then $$\frac{f}{g}$$ is differentiable at $$a$$ with $$g(a) \neq 0$$, then
 
-$$$$
+$$
 (\frac{d}{dx}\frac{f(x)}{g(x)})'(a) = \frac{f'(a)g(a) - f(a)g'(a)}{g(a)^2}
-$$$$
+$$
 
 #### Corollary
 
 If $$c$$ is a constant and $$f$$ is differentiable at $$a \in \mathbb{R}$$, then
-$$$$
+$$
 \frac{d}{dx}(cf)(a) = cf'(a)
-$$$$
+$$
+
+#### Remark
+
+Let $$I = [a,b]$$. We denota by
+
+- $$C^0(I): = \{f:[a,b] \to \mathbb{R}: f \;\text{is continous on} \;[a,b]\}$$
+- $$C^1(I): = \{f:[a,b] \to \mathbb{R}: f \; \text{is differentiable on} \;(a,b)\; \text{and}\; f' \; \text{is continous on} \;[a,b]\}$$
+Then, $$\frac{d}{dx}: C^1(I) \to C^0(I)$$ is a linear map. In fact, both $$C^0(I)$$ and $$C^1(I)$$ are real vector spaces.
+- (f+g)(x) = f + g
+- (cf)(x) = cf
 
 #### Theorem ( Chain rule )
 
 If $$g$$ is differentiable at $$a \in \mathbb{R}$$ and $$f$$ is differentiable at $$g(a)$$, then $$f \circ g$$ is differentiable at $$a$$ and
-$$$$
+$$
 (f \circ g)'(a) = f'(g(a))g'(a)
-$$$$
+$$
 
 ### 6.4 The Derivative of Elementary Functions
 
@@ -902,9 +931,9 @@ Let $$f:(a,b) \to \mathbb{R}$$ be differentiable on $$(a,b)$$. Assume $$x < y \i
 #### Theorem ( Cauchy's Mean value theorem )
 
 Let $$f:[a,b] \to \mathbb{R}$$ be continous on $$[a,b]$$ and differentiable on $$(a,b)$$. Then, there exists $$t \in (a,b)$$ such that
-$$$$
+$$
 f'(t) = \frac{f(b) - f(a)}{b-a}
-$$$$
+$$
 
 Proof idea: Consider the function $$g(t) = \frac{f(b) - f(a)}{b-a}(t-a) +f(a) $$ and apply Rolle's theorem.
 
@@ -915,9 +944,9 @@ If $$f'(t) > 0$$ on $$(a,b)$$, then $$f$$ is strictly monotone increasing on $$(
 #### Theorem ( The Intermediate Value Theorem for Derivatives )
 
 Let $$f:(a,b) \to \mathbb{R}$$ be differentiable on $$(a,b)$$. Then, $$f'(t)$$ satisfies the intermediate value property, i.e.
-$$$$
+$$
 \forall x<y \; \text{and any} \;c\;\text{between} \;f'(x) \; \text{and} \;f'(y), \; \exists t \in (x,y) \; \text{with} \; f'(t) = c
-$$$$
+$$
 
 Remark: This is true even when $$f'$$ is not continous.
 
@@ -930,18 +959,18 @@ If $$f'(t) \leq 0$$ for all $$t \in (a,b)$$, implies that $$f$$ is strictly mono
 #### Theorem ( The extended mean value theorem )
 
 If $$f$$ and $$g$$ are continous on $$[a,b]$$ and differentiable on $$(a,b)$$, then there exists $$x \in (a,b)$$ such that
-$$$$
+$$
 (f(b) - f(a))g'(x) = (g(b) - g(a))f'(x)
-$$$$
+$$
 
 Proof idea: Consider the function $$h(t) = (f(b) - f(a))g(t) - (g(b) - g(a))f(t)$$ and apply Rolle's theorem.
 
 #### Theorem ( L'Hospital's rule )
 
 Assume that
-$$$$
+$$
 \lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0
-$$$$
+$$
 If $$\lim_{x \to a} \frac{f'(x)}{g'(x)}$$ exists, then $$\lim_{x \to a} \frac{f(x)}{g(x)}$$ also exists and both limits are equal.
 
 Proof idea: Apply the extended mean value theorem to $$f$$ and $$g$$.
@@ -964,7 +993,7 @@ Let $$a$$ be a critical point of $$f$$, i.e. $$f'(a) = 0$$. Then,
 
 #### Theorem
 
-Assume $$f^{(2)}(a)$$ exists and $$f$$ has a local minimu at $$a$$. Then, $$f^{(2)}(a) \leq 0$$.
+Assume $$f''(a)$$ exists and $$f$$ has a local minimu at $$a$$. Then, $$f''(a) \leq 0$$.
 
 ### 6.9 Convexity
 
@@ -979,13 +1008,13 @@ We say that a function $$f:(a,b) \to \mathbb{R}$$ is convex if the region above 
 #### Definition ( Strict convexity )
 
 We say that $$f$$ is strictly convex on $$I$$ if: for all $$a, b \in I$$ and $$ t\in (0,1)$$, we have
-$$$$
+$$
 f((1-t)a + tb) < (1-t)f(a) + tf(b)
-$$$$
+$$
 or equivalently, for all $$a <x< b$$ and we have
-$$$$
+$$
 f(x) < \frac{f(b) - f(a)}{b-a}(x-a) + f(a)
-$$$$
+$$
 
 #### Theorem ( The second derivative test for convexity )
 
@@ -1005,22 +1034,16 @@ If $$f$$ is twice differentiable on $$I$$ and $$f''(x) > 0$$ for all $$x \in I$$
 #### Definition ( Partition )
 
 A partition of an interval $$[a,b]$$ is a finite set of points in $$[a,b] and containing both $$a$$ and $$b$$, i.e. a partition of $$[a,b]$$ is
-
-$$$$
+$$
 a = t_0 < t_1 < \cdots < t_n = b
-$$$$
-
+$$
 We usually denote a partition $$P$$ as
-
-$$$$
+$$
 P = a = t_0 < t_1 < \cdots < t_n = b
-$$$$
-
+$$
 or
-
-$$$$
+$$
 P = \{t_0, t_1, \cdots, t_n\}
-$$$$
 
 #### Definition ( Lower and upper sum )
 
@@ -1030,53 +1053,53 @@ Let $$f:[a,b] \to \mathbb{R}$$ be a bounded function and given a partition $$P$$
 - $$M_i = \sup\{f(x): x \in [t_{i-1},t_i] \}$$
 
 - Then, the lower sum of $$f$$ for $$P$$ as
-$$$$
+$$
 L(f,P) = \sum_{i=1}^n m_i(t_i - t_{i-1})
-$$$$
+$$
 - Then, the upper sum of $$f$$ for $$P$$ as
-$$$$
+$$
 U(f,P) = \sum_{i=1}^n M_i(t_i - t_{i-1})
-$$$$
+$$
 
 #### Lemma
 
 Given $$P$$ and $$Q$$ partitions of $$[a,b]$$, we have
-$$$$
+$$
 L(f,P) \leq U(f,Q)
-$$$$
+$$
 In particular:
-$$$$
+$$
 \sup\{L(f,P): P \text{ is a partition of } [a,b]\} \leq \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
-$$$$
+$$
 
 #### Example
 
 The function $$f:[0,1] \to \mathbb{R}$$ defined by
-$$$$
+$$
 f(x) = \begin{cases}
 1 & \text{ if } x \in \mathbb{Q} \\
 0 & \text{ if } x \notin \mathbb{Q}
 \end{cases}
-$$$$
+$$
 is not Riemann integrable.
 
 #### Definition ( Riemann integrable )
 
 We say that a bounded function $$f:[a,b] \to \mathbb{R}$$ is Riemann integrable if
-$$$$
+$$
 \sup\{L(f,P): P \text{ is a partition of } [a,b]\} = \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
-$$$$
+$$
 and we denote this common value as
-$$$$
+$$
 \int_a^b f(x) dx
-$$$$
+$$
 
 #### Theorem
 
 If f is bounded on $$[a,b]$$, then $$f$$ is Riemann integrable if and only if for all $$\epsilon > 0$$, there exists a partition $$P$$ of $$[a,b]$$ such that
-$$$$
+$$
 U(f,P) - L(f,P) < \epsilon
-$$$$
+$$
 
 #### Theorem ( Continous implies Riemann integrable )
 
@@ -1085,30 +1108,30 @@ If $$f$$ is continous on $$[a,b]$$, then $$f$$ is Riemann integrable on $$[a,b]$
 #### Theorem
 
 Let $$a<b<c$$ and $$f:[a,c] \to \mathbb{R}$$ be a bounded function. If $$f$$ is Riemann integrable on $$[a,b]$$ and $$[b,c]$$, then $$f$$ is Riemann integrable on $$[a,c]$$. Moreover, in such a case
-$$$$
+$$
 \int_a^c f(x) dx = \int_a^b f(x) dx + \int_b^c f(x) dx
-$$$$
+$$
 
 #### Theorem
 
 $$f$$ and $$g$$ are Riemann integrable on $$[a,b]$$, then $$f+g$$ is Riemann integrable on $$[a,b]$$. Moreover, in such a case:
-$$$$
+$$
 \int_a^b (f(x) + g(x)) dx = \int_a^b f(x) dx + \int_a^b g(x) dx
-$$$$
+$$
 
 #### Theorem
 
 Let $$f$$ be integrable on $$[a,b]$$ and assume $$m \leq f(x) \leq M$$ for all $$x \in [a,b]$$. Then
-$$$$
+$$
 m(b-a) \leq \int_a^b f(x) dx \leq M(b-a)
-$$$$
+$$
 
 #### Theorem
 
 If $$f(x) \geq g(x)$$ $$ \forall x \in [a,b]$$ and both functions are integrable on $$[a,b]$$, then
-$$$$
+$$
 \int_a^b f(x) dx \geq \int_a^b g(x) dx
-$$$$
+$$
 
 #### Question
 
@@ -1117,24 +1140,24 @@ If $$f$$ is continous on $$[a,b]$$ and $$f(x) \geq 0$$ for all $$x \in [a,b]$$, 
 ### 7.1 New functions using integral
 
 Assume $$f$$ is integrable on $$[a,b]$$ then it is also integrable on $$[a,x]\; \forall x\in [a,b]$$. Therefore, we can define a new function
-$$$$
+$$
 F(x) = \int_a^x f(t) dt
-$$$$
+$$
 
 #### Theorem
 
 If $$f$$ is integrable on $$[a,b]$$, then $$F(x) = \int_a^xf(t)dt$$ is continous on $$[a,b]$$
 
-#### Theorem ( The Fundamental Theorem of Calculus ) ( Part 1 )
+#### Theorem (The Fundamental Theorem of Calculus ) ( Part 1 )
 
 Let $$f$$ be integrable on $$[a,b]$$ and define $$F(x) = \int_a^x f(t) dt$$. If $$f$$ is continous at $$c \in [a,b]$$, then $$F$$ is differentiable at $$c$$ and $$F'(c) = f(c)$$.
 
 #### Corollary
 
 If $$f$$ is continous on $$[a,b]$$ and $$f = g'$$ for some function $$g$$ on $$[a,b]$$, then
-$$$$
+$$
 \int_a^b f(x) dx = g(b) - g(a)
-$$$$
+$$
 
 #### Definition ( Primitive function )
 
@@ -1143,31 +1166,31 @@ We say that $$F$$ is a primitive function for $$f$$ if $$F$$ is differentiable o
 #### Theorem ( The Fundamental Theorem of Calculus ) ( Part 2 )
 
 If $$g'$$ is integrable on $$[a,b]$$, then
-$$$$
+$$
 \int_a^b g'(x) dx = g(b) - g(a)
-$$$$
+$$
 Remark: $$g'(x)$$ dose not need to be continous. Therefore, continutiy means intergrability but not vice versa.
 
-#### Exercise ( Integration by parts )
+#### Exercise (Integration by parts)
 
 If $$f$$ and $$g$$ are continous on $$[a,b]$$, then
-$$$$
+$$
 \int_a^b f(x)g'(x) dx = f(b)g(b) - f(a)g(a) - \int_a^b f'(x)g(x) dx
-$$$$
+$$
 
 #### Exercise ( Change of variable formula )
 
 Let $$\phi:[a, b] \to \mathbb{R}$$ and $$f: \mathbb{R} \to \mathbb{R}$$. Assume $$f$$ and $$\phi
 '$$ are continous, then
-$$$$
+$$
 \int_a^b f(\phi(t))\phi'(t) dt = \int_{\phi(a)}^{\phi(b)} f(x) dx
-$$$$
+$$
 
 #### Definition ( Logarithmic and exponential function )
 
 We define the logarithmic function as, for $$x > 0$$,
-$$$$
+$$
 \log(x) = \int_1^x \frac{1}{t} dt
-$$$$
+$$
 and $$exp(y) = \log^{-1} (y)$$  $$\forall y \in \mathbb{R}$$.
 
