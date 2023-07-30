@@ -13,7 +13,7 @@ $$
 \mathrm{C}=\left(c_{i j}\right)_{p \times r}, \quad \text { where } \quad c_{i j}=\sum_{k=1}^{q} a_{i k} b_{k j}
 $$
 
-### Echelon form ( ef )
+### Echelon form (ef)
 
 We say a matrix is in echelon form (ef) if must satisify the following:
 
@@ -181,11 +181,11 @@ Let $$v_{1}, \ldots, v_{n}$$ be linearly independent in an $$F$$-vector space $$
 
 Let $$V$$ be an $$F$$-vector space. A basis of $$V$$ is a linearly independent spanning set of $$V$$.
 
-### Proposition ( The coordinates of a vector are unique )
+### Proposition (The coordinates of a vector are unique)
 
 Let $$V$$ be an $$F$$-vector space, let $$S=\left\{u_{1}, \ldots, u_{m}\right\} \subseteq V$$. Then $$S$$ is a basis of $$V$$  if and only if every vector in $$V$$ has a unique expression as a linear combination of elements of $$S$$.
 
-### Proposition  ( Every spanning set contains a basis )
+### Proposition  (Every spanning set contains a basis)
 
 Proposition 3.5.6. Let $$V$$ be a non-trivial (i.e. not $$\{0\}$$ ) $$F$$-vector space and suppose $$V$$ has a finite spanning set $$S$$ then $$S$$ contains a linearly independent spanning set.
 
@@ -238,7 +238,7 @@ Suppose that $$\operatorname{dim} V=n$$ :
 
 5. Any subset of $$V$$ of size $$>n$$ is linearly dependent.
 
-### Definition ( Intersection and sum of subspaces )
+### Definition (Intersection and sum of subspaces)
 
 Let $$V$$ be a vector space, $$U$$ and $$W$$ be subspaces of $$V$$.
 
@@ -278,9 +278,9 @@ Then $$U+W=\operatorname{Span}\left\{u_{1}, \ldots, u_{s}, w_{1}, \ldots, w_{r}\
 
 4. $$A$$ is invertible (so $$\operatorname{det}(A) \neq 0$$, etc.).
 
-## 4. Linear Transformations
+## 3. Linear Transformations
 
-### Definition ( Image and Kernel )
+### Definition (Image and Kernel)
 
 Let $$T: V \rightarrow W$$ be a linear transformation:
 
@@ -290,7 +290,9 @@ Let $$T: V \rightarrow W$$ be a linear transformation:
 
 ### Proposition
 
-Let $$T: V \rightarrow W$$ be a linear tranformation and let $$v_{1}, v_{2} \in V$$. Then$$
+Let $$T: V \rightarrow W$$ be a linear tranformation and let $$v_{1}, v_{2} \in V$$. Then
+
+$$
 T\left(v_{1}\right)=T\left(v_{2}\right) \text { iff } v_{1}-v_{2} \in \operatorname{Ker} T .
 $$
 
