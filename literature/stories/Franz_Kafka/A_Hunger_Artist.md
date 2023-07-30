@@ -1,12 +1,9 @@
 ---
+layout: simple
 title: A Hunger Artist
-categories: [Literature]
-comments: true
 ---
 
-### by Franz Kafka
-
-### Translation by Ian Johnston
+##### by Franz Kafka, Translation by Ian Johnston
 
 <div  align="center"> 
 <img src="/assets/img/kafuka.png?height=288&width=420&top_left_y=596&top_left_x=1357" style="zoom:55%">

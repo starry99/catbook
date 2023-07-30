@@ -1,7 +1,6 @@
 ---
-title: EIN HUNGERKÜNSTLER
-categories: [Literature]
-comments: true
+layout: simple
+title: Ein Hungerkünstler
 ---
 
 ### Erzählung von

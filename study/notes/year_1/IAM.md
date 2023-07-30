@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Introduction to Applied Mathematics
+title: A Brief Summary of Introduction to Applied Mathematics
 ---
 
 ## 1. Part I Graphs
