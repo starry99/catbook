@@ -9,7 +9,6 @@ order: 2
 
  Analysis I
 
-
  Linear Algebra and Groups
 
  Calculus and Applications
