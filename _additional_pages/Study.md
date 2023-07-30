@@ -4,7 +4,7 @@ layout: simple
 order: 2
 ---
 
-### Surviving the mathematics major at Imperial College London
+### Surviving a mathematics major at Imperial College London
 #### Year 1
 
  Analysis I
