@@ -7,20 +7,25 @@ order: 2
 
 
 ### Surviving the mathematics major at Imperial College London
-#### Year 1
 
- - [Analysis I](/study/year_1/Analysis_I/Analysis_I)
+- Year 1
 
- - [Linear Algebra and Groups](/study/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main)
+  - [Analysis I](/study/year_1/Analysis_I/Analysis_I)
 
- - Calculus and Applications
+  - [Linear Algebra and Groups](/study/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main)
 
- - Probability and Statistics
+  - Calculus and Applications
 
- - [An Introduction to Applied Mathematics](/study/year_1/An_Introduction_to_Applied_math/AITAM)
+  - Probability and Statistics
 
- - Individual Research Project
+  - [An Introduction to Applied Mathematics](/study/year_1/An_Introduction_to_Applied_math/AITAM)
 
- - UROP of my first year
+  - Individual Research Project
+
+  - UROP of my first year
+
+- Year 2
+- Year 3
+  
 
 
