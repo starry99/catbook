@@ -3,7 +3,7 @@ layout: simple
 title: Probability Part Memory Sheet
 ---
 
-#### Based on the notes and lectures by [Prof. Almut Veraart](https://sites.google.com/view/almutveraart/home).
+#### Based on the notes and lectures of [Prof. Almut Veraart](https://sites.google.com/view/almutveraart/home).
 ## 1. Sample Spaces and Probability
 
 ### Definition (Sample Space)

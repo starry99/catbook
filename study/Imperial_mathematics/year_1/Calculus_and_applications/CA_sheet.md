@@ -3,7 +3,7 @@ layout: simple
 title: Calculus and Application Memory Sheet
 ---
 
-#### Based on the lectures and notes by [Prof. Demetrios Papageorgiou](https://www.imperial.ac.uk/people/d.papageorgiou) and [Dr. Vahid Shahrezaei](https://www.imperial.ac.uk/people/v.shahrezaei).
+#### Based on the lectures and notes of [Prof. Demetrios Papageorgiou](https://www.imperial.ac.uk/people/d.papageorgiou) and [Dr. Vahid Shahrezaei](https://www.imperial.ac.uk/people/v.shahrezaei).
 ## 1. Differentiation
 
 ### Mean Value and Intermediate Theorem

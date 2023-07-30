@@ -3,6 +3,7 @@ layout: simple
 title: Statistics Part Memory Sheet
 ---
 
+#### Based on the lectures and notes of [Dr. Dean Bodenham](https://www.ma.imperial.ac.uk/~dab10/).
 ## 1. Central tendency and dispersion
 
 ### Theorem (The minimum expected square deviation is the mean)

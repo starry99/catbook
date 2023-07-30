@@ -3,7 +3,7 @@ layout: simple
 title: Linear Algebra Memory Sheet
 ---
 
-#### Based on the notes and lectures by [Dr. Charlotte Kestner](https://www.imperial.ac.uk/people/c.kestner/publications.html), [Prof. David Evans](https://www.ma.imperial.ac.uk/~dmevans/?_gl=1*770mhm*_ga*NTkyNDQ0MjkxLjE2OTA0NTE4MjA.*_ga_LME5ZDDFS0*MTY5MDc0NDkyOC4yOC4xLjE2OTA3NDY0NDYuNTguMC4w) and [Dr. Michele Zordan](https://mzordan.com).
+#### Based on the notes and lectures of [Dr. Charlotte Kestner](https://www.imperial.ac.uk/people/c.kestner/publications.html), [Prof. David Evans](https://www.ma.imperial.ac.uk/~dmevans/?_gl=1*770mhm*_ga*NTkyNDQ0MjkxLjE2OTA0NTE4MjA.*_ga_LME5ZDDFS0*MTY5MDc0NDkyOC4yOC4xLjE2OTA3NDY0NDYuNTguMC4w) and [Dr. Michele Zordan](https://mzordan.com).
 
 ## 1. Matrix
 

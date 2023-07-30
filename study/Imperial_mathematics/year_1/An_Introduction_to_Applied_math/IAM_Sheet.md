@@ -3,7 +3,7 @@ layout: simple
 title: An Introduction to Applied Mathematics Memory Sheet
 ---
 
-#### Based on the notes and lectures by [Prof. Darren Crowdy](https://www.ma.ic.ac.uk/~dgcrowdy/).
+#### Based on the notes and lectures of [Prof. Darren Crowdy](https://www.ma.ic.ac.uk/~dgcrowdy/).
 
 ## 1. Part I Graphs
 

@@ -3,7 +3,7 @@ layout: simple
 title: Analysis I Memory Sheet
 ---
 
-#### Based on the notes and lectures by [Prof. Richard Thomas](https://www.ma.imperial.ac.uk/~rpwt/?_gl=1*4lska7*_ga*NTkyNDQ0MjkxLjE2OTA0NTE4MjA.*_ga_LME5ZDDFS0*MTY5MDcxMTMzNS4yNS4wLjE2OTA3MTEzMzUuNjAuMC4w), [Dr. Ajay Chandra](https://sites.google.com/view/ajaychandra/home) and [Dr. Marco Guaraco](https://www.imperial.ac.uk/people/guaraco).
+#### Based on the notes and lectures of [Prof. Richard Thomas](https://www.ma.imperial.ac.uk/~rpwt/?_gl=1*4lska7*_ga*NTkyNDQ0MjkxLjE2OTA0NTE4MjA.*_ga_LME5ZDDFS0*MTY5MDcxMTMzNS4yNS4wLjE2OTA3MTEzMzUuNjAuMC4w), [Dr. Ajay Chandra](https://sites.google.com/view/ajaychandra/home) and [Dr. Marco Guaraco](https://www.imperial.ac.uk/people/guaraco).
 
 ## 1. Logic
 
