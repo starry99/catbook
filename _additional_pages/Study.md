@@ -7,16 +7,16 @@ order: 2
 ### Surviving the mathematics major at Imperial College London
 #### Year 1
 
-- Analysis I
+ Analysis I
 
 
-- Linear Algebra and Groups
+ Linear Algebra and Groups
 
-- Calculus and Applications
+ Calculus and Applications
 
-- Probability and Statistics
+ Probability and Statistics
 
-- <details><summary>An Introduction to Applied Mathematics</summary>
+<details><summary>An Introduction to Applied Mathematics</summary>
 
   - [A Brief Summary](/study/notes/year_1/Introduction_to_Applied_math/IAM)
   -  Coursework 1 ([pdf](/study/coursework/year_1/Introduction_to_Applied_math/pdf/IAM_Coursework1.pdf), [tex](/study/coursework/year_1/Introduction_to_Applied_math/tex/IAM_Coursework1.tex))
@@ -25,6 +25,6 @@ order: 2
   </details>
 
 
-- Individual Research Project
+ Individual Research Project
 
 
