@@ -100,7 +100,7 @@ $$
 p_{e s c}=\frac{C_{e f f}}{n}
 $$
 
-where $C_{e f f}$ is the effective conductance of node $+$ (where he starts ) to the boundary node $-$( where he wants to reach ).
+where $C_{e f f}$ is the effective conductance of node $+$ ( where he starts ) to the boundary node $-$ ( where he wants to reach ).
 
 $n$ is the total number of edges connected with the node he starts .
 
