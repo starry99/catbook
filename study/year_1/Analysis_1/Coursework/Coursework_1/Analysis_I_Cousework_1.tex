@@ -92,7 +92,7 @@ innertopmargin=\topskip,
 \newcommand{\tmtextbf}[1]{\text{{\bfseries{#1}}}}
 \newcommand{\tmtextit}[1]{\text{{\itshape{#1}}}}
 
-\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$\bullet$}\renewcommand{\labelitemii}{$\bullet$}\renewcommand{\labelitemiii}{$\bullet$}\renewcommand{\labelitemiv}{$\bullet$}}{\end{itemize}}
+\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$$\bullet$$}\renewcommand{\labelitemii}{$$\bullet$$}\renewcommand{\labelitemiii}{$$\bullet$$}\renewcommand{\labelitemiv}{$$\bullet$$}}{\end{itemize}}
 \catcode`\<=\active \def<{
 \fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
 \catcode`\>=\active \def>{
@@ -135,51 +135,51 @@ MATH40002: Analysis I
 
 \newpage
 \begin{Problem}
-    Prove that if $f$ and $g$ are continuous functions such that $f(q)=g(q)$ for all $q \in \mathbb{Q}$, then $f=g$.
+    Prove that if $$f$$ and $$g$$ are continuous functions such that $$f(q)=g(q)$$ for all $$q \in \mathbb{Q}$$, then $$f=g$$.
 \end{Problem}
 \begin{Solution}
     \begin{proof}
-        We prove this by using the sequential continuity. It states that if $f$ is continuous at $x$, then for any sequence $\lim _{n \rightarrow \infty} x_{n}=x$, we have $\lim _{n \rightarrow \infty} f\left(x_{n}\right)=f(x)$.
+        We prove this by using the sequential continuity. It states that if $$f$$ is continuous at $$x$$, then for any sequence $$\lim _{n \rightarrow \infty} x_{n}=x$$, we have $$\lim _{n \rightarrow \infty} f\left(x_{n}\right)=f(x)$$.
 
-        Let $x$ be any real number. Since $\mathbb{Q}$ is dense in $\mathbb{R}$, we can always find a sequence of rational numbers $\left\{q_{n}\right\} \subset \mathbb{Q}$, which satisfies,
+        Let $$x$$ be any real number. Since $$\mathbb{Q}$$ is dense in $$\mathbb{R}$$, we can always find a sequence of rational numbers $$\left\{q_{n}\right\} \subset \mathbb{Q}$$, which satisfies,
         
-        $$
+        $$$$
         \lim _{n \rightarrow \infty} q_{n}=x
-        $$
+        $$$$
         
-        for any real number $x$.
+        for any real number $$x$$.
         
-        As $f(q)=g(q)$ for all $q \in \mathbb{Q}$, we have $f\left(q_{n}\right)=g\left(q_{n}\right)$ for any $n \in \mathbb{N}$. It follows that
+        As $$f(q)=g(q)$$ for all $$q \in \mathbb{Q}$$, we have $$f\left(q_{n}\right)=g\left(q_{n}\right)$$ for any $$n \in \mathbb{N}$$. It follows that
         
-        $$
+        $$$$
         \lim _{n \rightarrow \infty} f\left(q_{n}\right)=\lim _{n \rightarrow \infty} g\left(q_{n}\right)
-        $$
+        $$$$
         
-        Since $f$ and $g$ are continuous functions, then they are continuous at any $x \in \mathbb{R}$ by the definition of continuous function. Then, by the sequential continuity we stated before and the equation (1), we have
+        Since $$f$$ and $$g$$ are continuous functions, then they are continuous at any $$x \in \mathbb{R}$$ by the definition of continuous function. Then, by the sequential continuity we stated before and the equation (1), we have
         
-        $$
+        $$$$
         \begin{aligned}
         & \lim _{n \rightarrow \infty} f\left(q_{n}\right)=f(x) . \\
         & \lim _{n \rightarrow \infty} g\left(q_{n}\right)=g(x) .
         \end{aligned}
-        $$
+        $$$$
         
         By the equations (2), (3), (4), we immediately get this:
         
-        $$
+        $$$$
         f(x)=g(x) \forall x \in \mathbb{R}
-        $$
+        $$$$
         
-        It means that $f=g$.
+        It means that $$f=g$$.
     \end{proof}
     \begin{Problem}
         Prove that the finite union of bounded sets is bounded.
     \end{Problem}
     \begin{Solution}
        \begin{proof}
-        Suppose we have a collection of finite bounded sets, which is $\left\{S_{1}, S_{2}, S_{3}, \ldots, S_{n}\right\}$. Each bounded set has its own upper bound, which is $\left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$ respectively and has its own lower bound, which is $\left\{m_{1}, m_{2}, m_{3}, \ldots, m_{n}\right\}$ respectively. We claim that the finite union of these sets $U_{i=1}^{n} S_{i}$ is upper bounded by $\max \left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$ and lower bounded by $\min \left\{m_{1}, m_{2}, m_{3} \ldots, m_{n}\right\}$.
+        Suppose we have a collection of finite bounded sets, which is $$\left\{S_{1}, S_{2}, S_{3}, \ldots, S_{n}\right\}$$. Each bounded set has its own upper bound, which is $$\left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$$ respectively and has its own lower bound, which is $$\left\{m_{1}, m_{2}, m_{3}, \ldots, m_{n}\right\}$$ respectively. We claim that the finite union of these sets $$U_{i=1}^{n} S_{i}$$ is upper bounded by $$\max \left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$$ and lower bounded by $$\min \left\{m_{1}, m_{2}, m_{3} \ldots, m_{n}\right\}$$.
 
-Since any element $x \in U_{i=1}^{n} S_{i}$ must be in at least one of the bounded sets $\left\{S_{1}, S_{2}, S_{3}, \ldots, S_{n}\right\}$, then for any $x \in U_{i=1}^{n} S_{i}$, we have $x \leq \max \left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$ and $x \geq \min \left\{m_{1}, m_{2}, m_{3} \ldots, m_{n}\right\}$. Therefore, the finite union of bounded sets is also bounded.
+Since any element $$x \in U_{i=1}^{n} S_{i}$$ must be in at least one of the bounded sets $$\left\{S_{1}, S_{2}, S_{3}, \ldots, S_{n}\right\}$$, then for any $$x \in U_{i=1}^{n} S_{i}$$, we have $$x \leq \max \left\{M_{1}, M_{2}, M_{3}, \ldots, M_{n}\right\}$$ and $$x \geq \min \left\{m_{1}, m_{2}, m_{3} \ldots, m_{n}\right\}$$. Therefore, the finite union of bounded sets is also bounded.
         \end{proof}
     \end{Solution}
 \end{Solution}

@@ -83,7 +83,7 @@ Imperial College London}
 \definecolor{colorexa}{RGB}{240,223,255}
 \newtheorem{exercise}{Exercise}[subsection]
 \newtheorem{example}{Example}[subsection]
-\newenvironment{solution}{\emph{Solution.}}{\hfill$\square$}
+\newenvironment{solution}{\emph{Solution.}}{\hfill$$\square$$}
 \begin{document}
 \maketitle
 \newpage
@@ -106,11 +106,11 @@ Imperial College London}
 \newpage
 \section{Numbers}
 \subsection{Rational numbers}
-Recall $ \mathbb{Q}$ = \{(p,q) $\in$ $\zz \times \nn$\}, where $\sim$ is the quaivalence ralation.\\
+Recall $$ \mathbb{Q}$$ = \{(p,q) $$\in$$ $$\zz \times \nn$$\}, where $$\sim$$ is the quaivalence ralation.\\
 \begin{center}
-    $(p_1,q_1)$ $\sim$ $(p_2,q_2)$ $\iff$ $p_1q_2=p_2q_1$
+    $$(p_1,q_1)$$ $$\sim$$ $$(p_2,q_2)$$ $$\iff$$ $$p_1q_2=p_2q_1$$
 \end{center}
-and we write the equivalence calss of (p,q) as $\frac{p}{q}$. Each equivalence class has a distinguished element $(p',q')$ such that $\slashed{\exists}$ n$\in \mathbb{N}$ with n>1 and $n \mid p'$,$n\mid q'$.We say $\frac{p'}{q'}$ is "in lowest terms". We define:\\
+and we write the equivalence calss of (p,q) as $$\frac{p}{q}$$. Each equivalence class has a distinguished element $$(p',q')$$ such that $$\slashed{\exists}$$ n$$\in \mathbb{N}$$ with n>1 and $$n \mid p'$$,$$n\mid q'$$.We say $$\frac{p'}{q'}$$ is "in lowest terms". We define:\\
 \begin{align*}
     \frac{p_1}{q_1}+\frac{p_2}{q_2} &:= \frac{p_1q_2+p_2q_1}{q_1q_2},\\
     \frac{p_1}{q_1}-\frac{p_2}{q_2} &:= \frac{p_1q_2-p_2q_1}{q_1q_2},\\
@@ -141,34 +141,34 @@ These satisfy certain axioms that we list next.
         13.& \forall x \in \mathbb{Q},\exists n \in \mathbb{N} such that n>x   \qquad(Archimedean \;axiom)
     \end{align*}
 \end{axioms}
-The real numbers $\mathbb{R}$ satisfy the exact same axioms,plus one more - the \textbf{completeness axiom} - disigned to fixed the problem that $\mathbb{Q}$ has holes.
+The real numbers $$\mathbb{R}$$ satisfy the exact same axioms,plus one more - the \textbf{completeness axiom} - disigned to fixed the problem that $$\mathbb{Q}$$ has holes.
 \subsection{Decimals}
 \subsubsection{Finite decimals}
 \begin{definition}{2.2.1}{}
-    For $a_0 \in \mathbb{Z}$ and $a_i \in {0,1,...,9}$ we define the finite decimal $a_0.a_1...a_i$ as follows. If $a_0 \geq 0$ the $a_0.a_1...a_i$ is set to be\\
+    For $$a_0 \in \mathbb{Z}$$ and $$a_i \in {0,1,...,9}$$ we define the finite decimal $$a_0.a_1...a_i$$ as follows. If $$a_0 \geq 0$$ the $$a_0.a_1...a_i$$ is set to be\\
     \begin{center}
-        $a_0+\frac{a_1}{10}+\frac{a_2}{100}+\frac{a_3}{1000}+...+\frac{a_i}{10^i} \in \mathbb{Q}$
+        $$a_0+\frac{a_1}{10}+\frac{a_2}{100}+\frac{a_3}{1000}+...+\frac{a_i}{10^i} \in \mathbb{Q}$$
     \end{center}
-    For $a_0<0$ we set $a_0.a_1...a_i$ to be $- (\vert a_0 \vert.a_1...a_i) $
+    For $$a_0<0$$ we set $$a_0.a_1...a_i$$ to be $$- (\vert a_0 \vert.a_1...a_i) $$
 \end{definition}
 \subsubsection{Eventually periodic decimals}
 Let us see this first
 \begin{center}
-    $1+x+x^2+\ldots +x^n=\frac{1-x^{n+1}}{1-x}, \quad x\neq 1$,
+    $$1+x+x^2+\ldots +x^n=\frac{1-x^{n+1}}{1-x}, \quad x\neq 1$$,
 \end{center}
 As we haven't prove that 
 \begin{center}
-    $1+x+x^2+\ldots+x^n+\ldots = \lim_{n \to \infty}\frac{1-x^{n+1}}{1-x}=\frac{1}{1-x},\quad -1<x<1$,
+    $$1+x+x^2+\ldots+x^n+\ldots = \lim_{n \to \infty}\frac{1-x^{n+1}}{1-x}=\frac{1}{1-x},\quad -1<x<1$$,
 \end{center}
 so for now we simply take it as a \textbf{definition}.
 \begin{definition}{2.2.2}{}
-    For $a_0 \in \mathbb{N},a_{i>0}\in \{0,1,...,9\}$ we define
+    For $$a_0 \in \mathbb{N},a_{i>0}\in \{0,1,...,9\}$$ we define
     \begin{center}
-        $a_0.a_1...a_i \overline{a_{i+1}a_{i+2}...a_j}$
+        $$a_0.a_1...a_i \overline{a_{i+1}a_{i+2}...a_j}$$
     \end{center}
     to be the \emph{rational number}
     \begin{center}
-        $a_0+\frac{a_1}{10}+\frac{a_2}{100}+ \ldots +\frac{a_i}{10^i}+(\frac{a_{i+1}a_{i+2}\ldots a_j}{10^j})(\frac{1}{1-10^{i-j}})$
+        $$a_0+\frac{a_1}{10}+\frac{a_2}{100}+ \ldots +\frac{a_i}{10^i}+(\frac{a_{i+1}a_{i+2}\ldots a_j}{10^j})(\frac{1}{1-10^{i-j}})$$
     \end{center}
 \end{definition}
 \begin{proposition}{2.2.1}{}
@@ -176,38 +176,38 @@ Condider two eventually periodic decimals differing in only one place:
     \begin{equation}
         a=a_0.a_1a_2 \ldots a_{n-1}a_na_{n+1}\ldots,b=a_0.a_1a_2\ldots a_{n-1}b_nb_{n+1}\ldots \tag{2.6}
     \end{equation}
-    that if $a<b$ if and only if $a_n<b_n$.
+    that if $$a<b$$ if and only if $$a_n<b_n$$.
 \end{proposition}
 Thus, any eventually periodic decimal expansion gives a \textbf{rational number}. Conversely, periodic decimals give \textbf{all} the rational numbers.
 \begin{theorem}{2.2.1}{}
-         $\forall x\in \mathbb{Q}$ is equal to an eventually periodic decimal expansion: $x=a_0.a_1...a_i\overline{a_{i+1}a_{i+2}...a_j}$ $(a_l \in \{0,1,...,9\} $ for $l \geq 1).$
+         $$\forall x\in \mathbb{Q}$$ is equal to an eventually periodic decimal expansion: $$x=a_0.a_1...a_i\overline{a_{i+1}a_{i+2}...a_j}$$ $$(a_l \in \{0,1,...,9\} $$ for $$l \geq 1).$$
 \end{theorem}
 \begin{proof}
     \begin{itemize}
-        \item Without loss of generality we take $x\geq 0$ and we ues the notation ${x}:=x-[x]\in [0,1)$ for the non-integer part of $x$.
-        \item Let $a_0:=[x]$ and $e_0:={x}$ so 
+        \item Without loss of generality we take $$x\geq 0$$ and we ues the notation $${x}:=x-[x]\in [0,1)$$ for the non-integer part of $$x$$.
+        \item Let $$a_0:=[x]$$ and $$e_0:={x}$$ so 
             \begin{equation}
             x=a_0+e_0, \quad a_0 \in \mathbb{N},e_0\in [0,1). \tag{2.9}
             \end{equation}
         \item  
-            Now repeat for $10e_0 \in [0,10)$, setting $a_1:=[10e_0] \quad e_1:={10e_0}$, so we have:
+            Now repeat for $$10e_0 \in [0,10)$$, setting $$a_1:=[10e_0] \quad e_1:={10e_0}$$, so we have:
             \begin{center}
-            $10e_0=a_1+e_1, \quad a_1\in \{0,1,\ldots,9\},e_k\in [0,1).$
+            $$10e_0=a_1+e_1, \quad a_1\in \{0,1,\ldots,9\},e_k\in [0,1).$$
             \end{center} 
-            so inductively, given $a_i \in {0,1,\ldots,9}$ and $e_i\in [0,1)$ for $i<k$ so we set $a_k:=[10e_{k-1}]$ and $e_k:={10e_{k-1}}$,so
+            so inductively, given $$a_i \in {0,1,\ldots,9}$$ and $$e_i\in [0,1)$$ for $$i<k$$ so we set $$a_k:=[10e_{k-1}]$$ and $$e_k:={10e_{k-1}}$$,so
             \begin{equation}
             10e_{k-1}=a_k+e_k, \quad  a_k\in \{0,1,\ldots,9\},e_k\in [0,1). \tag{2.10}
             \end{equation}
-            and we plug each eqation into the $x=a_o+e_0$,then we have:
+            and we plug each eqation into the $$x=a_o+e_0$$,then we have:
             \begin{equation}
                 x=a_0+\frac{a_1}{10}+\frac{a_2}{10^2}+\ldots+\frac{a_k}{10^k}+\frac{e_k}{10^k},\quad e_k\in[0,1).\tag{2.11}
             \end{equation}
-        \item Remember $x=\frac{p}{q}(p,q\in \mathbb{N})$ is a rational number, so if we use $p$ to mulitple the both sides of the equation (2.9), we get:
+        \item Remember $$x=\frac{p}{q}(p,q\in \mathbb{N})$$ is a rational number, so if we use $$p$$ to mulitple the both sides of the equation (2.9), we get:
             \begin{center}  
-                $p=qa_0+r_0$,
+                $$p=qa_0+r_0$$,
             \end{center}
-        where $r_0:=qe_0=p-qa_0\in [0,q)$ must be an integer (Actually, it is the remainder of p dividing q ). Inductively, $q\times (2.10)$ gives that $r_k:=qe_k$ is an integer in $[0,q)$.
-        \item As the remainder $r_k$ is an integer, it lies in a finite set $\{0,1,\ldots,q-1\}$.After a while, they must repeat:$r_j=r_i$ for some $j>i$.Also $e_k$ repeats: $e_j=e_i$, so in the contruction (2.10), we can see that $a_k$ also reapeats:$a_{j+1}=a_{i+1}$, so we produce a periodic decimal expansion:
+        where $$r_0:=qe_0=p-qa_0\in [0,q)$$ must be an integer (Actually, it is the remainder of p dividing q ). Inductively, $$q\times (2.10)$$ gives that $$r_k:=qe_k$$ is an integer in $$[0,q)$$.
+        \item As the remainder $$r_k$$ is an integer, it lies in a finite set $$\{0,1,\ldots,q-1\}$$.After a while, they must repeat:$$r_j=r_i$$ for some $$j>i$$.Also $$e_k$$ repeats: $$e_j=e_i$$, so in the contruction (2.10), we can see that $$a_k$$ also reapeats:$$a_{j+1}=a_{i+1}$$, so we produce a periodic decimal expansion:
             \begin{equation}
                 a_0.a_1a_2\ldots \overline{a_{i+1}a_{i+2}\ldots  a_j} \tag{2.12}
             \end{equation}
@@ -219,7 +219,7 @@ Thus, any eventually periodic decimal expansion gives a \textbf{rational number}
             \begin{equation}
                 10^{-i}e_i-10^{-j}e_j=10^{-j}(a_{i+1}a_{i+2}\ldots a_j).\tag{2.13}
             \end{equation}
-            by mulitplying $(1-10^{i-j})$ at the both sides and we add the equalities $10^{1-k}e_{k-1}e_k=\frac{a_k}{10^k}$ of (2.10) for $k=i+1,i+2,\ldots j$,we can get
+            by mulitplying $$(1-10^{i-j})$$ at the both sides and we add the equalities $$10^{1-k}e_{k-1}e_k=\frac{a_k}{10^k}$$ of (2.10) for $$k=i+1,i+2,\ldots j$$,we can get
             \begin{equation*}
                 10^{-i}e_i-10^{-j}e_j=\frac{a_{i+1}}{10^{i+1}}+\ldots+\frac{a_j}{10^j},
             \end{equation*}
@@ -232,48 +232,48 @@ Thus, any eventually periodic decimal expansion gives a \textbf{rational number}
     \end{equation*}
     so we have this \textit{proposition}
 \begin{proposition}{2.2.2}{}
-    If $x\in \mathbb{Q}$ has two different decimal expansions then they are of the form 
+    If $$x\in \mathbb{Q}$$ has two different decimal expansions then they are of the form 
     \begin{center}
-        $x=a_0.a_1a_2...a_n \overline{a_9}=a_0.a_1a_2...(a_n+1)$ with $a_n\in \{0,1,...8\}$.
+        $$x=a_0.a_1a_2...a_n \overline{a_9}=a_0.a_1a_2...(a_n+1)$$ with $$a_n\in \{0,1,...8\}$$.
     \end{center}
 \end{proposition}
 \subsubsection{Arbitrary decimals: the real numbers}
-We can define the real numbers as the set of decimal expansions which do not end in $\bar{9}$, it is not a good definiton,obviously. We will give a better one later.
+We can define the real numbers as the set of decimal expansions which do not end in $$\bar{9}$$, it is not a good definiton,obviously. We will give a better one later.
 \begin{definition}{2.2.3}{}
-    $\mathbb{R}$:=\{$a_0.a_1a_2...$ : $a_0\in \mathbb{Z}$, $a_{i \geq 1}\in \{0,1,...,9\}$, $\nexists $ such that $a_i$=9 $\forall i \geq N$\}
+    $$\mathbb{R}$$:=\{$$a_0.a_1a_2...$$ : $$a_0\in \mathbb{Z}$$, $$a_{i \geq 1}\in \{0,1,...,9\}$$, $$\nexists $$ such that $$a_i$$=9 $$\forall i \geq N$$\}
 \end{definition}
 \subsection{Countability}
 \begin{definition}{2.3.1}{}
-    A set S is \textit{countably infinite} if and only if there exists a bijection $f:\mathbb{N}\rightarrow\mathbb{S}$.
+    A set S is \textit{countably infinite} if and only if there exists a bijection $$f:\mathbb{N}\rightarrow\mathbb{S}$$.
 \end{definition}
 \textbf{NOTE : A set that is finite, or countably infinite, is said to be countable.}
 \begin{proposition}{2.3.1}{}
-    Suppose $S \subset \mathbb{N}$ is infinite. Then S is countably infinite.
+    Suppose $$S \subset \mathbb{N}$$ is infinite. Then S is countably infinite.
 \end{proposition}
-\begin{proof}We define $f:\mathbb{N} \rightarrow S$ as follows:\\
+\begin{proof}We define $$f:\mathbb{N} \rightarrow S$$ as follows:\\
     \begin{enumerate}
-        \item $f(1)=min\{S\}$.
-        \item Assume $f(1),\ldots,f(n-1)$ is defined. Since $S$ is infinite, $S \backslash  \{f(1),\ldots,f(n-1)\}$ is nonempty, and $\forall s \in S$ are $s \geq 0$, so we define:
+        \item $$f(1)=min\{S\}$$.
+        \item Assume $$f(1),\ldots,f(n-1)$$ is defined. Since $$S$$ is infinite, $$S \backslash  \{f(1),\ldots,f(n-1)\}$$ is nonempty, and $$\forall s \in S$$ are $$s \geq 0$$, so we define:
         \begin{equation*}
             f(n):=min\{S\backslash \{f(1),\ldots,f(n-1)\}\}.
         \end{equation*}
     \end{enumerate}
-    We want to prove that $f$ is injective and surjective.\\
-    Let's check injectivity firstly. To show $f$ is injective, note that for distinct $i,j \in \mathbb{N}$, we have either $i<j$ or $j<i$ and therefore eitehr $f(i)<f(j)$ or $f(j)<f(i)$. By definition, we have $f(1)<f(2)<f(3)<\ldots<f(n)<\ldots$, so it is injective. \\
-    As for surjectivity, let's do it by contraditon. If it is not surjective, then there exists a smallest $s\in S\backslash im(f)$. ($im(f)$ maeans the image of $f$.) Because $f(1)=min\{S\},f(1)\in im(S)$, $s\neq min\{S\}$. We know $\exists s' \in S$ that $s'<s$. Pick the largest such $s'$, then $s'=f(n)$ for some $n\in \mathbb{N}$, and by our definition, we must have $s=f(n+1)$, but $f(n+1)\in im(f)$, which is a contraditon.
+    We want to prove that $$f$$ is injective and surjective.\\
+    Let's check injectivity firstly. To show $$f$$ is injective, note that for distinct $$i,j \in \mathbb{N}$$, we have either $$i<j$$ or $$j<i$$ and therefore eitehr $$f(i)<f(j)$$ or $$f(j)<f(i)$$. By definition, we have $$f(1)<f(2)<f(3)<\ldots<f(n)<\ldots$$, so it is injective. \\
+    As for surjectivity, let's do it by contraditon. If it is not surjective, then there exists a smallest $$s\in S\backslash im(f)$$. ($$im(f)$$ maeans the image of $$f$$.) Because $$f(1)=min\{S\},f(1)\in im(S)$$, $$s\neq min\{S\}$$. We know $$\exists s' \in S$$ that $$s'<s$$. Pick the largest such $$s'$$, then $$s'=f(n)$$ for some $$n\in \mathbb{N}$$, and by our definition, we must have $$s=f(n+1)$$, but $$f(n+1)\in im(f)$$, which is a contraditon.
 \end{proof}
 \begin{proposition}{2.3.2}{}
-    $\mathbb{Z}$ is countably infinite.
+    $$\mathbb{Z}$$ is countably infinite.
 \end{proposition}
-\begin{proof}  Formally, we can find the bijection $f:\mathbb{N}\rightarrow \mathbb{Z}$.
+\begin{proof}  Formally, we can find the bijection $$f:\mathbb{N}\rightarrow \mathbb{Z}$$.
             \begin{equation*}
                 f(n)=\begin{cases}
                     \frac{n}{2} \quad (n=2k),\\
                     -\frac{n-1}{2} \quad (n=2k+1).
                     \end{cases}
-            \end{equation*}where $k \in \mathbb{N}$.\\
+            \end{equation*}where $$k \in \mathbb{N}$$.\\
             Or the Dr. Chandra's way:
-            $f:\mathbb{N} \rightarrow \mathbb{Z}$, for $k \geq 1$,
+            $$f:\mathbb{N} \rightarrow \mathbb{Z}$$, for $$k \geq 1$$,
             \begin{equation*}
                 \begin{cases}
                     f(2k-1):=-(k-1),\\
@@ -283,34 +283,34 @@ We can define the real numbers as the set of decimal expansions which do not end
 \end{proof}
             It is very easy to check both of the ways are bijection maybe we can do it as exercise.
 \begin{theorem}{2.3.1}{}
-    $\qq$ is countably infinite.
+    $$\qq$$ is countably infinite.
 \end{theorem}
 \begin{proof}
 \begin{itemize}
-    \item (Pairing funciton) Without loss of generality,let us consider $\mathbb{Q}_{>0}$. We know that any rational number can be expressed as $\frac{p}{q}$, and $gcd(p,q)=1$, $p,q\in N, q\neq 0$, which means we can regard a rational number as a pair of numbers $(p,q)$. Therefore, we can construct a pairing function $\pi: \mathbb{N} \times \mathbb{N} \rightarrow \mathbb{N}$, which is a bijection, so the proof is done.
+    \item (Pairing funciton) Without loss of generality,let us consider $$\mathbb{Q}_{>0}$$. We know that any rational number can be expressed as $$\frac{p}{q}$$, and $$gcd(p,q)=1$$, $$p,q\in N, q\neq 0$$, which means we can regard a rational number as a pair of numbers $$(p,q)$$. Therefore, we can construct a pairing function $$\pi: \mathbb{N} \times \mathbb{N} \rightarrow \mathbb{N}$$, which is a bijection, so the proof is done.
     \item We can also do like Dr. Chandra, which is more explicit.
-          Firstly, let's show $\mathbb{Q}_{>0}$ is countably infinite. Define: 
+          Firstly, let's show $$\mathbb{Q}_{>0}$$ is countably infinite. Define: 
           \begin{equation*}
           f:\mathbb{Q}_{>0}\rightarrow\mathbb{N}_{>0}, \quad f(m/n):=2^m3^n.
           \end{equation*}
-          where $m,n>1$ and $m/n$ is in lowest terms. \\
-          As every natural number greater than 1 has a unique factorization(The Fundametal Theorem of Arithmetic of the Part II of IUM). If a natural number can be expressed as the form of $2^m3^n$, the pair of $(m,n)$ is unique. Therefore, $f$ is injective.
-          $im(f)$ is an infinite subset of $\mathbb{N}$, so it is countably infinite by \emph{Proposition 2.31}. Therefore, we have a bijection $F:\mathbb{N}_{>0}\rightarrow\mathbb{Q}_{>0}$, which is the inverse function of $f$.
-          Now we can proof the countability of $\mathbb{Q}$ - define a bijection: $g:\mathbb{N}_{>0}\rightarrow\mathbb{Q}$, then we set:
+          where $$m,n>1$$ and $$m/n$$ is in lowest terms. \\
+          As every natural number greater than 1 has a unique factorization(The Fundametal Theorem of Arithmetic of the Part II of IUM). If a natural number can be expressed as the form of $$2^m3^n$$, the pair of $$(m,n)$$ is unique. Therefore, $$f$$ is injective.
+          $$im(f)$$ is an infinite subset of $$\mathbb{N}$$, so it is countably infinite by \emph{Proposition 2.31}. Therefore, we have a bijection $$F:\mathbb{N}_{>0}\rightarrow\mathbb{Q}_{>0}$$, which is the inverse function of $$f$$.
+          Now we can proof the countability of $$\mathbb{Q}$$ - define a bijection: $$g:\mathbb{N}_{>0}\rightarrow\mathbb{Q}$$, then we set:
           \begin{center}
-            $g(1):=0 \quad and \quad \begin{cases} 
+            $$g(1):=0 \quad and \quad \begin{cases} 
                                      g(2k):=F(k),\\ 
                                      g(2k+1):=-F(k).
-                                     \end{cases}$
+                                     \end{cases}$$
           \end{center}
-          Then, if $q_1,q_2\ldots(q_i:=F(i))$ is our lists of elements of $\mathbb{Q}_{>0}$ then our new list is $0,q_1,-q_1,q_2,-q_2,\ldots$ so \textit{it is done!}
+          Then, if $$q_1,q_2\ldots(q_i:=F(i))$$ is our lists of elements of $$\mathbb{Q}_{>0}$$ then our new list is $$0,q_1,-q_1,q_2,-q_2,\ldots$$ so \textit{it is done!}
         \end{itemize}
 \end{proof}
-\textbf{NOTE : The set $Q^c$(irrational numbers)(regarding $\mathbb{R}$ is $\Omega$.) is uncountable, which tells us that the number of the irrational numbers is much much more than the number of rational numbers. The way to prove it is the same as to prove $\mathbb{R}$ is uncountable: Cantor's Diagonal Argument,which is as follows.}
+\textbf{NOTE : The set $$Q^c$$(irrational numbers)(regarding $$\mathbb{R}$$ is $$\Omega$$.) is uncountable, which tells us that the number of the irrational numbers is much much more than the number of rational numbers. The way to prove it is the same as to prove $$\mathbb{R}$$ is uncountable: Cantor's Diagonal Argument,which is as follows.}
 \begin{theorem}{2.3.2}{}
-    $\rr$ is uncountable.
+    $$\rr$$ is uncountable.
 \end{theorem}
-\begin{proof}(Cantor's Diagonal Argument) We proof this by contraditon. If $\mathbb{R}$ is countable, then we can list all the real numbers just as follows, using decimal expansions with no $\overline{9}s$:
+\begin{proof}(Cantor's Diagonal Argument) We proof this by contraditon. If $$\mathbb{R}$$ is countable, then we can list all the real numbers just as follows, using decimal expansions with no $$\overline{9}s$$:
 \begin{align*}
     x_1&=a_1.a_{11}a_{12}a_{13}a_{14}\ldots\\
     x_2&=a_2.a_{21}a_{22}a_{23}a_{24}\ldots\\
@@ -319,8 +319,8 @@ We can define the real numbers as the set of decimal expansions which do not end
     x_m&=a_m.a_{m1}a_{m2}a_{m3}a_{m4}\ldots\\
     \vdots
 \end{align*}
-As usual $a_1,a_2,a_3,\ldots\in \mathbb{Z}$ and $a_{11},a_{12},\ldots\in \{0,1,2,\ldots,9\}$.\\
-Now we can produce a real number $x:=0.b_1b_2\ldots b_n\ldots$ not on the list:
+As usual $$a_1,a_2,a_3,\ldots\in \mathbb{Z}$$ and $$a_{11},a_{12},\ldots\in \{0,1,2,\ldots,9\}$$.\\
+Now we can produce a real number $$x:=0.b_1b_2\ldots b_n\ldots$$ not on the list:
 \begin{align*}
     Pick& \quad b_1\in \{0,1,\ldots,8\}\quad such \quad that \quad b_1 \neq a_{11},\\
     \vdots\\
@@ -328,165 +328,165 @@ Now we can produce a real number $x:=0.b_1b_2\ldots b_n\ldots$ not on the list:
     Pick& \quad b_n\in \{0,1,\ldots,8\}\quad such \quad that \quad  b_n \neq a_{nn},\\
     \vdots
 \end{align*}
-Since we don't allow $9$ we don't end up with a decimal ending in $\bar{9}$ and we really have $x\in\mathbb{R}$,then $\forall i\geq 1$, we see $x \neq x_i$, because it differs in $ith$ decimal place $a_{ii}$.
-Therefore we found an $x\in \mathbb{R}$ not on the list. \textit{It is done!}
+Since we don't allow $$9$$ we don't end up with a decimal ending in $$\bar{9}$$ and we really have $$x\in\mathbb{R}$$,then $$\forall i\geq 1$$, we see $$x \neq x_i$$, because it differs in $$ith$$ decimal place $$a_{ii}$$.
+Therefore we found an $$x\in \mathbb{R}$$ not on the list. \textit{It is done!}
 \end{proof}
 \subsubsection{Extra}
     \begin{definition}{2.3.2}{}
-        Algebraic numbers: There exits a set $\mathbb{A}$ with $\mathbb{Q}\subset \mathbb{A}\subset \mathbb{R}$ called the set of algebraic numbers: $\mathbb{A}$ is the collection of $x\in \mathbb{R}$ which satisfy a polynomial equation $p(x)=0$,where $p$ has integer coefficients.
+        Algebraic numbers: There exits a set $$\mathbb{A}$$ with $$\mathbb{Q}\subset \mathbb{A}\subset \mathbb{R}$$ called the set of algebraic numbers: $$\mathbb{A}$$ is the collection of $$x\in \mathbb{R}$$ which satisfy a polynomial equation $$p(x)=0$$,where $$p$$ has integer coefficients.
     \end{definition}
     \begin{proposition}{2.3.3}{}
-        Any rational numbers $p/q$ satisfies an equation $p(x):=qx-p=0$,so we indeed have $\mathbb{Q}\subset\mathbb{A}$. 
+        Any rational numbers $$p/q$$ satisfies an equation $$p(x):=qx-p=0$$,so we indeed have $$\mathbb{Q}\subset\mathbb{A}$$. 
          \end{proposition}
     \begin{proposition}{2.3.4}{}
-           $\sqrt[n]{m}$ satisfies $p(x):=x^n-m$, so $\sqrt[n]{m}\in \mathbb{A}$.
+           $$\sqrt[n]{m}$$ satisfies $$p(x):=x^n-m$$, so $$\sqrt[n]{m}\in \mathbb{A}$$.
     \end{proposition}
-    Examples of transcendental numbers are $e$ and $\pi$ .The set of transcendental numbers - real numbers which are not algebraic - is uncountable.
+    Examples of transcendental numbers are $$e$$ and $$\pi$$ .The set of transcendental numbers - real numbers which are not algebraic - is uncountable.
 \subsection{The Completeness Axioms}
 \begin{exercise}
-    Show if a subset $S \subset \rr $ has a maximum then it is unique.  
+    Show if a subset $$S \subset \rr $$ has a maximum then it is unique.  
 \end{exercise}
 \begin{definition}{2.4.1}{}
-    $\emptyset \neq S \subset \mathbb{R}$ is \emph{bounded above} if and only if \\
+    $$\emptyset \neq S \subset \mathbb{R}$$ is \emph{bounded above} if and only if \\
     \begin{equation*}
      \exists M \in \mathbb{R} \; such \; that\; \forall x \in S, x \leq M.
     \end{equation*}
-    Such an $M$ is called an \emph{upper bound} for $S$.\\
-    $S$ is bounder below if and only if 
+    Such an $$M$$ is called an \emph{upper bound} for $$S$$.\\
+    $$S$$ is bounder below if and only if 
     \begin{equation*} 
         \exists M \in \mathbb{R} \; such \; that \; \forall x\in S,M\leq x.
     \end{equation*}
-    Such an $M$ is called a \emph{lower bound}.\\
-   $S$ is bounded if and only if $S$ is \emph{bounded above and below}.
+    Such an $$M$$ is called a \emph{lower bound}.\\
+   $$S$$ is bounded if and only if $$S$$ is \emph{bounded above and below}.
 \end{definition}
 \begin{exercise}
-    Show that $S$ is bounded if and only if 
+    Show that $$S$$ is bounded if and only if 
     \begin{equation*}
         \exists R>0 \; such \; that \; \forall x \in S, \; -R\leq x \leq R.
     \end{equation*}
 \end{exercise}  
 \begin{definition}{2.4.2}{}
-    Suppose $\emptyset \neq S \subset \mathbb{R}$ is bounder above. We say $x\in \mathbb{R}$ is a \emph{least upper bound} of $S$ of \textbf{supremum} of $S$ if and only if 
+    Suppose $$\emptyset \neq S \subset \mathbb{R}$$ is bounder above. We say $$x\in \mathbb{R}$$ is a \emph{least upper bound} of $$S$$ of \textbf{supremum} of $$S$$ if and only if 
     \begin{itemize}
-        \item $x$ is an upper bound for S (i.e. $x\geq s \; \forall s \in S$), and
-        \item $x\leq y$ for any $y$ is an upper bound for $S$ $(y\geq s \; \forall s\in S \Longrightarrow   x\leq y)$.
+        \item $$x$$ is an upper bound for S (i.e. $$x\geq s \; \forall s \in S$$), and
+        \item $$x\leq y$$ for any $$y$$ is an upper bound for $$S$$ $$(y\geq s \; \forall s\in S \Longrightarrow   x\leq y)$$.
     \end{itemize}
 \end{definition}
 \begin{example}
-    Let $S=(0,1)$. Let's find $sup(S)$ and $inf(S)$.\\
+    Let $$S=(0,1)$$. Let's find $$sup(S)$$ and $$inf(S)$$.\\
 \end{example}
 \begin{solution}
-    Let't claim that $1=sup(S)$.
+    Let't claim that $$1=sup(S)$$.
     \begin{itemize}
-        \item claim: $1$ is an upper bound. It is obvious that $\forall x \in (0,1), \; x<1$.
-        \item claim: $1$ is the least upper bound. Let's do it by contraditon.
-         If $1$ is not the least upper bound of $(0.1)$, then $\exists y$ is an upper bound of$(0,1)$ with $y<1$. 
-         Since $y$ is an upper bound, $y>\frac{1}{2} \in (0,1)$, then $\frac{y+1}{2} \in (0,1)$, as$y<1$. But $\frac{y+1}{2} > y$ as $1>y$, so $y$ is not an upper bound, which is a contradiction.  
+        \item claim: $$1$$ is an upper bound. It is obvious that $$\forall x \in (0,1), \; x<1$$.
+        \item claim: $$1$$ is the least upper bound. Let's do it by contraditon.
+         If $$1$$ is not the least upper bound of $$(0.1)$$, then $$\exists y$$ is an upper bound of$$(0,1)$$ with $$y<1$$. 
+         Since $$y$$ is an upper bound, $$y>\frac{1}{2} \in (0,1)$$, then $$\frac{y+1}{2} \in (0,1)$$, as$$y<1$$. But $$\frac{y+1}{2} > y$$ as $$1>y$$, so $$y$$ is not an upper bound, which is a contradiction.  
     \end{itemize}
 \end{solution}
-\begin{theorem}{2.4.1}{}\textbf{Completeness axiom of $\rr$}:
-    Suppose that $S\subset \mathbb{R}$ is nonempty and bounded above, then $S$ has a supremum and $sup\:S\in \mathbb{R}$.
+\begin{theorem}{2.4.1}{}\textbf{Completeness axiom of $$\rr$$}:
+    Suppose that $$S\subset \mathbb{R}$$ is nonempty and bounded above, then $$S$$ has a supremum and $$sup\:S\in \mathbb{R}$$.
 \end{theorem}
 \begin{proof}
     \begin{itemize}
-        \item Without loss of generality, we may assume $S\neq \emptyset$ and has s positive element $0\leq s \in S$ and we replace $S$ by $S+a:={s+a: s\in S}$. This will simplify things, because positive decimals behave better than negative decimals.
-        \item Now, $S$ has a positve element and $S$ is bounded above by some $N \in \nn$. We can replace finding the supremum of $S$ by finding the supremum of $S\cap[0,N]$. One has a supremum if and only if the other one does and the two supremums are equal.
-        \item Next, we will create the $sup \:S=a_0.a_1a_2a_3...\geq 0$ digit by digit.
-        \item \textsf{\textbf{Leading integer :}} Let $s\in S\cap [0,N]$ be arbitrary and we write it as a decimal $s_0.s_1s_2s_3...$ not ending in $\overline{9}$ and as $s\in [0,N]$, $s_0\in \{0,1,...,N\}$ which is a finite set. So the set of leading integer $s_0$ is finite then it must contain a maximum, we set $a_0$ as the $max\{0,1,...,N\}$.
-        \item \textsf{\textbf{First decimal place :}} Now let's consider the set $S\cap [a_0,a_0+1)$, it is not empty and we may replace $S$ by it. All the elements are of the form $a_0.s_1s_2...$ with $s_1\in \{0,1,...,9\}$ which is a finite set then it must contain a maximum, we set it as $a_1$.
-        \item \textsf{\textbf{Second decimal place :}} Now let's consider the set $S\cap [a_0.a_1,a_0.(a_1+1))$(If $a_1=9$ we mean $S\cap[a_0.9,a_0+1))$, it is not empty and we may replace $S$ by it. All the elements are of the form $a_0.a_1s_2...$ with $s_2\in \{0,1,...,9\}$ which is a finite set then it must contain a maximum, we set it as $a_2$. 
-        \item \textsf{\textbf{n-th decimal place :}} Let's continue inductively, assume we've defined $a_0,...,a_{n-1}$ and shown that
+        \item Without loss of generality, we may assume $$S\neq \emptyset$$ and has s positive element $$0\leq s \in S$$ and we replace $$S$$ by $$S+a:={s+a: s\in S}$$. This will simplify things, because positive decimals behave better than negative decimals.
+        \item Now, $$S$$ has a positve element and $$S$$ is bounded above by some $$N \in \nn$$. We can replace finding the supremum of $$S$$ by finding the supremum of $$S\cap[0,N]$$. One has a supremum if and only if the other one does and the two supremums are equal.
+        \item Next, we will create the $$sup \:S=a_0.a_1a_2a_3...\geq 0$$ digit by digit.
+        \item \textsf{\textbf{Leading integer :}} Let $$s\in S\cap [0,N]$$ be arbitrary and we write it as a decimal $$s_0.s_1s_2s_3...$$ not ending in $$\overline{9}$$ and as $$s\in [0,N]$$, $$s_0\in \{0,1,...,N\}$$ which is a finite set. So the set of leading integer $$s_0$$ is finite then it must contain a maximum, we set $$a_0$$ as the $$max\{0,1,...,N\}$$.
+        \item \textsf{\textbf{First decimal place :}} Now let's consider the set $$S\cap [a_0,a_0+1)$$, it is not empty and we may replace $$S$$ by it. All the elements are of the form $$a_0.s_1s_2...$$ with $$s_1\in \{0,1,...,9\}$$ which is a finite set then it must contain a maximum, we set it as $$a_1$$.
+        \item \textsf{\textbf{Second decimal place :}} Now let's consider the set $$S\cap [a_0.a_1,a_0.(a_1+1))$$(If $$a_1=9$$ we mean $$S\cap[a_0.9,a_0+1))$$, it is not empty and we may replace $$S$$ by it. All the elements are of the form $$a_0.a_1s_2...$$ with $$s_2\in \{0,1,...,9\}$$ which is a finite set then it must contain a maximum, we set it as $$a_2$$. 
+        \item \textsf{\textbf{n-th decimal place :}} Let's continue inductively, assume we've defined $$a_0,...,a_{n-1}$$ and shown that
             \begin{equation*}
                 S\cap [a_0.a_1...a_{n-1},a_0.a_1...(a_{n-1}+1))
             \end{equation*}
-        is nonempty and has the same upper bounds as the original $S$. Any element in the set is the form of $s=a_0.a_1...a_{n-1}s_ns_{n+1}...$ with $s_n\in\{0,1,...,9\}$, which is a finite set. Thus there is a maxiumu, we set it as $a_n$.
+        is nonempty and has the same upper bounds as the original $$S$$. Any element in the set is the form of $$s=a_0.a_1...a_{n-1}s_ns_{n+1}...$$ with $$s_n\in\{0,1,...,9\}$$, which is a finite set. Thus there is a maxiumu, we set it as $$a_n$$.
         \item We have already produced a decimal expansions
             \begin{equation*}
                 a_0.a_1a_2...a_n... \; with \; a_n\in \nn \; and \; a_j\in \{0,1,...,9\}.
             \end{equation*}
-            If this decimal has repeating $9$'s, then we assume we have rounded up so that we have
+            If this decimal has repeating $$9$$'s, then we assume we have rounded up so that we have
             \begin{equation*}
                 x=a_0.a_1a_2...a_n..\in \rr.
             \end{equation*}
-        \item \textbf{Check $x$ is an upper bound.} Let $s\in S$ be arbitrary, it can be expressed as $s=s_0.s_1s_2...$. By our construction, we have
+        \item \textbf{Check $$x$$ is an upper bound.} Let $$s\in S$$ be arbitrary, it can be expressed as $$s=s_0.s_1s_2...$$. By our construction, we have
          \begin{enumerate}
-            \item[i.] $s_0<a_0$. If in this case, we have done.
-            \item[ii.] $s_0=a_0$.
+            \item[i.] $$s_0<a_0$$. If in this case, we have done.
+            \item[ii.] $$s_0=a_0$$.
          \end{enumerate}
          if in the second case, then we have
          \begin{enumerate}
-            \item[i.] $s_1<a_1$. If in this case, we have done.
-            \item[ii.] $s_1=a_1$. 
+            \item[i.] $$s_1<a_1$$. If in this case, we have done.
+            \item[ii.] $$s_1=a_1$$. 
          \end{enumerate}
          then we can finish this by induction.
-        \item \textbf{Check $x$ is the least upper bound.} Let's do it by contradiction. Suppose $b<x$ and $b$ is an upper bound of $S$ and $n$ is the first digit where $b$ differs from $x$.
+        \item \textbf{Check $$x$$ is the least upper bound.} Let's do it by contradiction. Suppose $$b<x$$ and $$b$$ is an upper bound of $$S$$ and $$n$$ is the first digit where $$b$$ differs from $$x$$.
               \begin{equation*}
                 b=a_0.a_1a_2\ldots a_{n-1}b_n\ldots \; with \; b_n<a_n
               \end{equation*}
-        But by our construction, $\exists s\in S$ of the form $s=a_0.a_1\ldots a_{n-1}a_n\ldots $ so $s>b$ which is a contradiction.
+        But by our construction, $$\exists s\in S$$ of the form $$s=a_0.a_1\ldots a_{n-1}a_n\ldots $$ so $$s>b$$ which is a contradiction.
     \end{itemize}
 \end{proof}
-\textbf{NOTE : The completeness axiom means $\rr \supset \qq$ fills in all the holes, and the completeness axiom is the only axiom that $\rr$ satisfies while $\qq$ doesn't.} 
+\textbf{NOTE : The completeness axiom means $$\rr \supset \qq$$ fills in all the holes, and the completeness axiom is the only axiom that $$\rr$$ satisfies while $$\qq$$ doesn't.} 
 \begin{proposition}{2.4.1}{}
-    There exists $0<x\in \mathbb{R}$ such that $x^3=3$. We call $x:=\sqrt{3}$.
+    There exists $$0<x\in \mathbb{R}$$ such that $$x^3=3$$. We call $$x:=\sqrt{3}$$.
 \end{proposition}
 \begin{proof}
     \begin{itemize}
-        \item Since there is no such a number in $\qq$ that $x^2=3$, we'd better use the completeness axiom.
-        \item Therefore,we need to define a subset $S\subset \rr$
+        \item Since there is no such a number in $$\qq$$ that $$x^2=3$$, we'd better use the completeness axiom.
+        \item Therefore,we need to define a subset $$S\subset \rr$$
         \begin{equation*}
             S:=\;\{0<a\in \rr:\; a^2<3 \}.
         \end{equation*}
-        then we set $x:=sup(S)$ so we must check:
+        then we set $$x:=sup(S)$$ so we must check:
         \begin{enumerate}
-        \item $S$ is nonempty.
-        \item $S$ is bounded above.
-        \item $x^2=3$. 
+        \item $$S$$ is nonempty.
+        \item $$S$$ is bounded above.
+        \item $$x^2=3$$. 
         \end{enumerate}
-        \item It is very easy to check 1 and 2. For 1, $1\in S$ which is obvious. 
-        For 2, let's choose the number $2$. If $a=2$ then $a^2=4>3$, so $2$ is an upper bound of $S$.
-        \item  As for 3, we need to show $x^2 \nless3 \cap x^2 \ngtr 3$ then $x^2=3$ by trichotomy axiom.(Axiom 2.1.2 13).
-        \item First, let's see what will happen if $x^2<3$. If $x^2<3$ then we can find a sufficiently small $\epsilon >0$ such that $(x+\epsilon )^2<3$ and this will make a contradiction that $(x+\epsilon) S$ as $(x+\epsilon )^2<3$, but $(x+\epsilon )>x$ as $\epsilon >0$ while $x=sup(S)$, which is a contradiction.\
+        \item It is very easy to check 1 and 2. For 1, $$1\in S$$ which is obvious. 
+        For 2, let's choose the number $$2$$. If $$a=2$$ then $$a^2=4>3$$, so $$2$$ is an upper bound of $$S$$.
+        \item  As for 3, we need to show $$x^2 \nless3 \cap x^2 \ngtr 3$$ then $$x^2=3$$ by trichotomy axiom.(Axiom 2.1.2 13).
+        \item First, let's see what will happen if $$x^2<3$$. If $$x^2<3$$ then we can find a sufficiently small $$\epsilon >0$$ such that $$(x+\epsilon )^2<3$$ and this will make a contradiction that $$(x+\epsilon) S$$ as $$(x+\epsilon )^2<3$$, but $$(x+\epsilon )>x$$ as $$\epsilon >0$$ while $$x=sup(S)$$, which is a contradiction.\
         Let's be more explicit: \begin{equation*}
             (x+\epsilon )^2=x^2+\epsilon (2x+\epsilon )\leq x^2+\epsilon (2\times 2+1)=x^2+5\epsilon <3.
         \end{equation*}
-        as $\epsilon$ should be as small as possible and $2$ is the upper bound of $S$ so $2 \geq x$. Then, we have $5\epsilon < 3-x^2$. \\
+        as $$\epsilon$$ should be as small as possible and $$2$$ is the upper bound of $$S$$ so $$2 \geq x$$. Then, we have $$5\epsilon < 3-x^2$$. \\
          Therefore, if we set 
         \begin{equation*}
             \epsilon := min(1,\frac{3-x^2}{10}),
         \end{equation*}
-        then $\epsilon >0$ as $x^2<3 \implies \frac{3-x^2}{10}>0$ and $(x+\epsilon )^2<3$. Therefore,$ (x+\epsilon )\in S$ is larger than $x=sup(S)$, which is the contradiction.
+        then $$\epsilon >0$$ as $$x^2<3 \implies \frac{3-x^2}{10}>0$$ and $$(x+\epsilon )^2<3$$. Therefore,$$ (x+\epsilon )\in S$$ is larger than $$x=sup(S)$$, which is the contradiction.
    
-    \item Now, let's prove $x^2 \ngtr 3$, also by contradiction. Let's assume $x^2>3$, then we can find a sufficiently small $\epsilon >0$ such that $(x-3)^2\leq 3$, then $(x-\epsilon )$ is an upper bound of $S$ but $(x-\epsilon)<x$ as $\epsilon >0$. Let's be more explicit.
+    \item Now, let's prove $$x^2 \ngtr 3$$, also by contradiction. Let's assume $$x^2>3$$, then we can find a sufficiently small $$\epsilon >0$$ such that $$(x-3)^2\leq 3$$, then $$(x-\epsilon )$$ is an upper bound of $$S$$ but $$(x-\epsilon)<x$$ as $$\epsilon >0$$. Let's be more explicit.
         \begin{equation*}
             (x-\epsilon )^2=x^2-2\epsilon x+{\epsilon }^2\leq x^2-4\epsilon \leq 3
         \end{equation*}
-        as $x \leq 2$ and $\epsilon \geq 0$, so we have $4\epsilon \leq x^2-3$. So if we set
+        as $$x \leq 2$$ and $$\epsilon \geq 0$$, so we have $$4\epsilon \leq x^2-3$$. So if we set
         \begin{equation*}
             \epsilon_0:=\frac{x^2-3}{4} 
         \end{equation*}
         
-        then $(x-\epsilon )^2>3$ for all $0\leq \epsilon \leq \epsilon_0$. So $ \forall y\in [x-\epsilon_0,x]$, we have $y^2\geq 3$,which means $y$ is the uppre bound of $S$ but $y<x$ so $y$ is not an upper bound, which is a contradiction. 
+        then $$(x-\epsilon )^2>3$$ for all $$0\leq \epsilon \leq \epsilon_0$$. So $$ \forall y\in [x-\epsilon_0,x]$$, we have $$y^2\geq 3$$,which means $$y$$ is the uppre bound of $$S$$ but $$y<x$$ so $$y$$ is not an upper bound, which is a contradiction. 
     \end{itemize}
     \end{proof}
     \begin{exercise}
-        Show $\sqrt[3]{2}$ exists.
+        Show $$\sqrt[3]{2}$$ exists.
     \end{exercise}
 \begin{proposition}{2.4.2}
-    Suppose $\emptyset \neq S\subset \mathbb{R}$ and $y$ is an upper bound for $S$, then $y=sup\: S\Longleftrightarrow  \forall\varepsilon \in S \; \exists s\in S  \: : \: s>y-\varepsilon $.  
+    Suppose $$\emptyset \neq S\subset \mathbb{R}$$ and $$y$$ is an upper bound for $$S$$, then $$y=sup\: S\Longleftrightarrow  \forall\varepsilon \in S \; \exists s\in S  \: : \: s>y-\varepsilon $$.  
 \end{proposition}
 \begin{proof}
     \begin{itemize}
-    \item $\Longrightarrow$ direction: Suppose $y=sup\:S$. Let $\epsilon >0, \: y-\epsilon<y$, so $y-\epsilon$ is not an upper bound for $S$. Therefore, $\exists s\in S, s>y-\epsilon$.
-    \item $\Longleftarrow $ direction: We know $y$ is an upper bound and $\forall \epsilon >0,\; \exists s\in S,\; s>y-\epsilon$ and we want to prove y is the least upper bound. Suppose $x<y$ and x is an upper bound of $S$. Set $\epsilon=y-x,\; \exists s\in S, s>y-(y-x)=x$, meaning $s>x$, which is a contradiction.
+    \item $$\Longrightarrow$$ direction: Suppose $$y=sup\:S$$. Let $$\epsilon >0, \: y-\epsilon<y$$, so $$y-\epsilon$$ is not an upper bound for $$S$$. Therefore, $$\exists s\in S, s>y-\epsilon$$.
+    \item $$\Longleftarrow $$ direction: We know $$y$$ is an upper bound and $$\forall \epsilon >0,\; \exists s\in S,\; s>y-\epsilon$$ and we want to prove y is the least upper bound. Suppose $$x<y$$ and x is an upper bound of $$S$$. Set $$\epsilon=y-x,\; \exists s\in S, s>y-(y-x)=x$$, meaning $$s>x$$, which is a contradiction.
     \end{itemize}
 \end{proof}
 \subsection{Alternative approach: Dedekind cuts}
 \begin{definition}{2.5.1}{}
-    We say a nonempty subset $S\subset\qq$ is a \textit{Dedekind cut} if it satisfies (i) and (ii) below.
+    We say a nonempty subset $$S\subset\qq$$ is a \textit{Dedekind cut} if it satisfies (i) and (ii) below.
     \begin{enumerate}
-        \item[(i)] If $s\in S$ and $s>t\in \qq$ then $ t\in S$($S$ is a semi-infinite interval to the left).
-        \item[(ii)] $S$ is bounded above but has no maximum.  
+        \item[(i)] If $$s\in S$$ and $$s>t\in \qq$$ then $$ t\in S$$($$S$$ is a semi-infinite interval to the left).
+        \item[(ii)] $$S$$ is bounded above but has no maximum.  
     \end{enumerate}
 \end{definition}
 \begin{definition}{2.5.2}{}
@@ -494,37 +494,37 @@ Therefore we found an $x\in \mathbb{R}$ not on the list. \textit{It is done!}
         \rr:= \{Dedekind\; cuts\;S\subset \qq\}.
     \end{equation*}
 \end{definition}
-We can again extend operations from $\qq$ to our newly constructed $\rr$; eg if $S \subset \qq$ and $T \subset \qq$ are Dedekind cuts, we define:
+We can again extend operations from $$\qq$$ to our newly constructed $$\rr$$; eg if $$S \subset \qq$$ and $$T \subset \qq$$ are Dedekind cuts, we define:
 \begin{equation*}
     S+T:=\{s+t:\; s\in S, t\in T\}\subset \qq.
 \end{equation*}
 \begin{exercise}
-    Check this is a Dedekind cut and gives the ususal + on $\qq$:i.e. $S_{q_1}+S_{q_2}=S_{q_1+q_2}$.
+    Check this is a Dedekind cut and gives the ususal + on $$\qq$$:i.e. $$S_{q_1}+S_{q_2}=S_{q_1+q_2}$$.
 \end{exercise}
-Similarly, we can define $<$ on $\rr$ to be just $\subsetneq$ on Dedekind cuts:
+Similarly, we can define $$<$$ on $$\rr$$ to be just $$\subsetneq$$ on Dedekind cuts:
 \begin{equation*}
 S<T \Longleftrightarrow S\subsetneq T.
 \end{equation*}
 \begin{exercise}
-    Show a set of real numbers $A \subset \rr$ is bounded above if and only if $A$ is a set of Dedekind cuts $S$ all contained in some fixed intervel $(-\infty,N)\cap \qq$ for some $N \in \nn$.
+    Show a set of real numbers $$A \subset \rr$$ is bounded above if and only if $$A$$ is a set of Dedekind cuts $$S$$ all contained in some fixed intervel $$(-\infty,N)\cap \qq$$ for some $$N \in \nn$$.
 \end{exercise}
 \begin{exercise}
-    If $A$ is bounded above nonempty set of Dedekind cuts, define
+    If $$A$$ is bounded above nonempty set of Dedekind cuts, define
     \begin{equation*}
         sup A := \bigcup _{S\in A} \subset \qq.
     \end{equation*} 
-    Show that this is also a Dedekind cut(a real number) and check it is the least upper bound of $A$.
+    Show that this is also a Dedekind cut(a real number) and check it is the least upper bound of $$A$$.
 \end{exercise}
 \subsection{Triangle inequalities}
 \begin{theorem}{2.4.1}{}
-    For all $a,b\in \rr$, we have 
+    For all $$a,b\in \rr$$, we have 
     \begin{equation*}
         |a+b\vert \leq |a\vert +|b\vert .
     \end{equation*}
 \end{theorem}
 There are so many ways to prove this inequality, what we do here is a very easy way.
 \begin{proof}
-    Suppose by contradiction that $|a+b\vert >|a|+|b| $then
+    Suppose by contradiction that $$|a+b\vert >|a|+|b| $$then
     \begin{equation*}
         |a+b||a+b|>(|a|+|b|)|a+b|>(|a|+|b|)^2=|a|^2+2|a||b|+|b|^2.
     \end{equation*}
@@ -537,21 +537,21 @@ There are so many ways to prove this inequality, what we do here is a very easy 
 \section{Sequences}
 \subsection{Introduction}
 \begin{definition}{3.1.1}{}
-    A sequence is a function $a:\nn \rightarrow \rr$.
+    A sequence is a function $$a:\nn \rightarrow \rr$$.
 \end{definition}
 \begin{exercise}
-    Show any sequence$(a_n)$ can be written as a series $a_n=\sum_{i=1}^n b_i$ for an appropriate choice of sequence $(b_n)$.
+    Show any sequence$$(a_n)$$ can be written as a series $$a_n=\sum_{i=1}^n b_i$$ for an appropriate choice of sequence $$(b_n)$$.
 \end{exercise}
 \subsection{Convergence of Sequences}
 \begin{definition}{3.2.1 (Convergence)}{}
-    We say that $a_n\rightarrow a$ as $n\rightarrow \infty$ if and only if 
+    We say that $$a_n\rightarrow a$$ as $$n\rightarrow \infty$$ if and only if 
     \begin{equation*}
         \forall \epsilon >0 \exists N \in \nn \; such\; that\; \forall n \geq N, |a_n-a|<\epsilon . 
     \end{equation*}
     Read this as follows:\\
-    \textit{However close $(\forall \epsilon >0)$ I want to get to the limit a, there is a point in the sequence $(\exists N \in \nn)$ beyond which $(n\geq N)$ all $a_n$ are indeed that close to the limit $a(|a_n-a|<\epsilon)$.}
+    \textit{However close $$(\forall \epsilon >0)$$ I want to get to the limit a, there is a point in the sequence $$(\exists N \in \nn)$$ beyond which $$(n\geq N)$$ all $$a_n$$ are indeed that close to the limit $$a(|a_n-a|<\epsilon)$$.}
 \end{definition}
-\textbf{Remark: $N$ depends on $\epsilon$ ! For a while we will sometimes denote it $N_\epsilon$, as a reminder.}\\
+\textbf{Remark: $$N$$ depends on $$\epsilon$$ ! For a while we will sometimes denote it $$N_\epsilon$$, as a reminder.}\\
 Equivalently:
 \begin{equation*}
     \forall \epsilon>0,\; \exists N_\epsilon \in \nn \;such \;that\; [n\geq N_\epsilon \rightarrow |a_n-a|<\epsilon]
@@ -561,89 +561,89 @@ or equivalently:
     \forall \epsilon >0,\; \exists N_\epsilon \in \nn \; such \; that\; |a_n-a|<\epsilon \; \forall n\geq N_\epsilon.
 \end{equation*}
 \begin{example}
-    Prove $\frac{1}{n}\rightarrow 0 \;as \; n\rightarrow \infty$. \\
-    \textit{Rough working:} Fix $\epsilon>0$, we want to find $N_\epsilon \in \nn$ such that $|a_n-a|=|\frac{1}{n}-0|=\frac{1}{n}<\epsilon \; \forall n\geq N_\epsilon$. As this is equivalent to $n>\epsilon^{-1}$ then it is enough to take $N_\epsilon >\epsilon^{-1}$ which we know exists by Archimedean axiom $(e.g. N_\epsilon=[\frac{1}{\epsilon}]+1)$. 
+    Prove $$\frac{1}{n}\rightarrow 0 \;as \; n\rightarrow \infty$$. \\
+    \textit{Rough working:} Fix $$\epsilon>0$$, we want to find $$N_\epsilon \in \nn$$ such that $$|a_n-a|=|\frac{1}{n}-0|=\frac{1}{n}<\epsilon \; \forall n\geq N_\epsilon$$. As this is equivalent to $$n>\epsilon^{-1}$$ then it is enough to take $$N_\epsilon >\epsilon^{-1}$$ which we know exists by Archimedean axiom $$(e.g. N_\epsilon=[\frac{1}{\epsilon}]+1)$$. 
     \begin{proof}
-        Let $\epsilon>0$ be arbitrary  and let $N_\epsilon=\frac{1}{\epsilon}+1$, then for any $n\geq N_\epsilon$ we have $|\frac{1}{\epsilon}-0|=\frac{1}{n}\leq \frac{1}{N_\epsilon}<\epsilon$ since $N_\epsilon >\frac{1}{\epsilon}$.
+        Let $$\epsilon>0$$ be arbitrary  and let $$N_\epsilon=\frac{1}{\epsilon}+1$$, then for any $$n\geq N_\epsilon$$ we have $$|\frac{1}{\epsilon}-0|=\frac{1}{n}\leq \frac{1}{N_\epsilon}<\epsilon$$ since $$N_\epsilon >\frac{1}{\epsilon}$$.
     \end{proof}
 \end{example}
-\textsf{\textbf{How to prove} $a_n\rightarrow a$}\\
+\textsf{\textbf{How to prove} $$a_n\rightarrow a$$}\\
 \begin{center}
     \fbox{
-        $\forall \epsilon >0,\;\exists N_\epsilon \in \nn \; such \; that \; |a_n-a|<\epsilon \; \forall n \geq N_\epsilon$
+        $$\forall \epsilon >0,\;\exists N_\epsilon \in \nn \; such \; that \; |a_n-a|<\epsilon \; \forall n \geq N_\epsilon$$
     }
 \end{center}
 \begin{enumerate}
-    \item[(I)] Fix $\epsilon>0$.
-    \item[(II)] Calculate $|a_n-a|$. 
-    \item[(II')] Find a good estimate $|a_n-a|\leq b_n$.
-    \item[(III)] Try to solve $b_n<\epsilon$.
-    \item[(IV)] Find $N_\epsilon \in \nn$ such that $(*)$ holds whenever $n\geq N_\epsilon$.
+    \item[(I)] Fix $$\epsilon>0$$.
+    \item[(II)] Calculate $$|a_n-a|$$. 
+    \item[(II')] Find a good estimate $$|a_n-a|\leq b_n$$.
+    \item[(III)] Try to solve $$b_n<\epsilon$$.
+    \item[(IV)] Find $$N_\epsilon \in \nn$$ such that $$(*)$$ holds whenever $$n\geq N_\epsilon$$.
     \item[(V)] Put everything together into a logical proof(usually involves rewritng everything in reverse order).     
 \end{enumerate}
 \begin{example}
-    Prove that $a_n=\frac{n+5}{n+1}\rightarrow 1$.
+    Prove that $$a_n=\frac{n+5}{n+1}\rightarrow 1$$.
 \end{example}
 \begin{proof}
-    Let $\epsilon >0$, fix $N_\epsilon \in \nn $ with $N_\epsilon >\frac{4}{\epsilon}$. Then $\forall n \geq N_\epsilon$,
+    Let $$\epsilon >0$$, fix $$N_\epsilon \in \nn $$ with $$N_\epsilon >\frac{4}{\epsilon}$$. Then $$\forall n \geq N_\epsilon$$,
     \begin{equation*}
         |a_n-1|=\frac{4}{n+1}\leq\frac{4}{N_\epsilon+1}\leq\frac{4}{N_\epsilon}<\epsilon.
     \end{equation*} 
 \end{proof}
 \begin{example}
-    Define $a_n$ by setting $a_1=a_2=0$ and $a_n=\frac{n+2}{n-2} $ for $n\geq 3$. Prove $a_n\rightarrow 1$.
+    Define $$a_n$$ by setting $$a_1=a_2=0$$ and $$a_n=\frac{n+2}{n-2} $$ for $$n\geq 3$$. Prove $$a_n\rightarrow 1$$.
 \end{example}
 \textit{Rough work:}
 \begin{proof}
-    Let $\epsilon >0$ ,choose $N_\epsilon \in \nn $ with $N_\epsilon>max(4,\frac{8}{\epsilon})$.
-    For $n\geq N_\epsilon \;|a_n-1|=\frac{4}{n-2}(when \; n\geq 3)\leq\frac{8}{n}(when \; n\geq 4)\leq\frac{8}{N_\epsilon}<\epsilon$.
+    Let $$\epsilon >0$$ ,choose $$N_\epsilon \in \nn $$ with $$N_\epsilon>max(4,\frac{8}{\epsilon})$$.
+    For $$n\geq N_\epsilon \;|a_n-1|=\frac{4}{n-2}(when \; n\geq 3)\leq\frac{8}{n}(when \; n\geq 4)\leq\frac{8}{N_\epsilon}<\epsilon$$.
 \end{proof}
 \begin{example}
-    Prove that $a_n=\frac{n+2}{|n-2|}\rightarrow 1$. 
+    Prove that $$a_n=\frac{n+2}{|n-2|}\rightarrow 1$$. 
 \end{example}
 \begin{proof}
 \end{proof}
 We now say what it means for a sequence to \textsf{\textbf{converge}}.
 \begin{definition}{3.2.2}{}
-    We say $a_n$ \textit{converges} if and only if $\exists a \in \rr$ such that $a_n \rightarrow a$, i.e.
+    We say $$a_n$$ \textit{converges} if and only if $$\exists a \in \rr$$ such that $$a_n \rightarrow a$$, i.e.
     \begin{equation*}
             \exists a \;such \; that \;\forall \epsilon >0 \exists N \in \nn \; such \; that \; \forall n\geq N\Longrightarrow  |a_n-a|<\epsilon.
     \end{equation*}
 \end{definition}
   Negating the above statement gives the following:
 \begin{definition}{3.2.3}{}
-    We say  $a_n$ \textit{diverges} if and only if it does not converge (to any $a\in \rr$), i.e.
+    We say  $$a_n$$ \textit{diverges} if and only if it does not converge (to any $$a\in \rr$$), i.e.
     \begin{equation*}
         \forall a \; \exists \epsilon >0 \; such \; that\; \forall N \in \nn ,\; \exists n \geq N \; such \;that \; |a_n-a|\geq \epsilon.
     \end{equation*}
 \end{definition}
 \begin{definition}{3.2.5}{}
-    Fix a sequence of real numbers $(a_n)_{n\geq 1}$. Consider 
+    Fix a sequence of real numbers $$(a_n)_{n\geq 1}$$. Consider 
     \begin{equation*}
         \forall n\geq 1 \exists \epsilon >0 \; such \; that \; |a_n|<\epsilon.
     \end{equation*}
     then we say this sequence is bounded.
 \end{definition}
-We can also define limits for \textit{complex sequences}. Let $|z|:= \sqrt{(Re\:z)^2+(Im\:z)^2}$.
+We can also define limits for \textit{complex sequences}. Let $$|z|:= \sqrt{(Re\:z)^2+(Im\:z)^2}$$.
 \begin{definition}{3.2.4}{}
-        $a_n\in \cc ,\; \forall n\geq 1$. We say $a_n\rightarrow a\in \cc$ if and only if
+        $$a_n\in \cc ,\; \forall n\geq 1$$. We say $$a_n\rightarrow a\in \cc$$ if and only if
         \begin{equation*}
             \forall \epsilon >0,\; \exists N \in \nn \; such \; that\; n\geq N \Longrightarrow |a_n-a|<\epsilon. 
         \end{equation*}
 \end{definition}
 \begin{example}
-    Prove $a_n=\frac{e^{in}}{n^3-n^2-6}\rightarrow 0$ as $n\rightarrow \infty$.
+    Prove $$a_n=\frac{e^{in}}{n^3-n^2-6}\rightarrow 0$$ as $$n\rightarrow \infty$$.
 \end{example}
 \begin{proof}
 
 \end{proof}
 \begin{example}
-    Set $\delta = 10^{-1000000},\; a_n=(-1)^n\delta$. Prove that $a_n$ diverges, that is it does not converge to ant $a\in \rr$.
+    Set $$\delta = 10^{-1000000},\; a_n=(-1)^n\delta$$. Prove that $$a_n$$ diverges, that is it does not converge to ant $$a\in \rr$$.
 \end{example}
 \begin{proof}
 \end{proof}
 \begin{theorem}{3.2.1}{}
-    Limits are unique. If $a_n\rightarrow a$ and $a_n\rightarrow b$, then $a=b$.
+    Limits are unique. If $$a_n\rightarrow a$$ and $$a_n\rightarrow b$$, then $$a=b$$.
 \end{theorem}
 \begin{proof}[Proof 1.]
 \end{proof}

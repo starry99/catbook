@@ -1,11 +1,11 @@
-@mixin breakpoint($size) {
-    @if $size==medium {
+@mixin breakpoint($$size) {
+    @if $$size==medium {
         @media (min-width: 769px) {
             @content;
         }
     }
 
-    @else if $size==large {
+    @else if $$size==large {
         @media (min-width: 1024px) {
             @content;
         }

@@ -92,7 +92,7 @@ innertopmargin=\topskip,
 \newcommand{\tmtextbf}[1]{\text{{\bfseries{#1}}}}
 \newcommand{\tmtextit}[1]{\text{{\itshape{#1}}}}
 
-\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$\bullet$}\renewcommand{\labelitemii}{$\bullet$}\renewcommand{\labelitemiii}{$\bullet$}\renewcommand{\labelitemiv}{$\bullet$}}{\end{itemize}}
+\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$$\bullet$$}\renewcommand{\labelitemii}{$$\bullet$$}\renewcommand{\labelitemiii}{$$\bullet$$}\renewcommand{\labelitemiv}{$$\bullet$$}}{\end{itemize}}
 \catcode`\<=\active \def<{
 \fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
 \catcode`\>=\active \def>{
@@ -137,13 +137,13 @@ MATH40002: Analysis I
 \begin{Problem}
     1. This question is shamelessly stolen from Example 6.2.9(b) of "Introduction to Real Analysis" by R. Bartle and D. Sherbert.
 \begin{itemize}
-    \item [(a)] Prove that if $c \in(100,105)$ then $10<\sqrt{c}<11$.
+    \item [(a)] Prove that if $$c \in(100,105)$$ then $$10<\sqrt{c}<11$$.
     \item [(b)] Use the Mean Value Theorem to show that
 
 
-    $$
+    $$$$
     \frac{5}{22}<\sqrt{105}-10<\frac{1}{4}
-    $$
+    $$$$
     
     \item [(c)] Can you improve this estimate?
 \end{itemize}  
@@ -153,31 +153,31 @@ MATH40002: Analysis I
         \begin{itemize}
             \item[(a)] 
             \begin{proof}
-            We consider the function $f(x)=\sqrt{x}$ for $x \in \mathbb{R}^+$. We konw that $f(x)$ is differentiable for $x>0$ from the lecture. The derivative of $f(x)$ is $f'(x)=\frac{1}{2\sqrt{x}}$, which is positive for all $x \in \mathbb{R}^+$. Hence, $f(x)$ is strictly monotone incresing for $x \in (99,122)$. Therefore, for $c \in (100,105)$, $\sqrt{100}<\sqrt{c}<\sqrt{105}<\sqrt{121}$, which shows that
+            We consider the function $$f(x)=\sqrt{x}$$ for $$x \in \mathbb{R}^+$$. We konw that $$f(x)$$ is differentiable for $$x>0$$ from the lecture. The derivative of $$f(x)$$ is $$f'(x)=\frac{1}{2\sqrt{x}}$$, which is positive for all $$x \in \mathbb{R}^+$$. Hence, $$f(x)$$ is strictly monotone incresing for $$x \in (99,122)$$. Therefore, for $$c \in (100,105)$$, $$\sqrt{100}<\sqrt{c}<\sqrt{105}<\sqrt{121}$$, which shows that
             \begin{equation*}
                 10<\sqrt{c}<11
             \end{equation*}
             \end{proof}
-            \item[(b)] We still consider the function $f(x) = \sqrt{x}$ for $x \in \mathbb{R}^+$. The Mean Value Theorem states that:\\
-                Let $f:[a,b] \mapsto \mathbb{R}$ be continous on $[a,b]$ and differentiable on $(a,b)$. Then, there is $c \in (a,b)$ such that $f'(c)=\frac{f(b)-f(a)}{b-a}$.\\
-            We apply the Mean Value Theorem with $f(x)=\sqrt{x}$ and set $a = 100,\;b=105$. From the lectre, we know that $f(x)$ is continous and differentiable for $x>0$, $f(x)$ is continous on $[100,105]$ and differentiable on $(100,105)$. The derivative of $f(x)$ is $f'(x) = \frac{1}{2\sqrt{x}}$ for $x>0$. Hence, by the Mean Value Theorem, we abtain that there exists a $c \in (100,105)$ such that
+            \item[(b)] We still consider the function $$f(x) = \sqrt{x}$$ for $$x \in \mathbb{R}^+$$. The Mean Value Theorem states that:\\
+                Let $$f:[a,b] \mapsto \mathbb{R}$$ be continous on $$[a,b]$$ and differentiable on $$(a,b)$$. Then, there is $$c \in (a,b)$$ such that $$f'(c)=\frac{f(b)-f(a)}{b-a}$$.\\
+            We apply the Mean Value Theorem with $$f(x)=\sqrt{x}$$ and set $$a = 100,\;b=105$$. From the lectre, we know that $$f(x)$$ is continous and differentiable for $$x>0$$, $$f(x)$$ is continous on $$[100,105]$$ and differentiable on $$(100,105)$$. The derivative of $$f(x)$$ is $$f'(x) = \frac{1}{2\sqrt{x}}$$ for $$x>0$$. Hence, by the Mean Value Theorem, we abtain that there exists a $$c \in (100,105)$$ such that
             \begin{align*}
                 \frac{1}{2\sqrt{c}}&=\frac{\sqrt{105}-\sqrt{100}}{105-100}\\
                 \sqrt{105}-\sqrt{100}&=\frac{5}{2\sqrt{c}}\\
                 \sqrt{105}-10&=\frac{5}{2\sqrt{c}}
             \end{align*}
-            By $(a)$, we know that $10<\sqrt{c}<11$, we can assert that
+            By $$(a)$$, we know that $$10<\sqrt{c}<11$$, we can assert that
             \begin{align*}
                 \frac{5}{2\times 11}<&\sqrt{105}-10<\frac{5}{2\times 10}\\
                 \frac{5}{22}<&\sqrt{105}-10<\frac{1}{4}
             \end{align*}
             by the property of the inequality.
-            \item[(c)] We can improve the estimate by using our conclusiton of (b). As $\frac{5}{22}<\sqrt{105}-10<\frac{1}{4}$, it follows that $10.2272<\sqrt{105}<10.2500$. Since $c \in (100,105)$, $\sqrt{c}<\sqrt{105}<10.2500$. Thus, we can easyily get that
+            \item[(c)] We can improve the estimate by using our conclusiton of (b). As $$\frac{5}{22}<\sqrt{105}-10<\frac{1}{4}$$, it follows that $$10.2272<\sqrt{105}<10.2500$$. Since $$c \in (100,105)$$, $$\sqrt{c}<\sqrt{105}<10.2500$$. Thus, we can easyily get that
             \begin{equation*}
                 \sqrt{105}-10 = \frac{5}{2\sqrt{c}} > \frac{5}{2\times 10.2500}>0.2439
             \end{equation*}
             by the property of the inequality.\\
-            The improved estimate is $0.2439<\sqrt{105}-10<0.2500.$
+            The improved estimate is $$0.2439<\sqrt{105}-10<0.2500.$$
         \end{itemize}
     \end{proof}
 \end{Solution}

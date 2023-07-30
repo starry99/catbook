@@ -26,7 +26,7 @@ I have not changed any style of this theme, at least for now.
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
 	tex2jax: {
-	  inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+	  inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
 	  processEscapes: true
 	}
   });

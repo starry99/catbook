@@ -36,8 +36,8 @@ An \textit{inhomogeneous linear} differential equation has the form
 \begin{align}
 L[v ] = f,
 \end{align}
-where $L$ is a linear differential operator, $v$ is the dependent
-variable, and $f$ is a given non−zero function of the independent
+where $$L$$ is a linear differential operator, $$v$$ is the dependent
+variable, and $$f$$ is a given non−zero function of the independent
 variables alone.
 }
 \mdfdefinestyle{theoremstyle}{%
@@ -119,7 +119,7 @@ innertopmargin=\topskip,
 \newcommand{\tmtextbf}[1]{\text{{\bfseries{#1}}}}
 \newcommand{\tmtextit}[1]{\text{{\itshape{#1}}}}
 
-\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$\bullet$}\renewcommand{\labelitemii}{$\bullet$}\renewcommand{\labelitemiii}{$\bullet$}\renewcommand{\labelitemiv}{$\bullet$}}{\end{itemize}}
+\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$$\bullet$$}\renewcommand{\labelitemii}{$$\bullet$$}\renewcommand{\labelitemiii}{$$\bullet$$}\renewcommand{\labelitemiv}{$$\bullet$$}}{\end{itemize}}
 \catcode`\<=\active \def<{
 \fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
 \catcode`\>=\active \def>{
@@ -169,22 +169,22 @@ innertopmargin=\topskip,
 
 \newpage
 \begin{Problem}
-Coursework background: Let $N>1$ be a positive integer. Given an $N$-node graph viewed as a resistive electric circuit with all edges having unit conductance, the resistance matrix $\mathbf{R}$ is defined as the matrix with components $R_{i j}$ given by the effective resistance between node $i$ (set to unit voltage) and node $j$ (grounded) with all diagonal elements taken to vanish, i.e. $R_{i i}=0$. Recall that the effective resistance is just the reciprocal of the effective conductance $C_{\text {eff }}$ introduced in lectures.
+Coursework background: Let $$N>1$$ be a positive integer. Given an $$N$$-node graph viewed as a resistive electric circuit with all edges having unit conductance, the resistance matrix $$\mathbf{R}$$ is defined as the matrix with components $$R_{i j}$$ given by the effective resistance between node $$i$$ (set to unit voltage) and node $$j$$ (grounded) with all diagonal elements taken to vanish, i.e. $$R_{i i}=0$$. Recall that the effective resistance is just the reciprocal of the effective conductance $$C_{\text {eff }}$$ introduced in lectures.
 
 The total effective resistance of the graph is defined in terms of this resistance matrix as
 
-$$
+$$$$
 R^{(total)}=\sum_{i<j} R_{i j} .
-$$
+$$$$
 
-Let the orthonormal (i.e., unit length and mutually orthogonal) eigenvectors and corresponding eigenvalues of the $N-$ by $-N$ graph Laplacian $\mathbf{K}$ be denoted by
+Let the orthonormal (i.e., unit length and mutually orthogonal) eigenvectors and corresponding eigenvalues of the $$N-$$ by $$-N$$ graph Laplacian $$\mathbf{K}$$ be denoted by
 
-$$
+$$$$
 \left\{\mathbf{e}_{k} \mid k=1, \ldots, N\right\}, \quad\left\{\lambda_{k} \mid k=1, \ldots, N\right\},
-$$
+$$$$
 where we take
 
-$$
+$$$$
 \mathbf{e}_{1}=\frac{1}{\sqrt{N}}\left(\begin{array}{c}
 1 \\
 1 \\
@@ -192,11 +192,11 @@ $$
 \cdot \\
 1
 \end{array}\right), \quad \lambda_{1}=0
-$$
+$$$$
 
-and where we denote the elements of $\mathbf{e}_{k}$ for $k=2, \ldots, N$ as
+and where we denote the elements of $$\mathbf{e}_{k}$$ for $$k=2, \ldots, N$$ as
 
-$$
+$$$$
 \mathbf{e}_{k}=\left(\begin{array}{r}
 e_{k 1} \\
 e_{k 2} \\
@@ -204,7 +204,7 @@ e_{k 2} \\
 \cdot \\
 e_{k N}
 \end{array}\right), \quad k=2, \ldots, N
-$$
+$$$$
 
 The following two formulas can be established relating the elements of the resistance matrix and the total effective resistance to the eigenvectors/eigenvalues of K: 
 \begin{equation*}
@@ -224,11 +224,11 @@ Coursework exercise: Consider the 4-node graph shown in Figure 1:
 Figure 1: A 4-node graph viewed as an electric circuit.
 \end{center}
 \begin{itemize}
-\item[(a)] Using the node labelling given in the figure, find the resistance matrix $\mathbf{R}$ for this graph.
+\item[(a)] Using the node labelling given in the figure, find the resistance matrix $$\mathbf{R}$$ for this graph.
 
-\item[(b)] Hence, using your results from part (a), compute $R^{\text {total }}$ for this graph using formula (1).
+\item[(b)] Hence, using your results from part (a), compute $$R^{\text {total }}$$ for this graph using formula (1).
 
-\item[(c)] Find the eigenvalues $\left\{\lambda_{k} \mid k=1, \ldots, 4\right\}$ and orthonormal eigenvectors $\left\{\mathbf{e}_{k} \mid k=\right.$ $1, \ldots, 4\}$ of the graph Laplacian $\mathbf{K}$.
+\item[(c)] Find the eigenvalues $$\left\{\lambda_{k} \mid k=1, \ldots, 4\right\}$$ and orthonormal eigenvectors $$\left\{\mathbf{e}_{k} \mid k=\right.$$ $$1, \ldots, 4\}$$ of the graph Laplacian $$\mathbf{K}$$.
 
 \item[(d)] Use the results of parts (a) and (c) to verify formula (2).
 
@@ -242,9 +242,9 @@ Figure 1: A 4-node graph viewed as an electric circuit.
 \begin{Solution}
     \begin{itemize}
         \item [(a)]
-        As each node in the graph is connected to three edges, the degree matrix $\mathbf{D}$ of the graph is:
+        As each node in the graph is connected to three edges, the degree matrix $$\mathbf{D}$$ of the graph is:
         \begin{center}
-        $\mathbf{D}=$
+        $$\mathbf{D}=$$
         \begin{pmatrix}
         3&0&0&0\\
         0&3&0&0\\
@@ -253,9 +253,9 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         \end{pmatrix}
         \end{center}
 
-    Since all the nodes in the graph are connected with each other, the adjacent matrix $\mathbf{W}$ of the graph is:
+    Since all the nodes in the graph are connected with each other, the adjacent matrix $$\mathbf{W}$$ of the graph is:
     \begin{center}
-        $\mathbf{W}=$
+        $$\mathbf{W}=$$
         \begin{pmatrix}
             0&1&1&1\\
             1&0&1&1\\
@@ -265,9 +265,9 @@ Figure 1: A 4-node graph viewed as an electric circuit.
     \end{center}
     since all the nodes in the graph are connected with each other.
 
-    Therefore, the Laplacian matrix $\mathbf{K}$ of the graph is:
+    Therefore, the Laplacian matrix $$\mathbf{K}$$ of the graph is:
     \begin{center}
-        $\mathbf{K}=\mathbf{D}-\mathbf{W}=$
+        $$\mathbf{K}=\mathbf{D}-\mathbf{W}=$$
     \begin{pmatrix}
         3&-1&-1&-1\\
         -1&3&-1&-1\\
@@ -275,12 +275,12 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         -1&-1&-1&3
     \end{pmatrix}
     \end{center}
-    Since the graph is complete, it followes that the effective conductances between every pair of two nodes are the same. So, we could only caculate the conductance of one pair of the $4$ nodes. We can assume that the voltage of node \textcircled{\raisebox{-0.7pt}{1}} is 
-    $1$ and the node \textcircled{\raisebox{-0.7pt}{4}} is grounded. Then, set the effective conductance between node \textcircled{\raisebox{-0.7pt}{1}} and node \textcircled{\raisebox{-0.7pt}{4}} is $\mathbf{C_{eff}}$. We have this
+    Since the graph is complete, it followes that the effective conductances between every pair of two nodes are the same. So, we could only caculate the conductance of one pair of the $$4$$ nodes. We can assume that the voltage of node \textcircled{\raisebox{-0.7pt}{1}} is 
+    $$1$$ and the node \textcircled{\raisebox{-0.7pt}{4}} is grounded. Then, set the effective conductance between node \textcircled{\raisebox{-0.7pt}{1}} and node \textcircled{\raisebox{-0.7pt}{4}} is $$\mathbf{C_{eff}}$$. We have this
     \begin{equation*}
         \mathbf{K}\mathbf{x}=\mathbf{f}
     \end{equation*}
-    We suppose the potentials at \textcircled{\raisebox{-0.7pt}{2}} and \textcircled{\raisebox{-0.7pt}{3}} are $x_1$ and $x_2$ respectvely.
+    We suppose the potentials at \textcircled{\raisebox{-0.7pt}{2}} and \textcircled{\raisebox{-0.7pt}{3}} are $$x_1$$ and $$x_2$$ respectvely.
     As KCL holds at node \textcircled{\raisebox{-0.7pt}{2}} and \textcircled{\raisebox{-0.7pt}{3}}, it follows that
     \begin{equation*}
         \begin{pmatrix}
@@ -334,12 +334,12 @@ Figure 1: A 4-node graph viewed as an electric circuit.
                 x_3=\frac{1}{2}
             \end{array}
     \end{equation*}
-    Therefore, the effective conductance between each pair of the nodes is $2$. As the effective resistance is the reciprocal of the effective conductance, it follows that
+    Therefore, the effective conductance between each pair of the nodes is $$2$$. As the effective resistance is the reciprocal of the effective conductance, it follows that
     \begin{equation*}
         \mathbf{R_{eff}}=\frac{1}{\mathbf{C_{eff}}}=\frac{1}{2}.
     \end{equation*}
     The graph is complete,so the effective resistances between every pair of two nodes are the same. 
-    Hence, by the definition of the resistance matrix $\mathbf{R}$ for this graph is
+    Hence, by the definition of the resistance matrix $$\mathbf{R}$$ for this graph is
     \begin{equation*}
         \mathbf{R}=
         \begin{pmatrix}
@@ -350,11 +350,11 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         \end{pmatrix}
     \end{equation*}
     \item[(b)]
-    $$
+    $$$$
     R^{(total)}=\sum_{i<j} R_{i j}=\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}+\frac{1}{2}=\frac{1}{2}\times 6=3
-    $$
+    $$$$
     \item[(c)]
-    The graph Laplacian matrix $\mathbf{K}$ is
+    The graph Laplacian matrix $$\mathbf{K}$$ is
     \begin{pmatrix}
         3&-1&-1&-1\\
         -1&3&-1&-1\\
@@ -362,7 +362,7 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         -1&-1&-1&3 
     \end{pmatrix}
 
-    so,the characteristic polynomial of $\mathbf{K}$ is
+    so,the characteristic polynomial of $$\mathbf{K}$$ is
     \begin{equation*}
         \det(\lambda I_n-\mathbf{K})=
         \begin{vmatrix}
@@ -373,23 +373,23 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         \end{vmatrix}
         =\lambda(\lambda-4)^3.
     \end{equation*}
-    $$
+    $$$$
     \lambda(\lambda-4)^3=0\Longrightarrow \lambda=0\;or\;4.
-    $$
-    Hence, we have $\lambda_1=0,\:\lambda_2=4,\:\lambda_3=4,\:\lambda_4=4$.
-    $$
+    $$$$
+    Hence, we have $$\lambda_1=0,\:\lambda_2=4,\:\lambda_3=4,\:\lambda_4=4$$.
+    $$$$
     \{\lambda_k|k=1,\ldots,4\}=\{\lambda_1=0,\lambda_2=4,\lambda_3=4,\lambda_4=4\}
-    $$
-    When $\lambda_1=0$, the corresponding eigenvector is
-    $$
+    $$$$
+    When $$\lambda_1=0$$, the corresponding eigenvector is
+    $$$$
         e_1=\frac{1}{\sqrt{4}}\begin{pmatrix}
             1\\1\\1\\1
         \end{pmatrix}
         =\frac{1}{2}\begin{pmatrix}
             1\\1\\1\\1
         \end{pmatrix}
-    $$
-    When $\lambda_2=\lambda_3=\lambda_4=4$, we have
+    $$$$
+    When $$\lambda_2=\lambda_3=\lambda_4=4$$, we have
     \begin{align*}
         \mathbf{K}\mathbf{x}&=4\mathbf{x}\\
         \mathbf{K}\mathbf{x}-4\mathbf{x}&=0\\
@@ -416,14 +416,14 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         &=0\\
         x_1+x_2+x_3+x_4&=0
     \end{align*}
-    Therefore, the eigenspace $E_4$ of $\mathbf{K}$ is the right null space of the matrix\\
+    Therefore, the eigenspace $$E_4$$ of $$\mathbf{K}$$ is the right null space of the matrix\\
     \begin{pmatrix}
         1&1&1&1\\
         1&1&1&1\\
         1&1&1&1\\
         1&1&1&1\\
     \end{pmatrix}
-    It is easy to konw that the rank of this matrix is $1$ by elementary row operations and this is a $4\times 4$ matrix. Hence, by the rank nulity theorem, the dimension of the eigenspace of the matrix is $3$. Therefore,
+    It is easy to konw that the rank of this matrix is $$1$$ by elementary row operations and this is a $$4\times 4$$ matrix. Hence, by the rank nulity theorem, the dimension of the eigenspace of the matrix is $$3$$. Therefore,
     \begin{equation*}
         E_4= span \left\{
             \begin{pmatrix}
@@ -469,11 +469,11 @@ Figure 1: A 4-node graph viewed as an electric circuit.
             \end{pmatrix}
             \right\}
         \end{equation*}
-    \item[(d)] The formula $(2)$ is
-    $$
+    \item[(d)] The formula $$(2)$$ is
+    $$$$
     R_{i j}=\sum_{k=2}^{N} \frac{1}{\lambda_{k}}\left(e_{k i}-e_{k j}\right)^{2}
-    $$
-    As $\lambda_2=\lambda_3=\lambda_4=4$ and $e_1&=\frac{1}{2}\begin{pmatrix}
+    $$$$
+    As $$\lambda_2=\lambda_3=\lambda_4=4$$ and $$e_1&=\frac{1}{2}\begin{pmatrix}
         1\\1\\1\\1
     \end{pmatrix}
     e_2&=\frac{1}{\sqrt{2}}\begin{pmatrix}
@@ -484,9 +484,9 @@ Figure 1: A 4-node graph viewed as an electric circuit.
     \end{pmatrix}
     e_4&=\begin{pmatrix}
         -\frac{1}{2\sqrt{3}}\\-\frac{1}{2\sqrt{3}}\\-\frac{1}{2\sqrt{3}}\\ \frac{\sqrt{3}}{2}
-    \end{pmatrix}$
+    \end{pmatrix}$$
     \begin{equation*}
-        $\mathbf{R}=$\\
+        $$\mathbf{R}=$$\\
     \begin{pmatrix}
         0&\frac{1}{4}(\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}})^2&\frac{1}{4}[\frac{1}{2}+(\frac{\sqrt{6}}{3}+\frac{1}{\sqrt6})^2]&\frac{1}{4}[\frac{1}{2}+\frac{1}{6}+(\frac{\sqrt{3}}{2}+\frac{1}{2\sqrt{3}})^2}]\\
         \frac{1}{4}(\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}})^2&0&\frac{1}{4}[\frac{1}{2}+(\frac{\sqrt{6}}{3}+\frac{1}{\sqrt6})^2]&\frac{1}{4}[\frac{1}{2}+\frac{1}{6}+(\frac{\sqrt{3}}{2}+\frac{1}{2\sqrt{3}})^2}]\\
@@ -501,24 +501,24 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         \frac{1}{2}&\frac{1}{2}&\frac{1}{2}&0
     \end{pmatrix}
     \end{equation*}\\
-    which is the same as the result in part (a). Therefore, the formula $(2)$ is correct.
+    which is the same as the result in part (a). Therefore, the formula $$(2)$$ is correct.
     \item[(e)]
-    The formula $(3)$ is 
+    The formula $$(3)$$ is 
     \begin{equation*}
     R^{(total)}=N \sum_{k=2}^{N} \frac{1}{\lambda_{k}}    
     \end{equation*}
-    Since $N=4$ and $\lambda_2=\lambda_3=\lambda_3=4$,
+    Since $$N=4$$ and $$\lambda_2=\lambda_3=\lambda_3=4$$,
     \begin{equation*}
         R^{(total)}=N \sum_{k=2}^{N} \frac{1}{\lambda_{k}}=4\times(\frac{1}{4}+\frac{1}{4}+\frac{1}{4})=3.
     \end{equation*}
-    which is the same as the result in part (b). Therefore, the formula $(3)$ is correct.
+    which is the same as the result in part (b). Therefore, the formula $$(3)$$ is correct.
     \item[(f)]
     \begin{proof}
-        We use the eigenvectors $E=\{e_1,e_2,e_3,e_4\}$ as a basis of $\mathbb{R}^4$. Regard $\mathbf{K}$ as a linear transformation,
+        We use the eigenvectors $$E=\{e_1,e_2,e_3,e_4\}$$ as a basis of $$\mathbb{R}^4$$. Regard $$\mathbf{K}$$ as a linear transformation,
         \begin{equation*}
             \mathbf{K}:\mathbb{R}^4 \to \mathbb{R}^4
         \end{equation*}
-        Set the standard basis of $\mathbb{R^4}$ is $B$.
+        Set the standard basis of $$\mathbb{R^4}$$ is $$B$$.
         From the Linear Algebra and Groups course, we have basis change fomula, where
         \begin{equation*}
             _{B}[id]_E=\begin{pmatrix}
@@ -528,8 +528,8 @@ Figure 1: A 4-node graph viewed as an electric circuit.
                 e_{14}&e_{24}&e_{34}&e_{44}
             \end{pmatrix}
         \end{equation*}
-        We set $_{B}[id]_E$ as $P$.
-        As the matrix $_{B}[id]_E$ is consist of four orthogonal unit vectors, the inverse of it is 
+        We set $$_{B}[id]_E$$ as $$P$$.
+        As the matrix $$_{B}[id]_E$$ is consist of four orthogonal unit vectors, the inverse of it is 
         \begin{equation*}
             _{E}[id]_B=(_{B}[id]_E)^T=\begin{pmatrix}
                 e_{11}&e_{12}&e_{13}&e_{14}\\
@@ -542,7 +542,7 @@ Figure 1: A 4-node graph viewed as an electric circuit.
         \begin{equation*}
             [\mathbf{K}]_E=P^{-1}\mathbf{K}P
         \end{equation*}
-        As the column of $P$ is consist of eigenvectors of $\mathbf{K}$, $[\mathbf{K}]_E$ is a diagonal matrix whose element on the diagonal is the eigenvalues of $\mathbf{K}$, we set it as $D$, where
+        As the column of $$P$$ is consist of eigenvectors of $$\mathbf{K}$$, $$[\mathbf{K}]_E$$ is a diagonal matrix whose element on the diagonal is the eigenvalues of $$\mathbf{K}$$, we set it as $$D$$, where
         \begin{equation*}
             D=\begin{pmatrix}
                 \lambda_1&0&0&0\\
@@ -607,7 +607,7 @@ Figure 1: A 4-node graph viewed as an electric circuit.
                 e_{41}&e_{42}&e_{43}&e_{44}
             \end{pmatrix}
         \end{equation*}
-        Then, use the way in part (a) that we calculate $R_{i j}$ and substitue $\mathbf{K}$ with $(\ast)$, we can immediately get
+        Then, use the way in part (a) that we calculate $$R_{i j}$$ and substitue $$\mathbf{K}$$ with $$(\ast)$$, we can immediately get
         \begin{equation*}
             R_{i j}=\sum_{k=2}^N\frac{1}{\lambda_k}(e_{ki}-e_{kj})^2.
         \end{equation*}
