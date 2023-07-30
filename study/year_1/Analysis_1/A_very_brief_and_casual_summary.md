@@ -28,9 +28,9 @@ A function $f: A \rightarrow B$ is bijective if it is both injective and surject
 3. $a + (b + c) = (a + b) + c$
 4. $a \times (b \times c) = (a \times b) \times c$
 5. $a \times (b + c) = a \times b + a \times c$
-6. $\exist 0 \in \mathbb{Q}: a+0 = a$
-7. $\exist 1 \in \mathbb{Q}: 0 \neq 1, a \times 1 = a$
-8. $\forall a \in \mathbb{Q}, \exist (-a) \in \mathbb{Q}$ such that $a+(-a) = 0$
+6. $\exists 0 \in \mathbb{Q}: a+0 = a$
+7. $\exists 1 \in \mathbb{Q}: 0 \neq 1, a \times 1 = a$
+8. $\forall a \in \mathbb{Q}, \exists (-a) \in \mathbb{Q}$ such that $a+(-a) = 0$
 9. $\forall a \in \mathbb{Q} \backslash\{0\} \exists a^{-1} \in \mathbb{Q}$ such that $a \times\left(a^{-1}\right)=1$
 
 #### Axioms 2.2
@@ -59,9 +59,6 @@ x & =a_{0} \cdot a_{1} a_{2} \ldots a_{n} \overline{9} \\
 \end{aligned}
 $$
 
-#### Definiton 2.1 ( Arbitrary decimals: the real numbers )
-
-$\mathbb{R}:=\left\{a_{0} \cdot a_{1} a_{2} \ldots: a_{0} \in \mathbb{Z}, a_{i \geq 1} \in\{0,1, \ldots, 9\}, \nexists N\right.$ such that $\left.a_{i}=9 \forall i \geq N\right\}$
 
 ### 2.3 Countability
 
@@ -179,13 +176,13 @@ $$
 |a+b| \leq|a|+|b|
 $$
 
-(a) $|x+y| \leq|x|+|y|$
-(e) $|x| \leq|y|+|x-y|$
-(b) $|x+y| \geq|x|-|y|$
-(f) $|x| \geq|y|-|x-y|$
-(c) $|x+y| \geq|y|-|x|$
-(g) $|x-y| \leq|x-z|+|y-z|$
-(d) $|x-y| \geq|| x|-| y||$
+- $|x+y| \leq|x|+|y|$
+- $|x| \leq|y|+|x-y|$ 
+- $|x+y| \geq|x|-|y|$
+- $|x| \geq|y|-|x-y|$
+- $|x+y| \geq|y|-|x|$
+- $|x-y| \leq|x-z|+|y-z|$
+- $|x-y| \geq|| x|-| y||$
 
 #### Exercise 2.46
 
@@ -232,28 +229,25 @@ $$
 
 (III) Try to solve $b_{n}<\epsilon$
 
-(IV) Find $N_{\epsilon} \in \mathbb{N}_{>0}$ such that $(*)$ holds whenever $n \geq N_{\epsilon}$.
+(IV) Find $ N_{\epsilon} \in \mathbb{N}_{>0}$ such that $(*)$ holds whenever $n \geq N_{\epsilon}$.
 
 (V) Put everything together into a logical proof.
 
 #### Definition （ Convergence ）
 
 We say that $a_{n}$ converges if and only if $\exists a \in \mathbb{R}$ such that $a_{n} \rightarrow a$, i.e.
-
-$\exists a$ such that $\forall \epsilon>0 \exists N \in \mathbb{N}_{>0}$ such that $n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$
+$$
+\exists a \text{ such that } \forall \epsilon>0 \exists N \in \mathbb{N}_{>0}
+\text{ such that } n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon
+$$
 
 #### Definition （ Divergence ）
 
 We say that $a_{n}$ diverges if and only if $a_{n}$ does not converge( to any $a \in \mathbb{R}$ ),i.e.
+
 $$
 \forall a \exists \epsilon>0 \text { such that } \forall N \in \mathbb{N}_{>0}, \exists n \geq N \text { such that }\left|a_{n}-a\right| \geq \epsilon
 $$
-
-#### Definition （ Convergence for complex sequences ）
-
-$a_{n} \in \mathbb{C}, \forall n \geq 1$. We say $a_{n} \rightarrow a \in \mathbb{C}$ if and only if
-
-$\forall \epsilon>0, \exists N \in \mathbb{N}_{>0}$ such that $n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$
 
 ##### Theorem 3.14 ( Uniqueness of limits )
 
@@ -275,7 +269,11 @@ If $a_{n} \rightarrow a$ and $b_{n} \rightarrow b$ then:
 
 #### Theorem 3.21 ( Bounded and monotonic sequences must be convergent )
 
-If $\left(a_{n}\right)$ is bounded above and monotonically increasing then $a_{n}$ converges to $a:=\sup \left\{a_{i}: i \in \mathbb{N}_{>0}\right\}$. We write $a_{n} \uparrow a$.
+If $\left(a_{n}\right)$ is bounded above and monotonically increasing then $a_{n}$ converges to 
+
+$$
+a:=\sup \left\{a_{i}: i \in \mathbb{N}_{>0}\right\}
+$$
 
 #### Example 3.22
 
@@ -324,8 +322,6 @@ $\left(a_{n}\right)$ Cauchy $\Longleftrightarrow\left(a_{n}\right)$ convergent.
 #### Definition ( Subsequence )
 
 A subsequence of $\left(a_{n}\right)$ is a new sequence $b_{i}=a_{n(i)} \forall i \in \mathbb{N}_{>0}$, where  $n(1)<n(2)<\cdots<n(i)<\ldots \forall i$.
-
-Formally $n(\cdot)$ is a function $\mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$ sending $i \mapsto n(i)$ which is strictly monotonically increasing.
 
 #### Theorem 3.34 ( Bolzano-Weierstrass )
 
@@ -383,32 +379,6 @@ $$
 \sum_{n=0}^{\infty} a_{n} \text { is convergent } \Longrightarrow a_{n} \rightarrow 0
 $$
 
-#### Example 4.4
-
-$\sum_{n=1}^{\infty} \frac{1}{n}$ is not convergent.
-Proof. Uses a slight trick. Arrange the partial sum as follows:
-
-$$
-\begin{aligned}
-1+\frac{1}{2}+\frac{1}{3}+\ldots= & +\left(\frac{1}{2}+\frac{1}{3}\right)+\left(\frac{1}{4}+\cdots+\frac{1}{7}\right) \\
-& +\left(\frac{1}{8}+\cdots+\frac{1}{15}\right)+\left(\frac{1}{16}+\cdots+\frac{1}{31}\right)+\ldots
-\end{aligned}
-$$
-
-We can bound the $k$ th bracketed term from below:
-
-$$
-\left(\frac{1}{2^{k}}+\cdots+\frac{1}{\left(2^{k+1}-1\right)}\right)>\frac{1}{2^{k+1}}+\cdots+\frac{1}{2^{k+1}}=\frac{2^{k}}{2^{k+1}}=\frac{1}{2} .
-$$
-
-In particular then
-
-$$
-s_{2^{k+1}-1}>1+\underbrace{\frac{1}{2}+\cdots+\frac{1}{2}}_{k \text { terms }}=1+\frac{k}{2}
-$$
-
-is arbitrarily large. But if $s_{n}$ converged, it would be bounded: $\left|s_{n}\right| \leq C \;\forall n$. So we get the contradiction (to the Archimedean property) $1+\frac{k}{2} \leq C \; \forall k \in \mathbb{N}$.
-
 #### Proposition 4.6
 
 Suppose $a_{n} \geq 0 \forall n\left(\Longleftrightarrow s_{n}=\sum_{i=1}^{n} a_{i}\right.$ is monotonically increasing), Then the following two facts are true:
@@ -437,19 +407,16 @@ $$
 
 #### Definition ( Absolute convergence )
 
-For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is absolutely convergent if and only if the series $\sum_{n=1}^{\infty}\left|a_{n}\right|$ is convergent.
+For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is absolutely convergent if and only if the series $\sum_{n=1}^{\infty}|a_{n}|$ is convergent.
 
 #### Definition
 
-For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is conditionally convergent if and only if the series $\sum_{n=1}^{\infty} a_{n}$ is convergent but it is not absolutely convergent (that is, $\sum_{n=1}^{\infty}\left|a_{n}\right|$ diverges to infinity).
+For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is conditionally convergent if and only if the series $\sum_{n=1}^{\infty} a_{n}$ is convergent but it is not absolutely convergent (that is, $\sum_{n=1}^{\infty}|a_{n}|$ diverges to infinity).
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
 Let $\left(a_{n}\right)_{n \geq 0}$ be a real or complex sequence. If $\sum a_{n}$ is absolutely convergent, then it is convergent.
 
-#### Example 4.15
-
- For $z \in \mathbb{C}$ the power series $\sum_{n=1}^{\infty} z^{n}$ is absolutely convergent for $|z|<1$ and divergent for $|z| \geq 1$.
 
 ### 4.3 Test for convergence
 
@@ -463,32 +430,23 @@ Then $\sum a_{n}$ is convergent.
 
 If $\frac{a_{n}}{b_{n}} \rightarrow L \in \mathbb{R}$ and $\sum b_{n}$ is absolutely convergent, then $\sum a_{n}$ is absolutely convergent.
 
-#### Exercise 4.19
-
-Fix $N \in \mathbb{N}_{>0}$. Then $\sum_{n \geq N} c_{n}$ is convergent if and only if $\sum_{n \geq 1} c_{n}$ is convergent.
-
 #### Theorem 4.20 ( Alternating series test )
 
 Suppose $a_{n}$ is alternating with $\left|a_{n}\right| \downarrow 0$. Then $\sum a_{n}$ converges.
 
-#### Exercise 4.22
-
-The alternating sequence $a_{n}=\left\{\begin{array}{cc}\frac{1}{n^{2}}+\frac{1}{n} & n \text { even, } \\ -\frac{1}{n^{2}} & n \text { odd, }\end{array}\right.$ has sum $\sum a_{n}$ which is divergent to $+\infty$.
-It is alternating but $\left|a_{n}\right|$ is not monotonically decreasing, so the alternating series test does not apply.
-
 #### Theorem 4.23 ( Ratio test )
 
-If $a_{n}$ is a sequence such that $\left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent.
+If $a_{n}$ is a sequence such that $|\frac{a_{n+1}}{a_{n}}| \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent.
 
 #### Theorem 4.24 ( Root test )
 
-If $\left|a_{n}\right|^{1 / n} \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent.
+If $|a_{n}|^{1 / n} \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent.
 
 ### 4.4 Rearrangement of Series
 
-#### Definition
+#### Definition (Rearrangement of a sequence)
 
-Definition (Rearrangement of a sequence) Given a bijection $n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$, define $b_{i}:=a_{n(i)}$. Then $\left(b_{i}\right)_{i \geq 1}$ is a rearrangement or reordering of $\left(a_{n}\right)_{n \geq 1}$.
+ Given a bijection $n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$, define $b_{i}:=a_{n(i)}$. Then $(b_{i})_{i \geq 1}$ is a rearrangement or reordering of $(a_{n})_{n \geq 1}$.
 
 #### Example 4.31
 
@@ -553,7 +511,7 @@ Then $\exists R \in[0, \infty]$ such that
 - $|z|<R \Longrightarrow \sum a_{n} z^{n}$ is absolutely convergent, and
 
 - $|z|>R \Longrightarrow \sum a_{n} z^{n}$ is divergent.
-Proof. Let $S=\left\{|z|: a_{n} z^{n} \rightarrow 0\right\}$, nonempty since $0 \in S$. Then define
+Proof. Let $S=\{|z|: a_{n} z^{n} \rightarrow 0\}$, nonempty since $0 \in S$. Then define
 
 $$
 R= \begin{cases}\sup S & \text { if } S \text { bounded }, \\ \infty & \text { if } S \text { unbounded }\end{cases}
@@ -561,7 +519,7 @@ $$
 
 #### Exercise 4.38
 
-Suppose $\left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow a \in[0, \infty]$ as $n \rightarrow \infty$, then $R=\frac{1}{a}$ is the radius of convergence of $\sum a_{n} z^{n}$.
+Suppose $|\frac{a_{n+1}}{a_{n}}| \rightarrow a \in[0, \infty]$ as $n \rightarrow \infty$, then $R=\frac{1}{a}$ is the radius of convergence of $\sum a_{n} z^{n}$.
 
 ### 4.5.1 Products of Power Series
 
@@ -575,7 +533,11 @@ If $\sum a_{n}, \sum b_{n}$ are absolutely convergent, then their Cauchy product
 
 #### Corollary 4.40
 
-If $\sum a_{n} z^{n}$ and $\sum b_{n} z^{n}$ have radius of convergence $R_{A}$ and $R_{B}$ respectively, then $\sum c_{n} z^{n}$ has radius of convergence $R_{C} \geq \min \left\{R_{A}, R_{B}\right\}$.
+If $\sum a_{n} z^{n}$ and $\sum b_{n} z^{n}$ have radius of convergence $R_{A}$ and $R_{B}$ respectively, then $\sum c_{n} z^{n}$ has radius of convergence
+
+$$
+R_{C} \geq \min \{R_{A}, R_{B}\}
+$$
 
 #### Exercise 4.41
 
@@ -593,7 +555,6 @@ $$
 \lim _{x \rightarrow x_{0}} f(x)=y \Longleftrightarrow \forall \epsilon>0 \exists \delta>0 \text { such that } 0<|x-x_{0}|<\delta \Longrightarrow|f(x)-y|<\epsilon
 $$
 
-as for every $\epsilon >0 $, there exists a $\delta = \delta(\epsilon) > 0$ such that $|x - x_0|<\delta$ and $x \neq x_0$ implies $|f(x) - y|<\epsilon$.
 
 #### Proposition ( Limits keep sign )
 
@@ -605,7 +566,7 @@ If $\lim_{x \to x_0} f(x)$ exists then there is an open interval $I$ containing 
 
 #### Proposition ( Uniqueness of limits )
 
-If $\lim _{x \to x_0} f(x) = a$ and $\lim_{x \to x_0} f(x) = b$, then $a = b$.
+If $\lim_{x \to x_0} f(x) = a$ and $\lim_{x \to x_0} f(x) = b$, then $a = b$.
 
 #### Proposition (Squeeze theorem)
 
@@ -632,9 +593,9 @@ $$
 - $\lim_{x \to x_0} (f(x) + g(x)) = \lim_{x \to x_0} f(x) + \lim_{x \to x_0} g(x)$
 - $\lim_{x \to x_0} (f(x) \cdot g(x)) = \lim_{x \to x_0} f(x) \cdot \lim_{x \to x_0} g(x)$
 - If $\lim_{x \to x_0} {g(x)} \neq 0$, then
- $$
- \lim_{x \to x_0}\frac{f(x)}{g(x)} = \frac{\lim_{x \to x_0}f(x)}{\lim_{x \to x_0}g(x)}
- $$.
+$$
+\lim_{x \to x_0}\frac{f(x)}{g(x)} = \frac{\lim_{x \to x_0}f(x)}{\lim_{x \to x_0}g(x)}
+$$.
 
 ### 5.2 Continuity
 
@@ -644,9 +605,6 @@ We say that $f: I \rightarrow \mathbb{R} $ is continuous at $x_0$ if continous a
 $$
 \lim _{x \to a} f(x)=f(a)
 $$
-which means, $f: I \to \mathbb{R}$ is continuous at $a$ if:
-
-for every $\epsilon > 0$, there exists $\delta = \delta(\epsilon) > 0$ such that $|x - a| < \delta$ implies $|f(x) - f(a)| < \epsilon$.
 
 #### Theorem ( Algebra of continuous functions )
 
@@ -678,17 +636,12 @@ Let $f: I \to \mathbb{R}$ be continuous at $a \in I$. If $f(a) > 0$, then there 
 
 We say that $f(x)$ tends to $L$ as $x$ approaches $a$ from the right if
 
-For all $\epsilon > 0$, there exists $\delta > 0$ such that $a < x  <a+ \delta$ implies $|f(x) - L| < \epsilon$.
-
-In this case, we write:
 $$
 \lim _{x \to a^{+}} f(x)=L
 $$
 
 Similarly, we say that $f(x)$ tends to $L$ as $x$ approaches $a$ from the left if
-For all $\epsilon > 0$, there exists $\delta > 0$ such that $a - \delta < x  <a$ implies $|f(x) - L| < \epsilon$.
 
-In this case, we write:
 $$
 \lim _{x \to a^{-}} f(x)=L
 $$
@@ -775,10 +728,6 @@ Let $f: X \subset \mathbb{R} \to \mathbb{R}$ be continuous on $X$, then
 - If $X = [a,b]$, then $f$ is uniformly continuous on $X$.
 - If $X$ is compact, then $f$ is uniformly continuous on $X$.
 
-#### Exercise
-
-We say that $\lim_{x \to a} = \infty$ if for all $N > 0$, there exists a $\delta > 0$ such that $f(x) > N$ for all $|x-a|<\delta$. Then, if $f:(a,b) \to \mathbb{R}$ is continous on $(a,b)$ and $\lim_{x \to a^+}f(x) = \lim_{x \to b^-}f(x) = \infty$, then $f$ attains a minimum on $(a,b)$.
-
 ## 6. Differentiation
 
 ### 6.1 The derivative
@@ -852,16 +801,6 @@ If $c$ is a constant and $f$ is differentiable at $a \in \mathbb{R}$, then
 $$
 \frac{d}{dx}(cf)(a) = cf'(a)
 $$
-
-#### Remark
-
-Let $I = [a,b]$. We denota by
-
-- $C^0(I): = \{f:[a,b] \to \mathbb{R}: f \;\text{is continous on} \;[a,b]\}$
-- $C^1(I): = \{f:[a,b] \to \mathbb{R}: f \; \text{is differentiable on} \;(a,b)\; \text{and}\; f' \; \text{is continous on} \;[a,b]\}$
-Then, $\frac{d}{dx}: C^1(I) \to C^0(I)$ is a linear map. In fact, both $C^0(I)$ and $C^1(I)$ are real vector spaces.
-- (f+g)(x) = f + g
-- (cf)(x) = cf
 
 #### Theorem ( Chain rule )
 
@@ -978,7 +917,7 @@ Let $a$ be a critical point of $f$, i.e. $f'(a) = 0$. Then,
 
 #### Theorem
 
-Assume $f''(a)$ exists and $f$ has a local minimu at $a$. Then, $f''(a) \leq 0$.
+Assume $f^{(2)}(a)$ exists and $f$ has a local minimu at $a$. Then, $f^{(2)}(a) \leq 0$.
 
 ### 6.9 Convexity
 
@@ -1019,16 +958,22 @@ If $f$ is twice differentiable on $I$ and $f''(x) > 0$ for all $x \in I$, then $
 #### Definition ( Partition )
 
 A partition of an interval $[a,b]$ is a finite set of points in $[a,b] and containing both $a$ and $b$, i.e. a partition of $[a,b]$ is
+
 $$
 a = t_0 < t_1 < \cdots < t_n = b
 $$
+
 We usually denote a partition $P$ as
+
 $$
 P = a = t_0 < t_1 < \cdots < t_n = b
 $$
+
 or
+
 $$
 P = \{t_0, t_1, \cdots, t_n\}
+$$
 
 #### Definition ( Lower and upper sum )
 
