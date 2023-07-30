@@ -17,8 +17,8 @@ Let $G$ be a graph with $n$ nodes and $m$ edges. The incidence matrix $A$ of $G$
 
 For an $m \times n$ incidence matrix $A$, we have
 
-- $\operatorname{dim}(\operatorname{right}$ null space) $+\operatorname{rank}(A)=n$ (the number of nodes)
-- $\operatorname{dim}($ left null space) $+\operatorname{rank}(A)=m$ (the number of edges)
+- $\dim\text{(right null space)} +\rank (A)=n \text{(the number of nodes)}$
+- $\dim\text{(left null space)} +\rank (A)=m \text{(the number of edges)}$
 
 
 ####  The geometric interpretation of the rank nullity theorem
