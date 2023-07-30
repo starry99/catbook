@@ -9,7 +9,7 @@ order: 2
 
  - [Analysis I](/study/year_1/Analysis_I/Analysis_I)
 
- - Linear Algebra and Groups
+ - [Linear Algebra and Groups](/study/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main)
 
  - Calculus and Applications
 
