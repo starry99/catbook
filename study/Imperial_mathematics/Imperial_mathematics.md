@@ -18,9 +18,9 @@ title: Surviving the mathematics major at Imperial College London
 
 - [An Introduction to Applied Mathematics](/study/Imperial_mathematics/year_1/An_Introduction_to_Applied_math/AITAM)
 
-- Individual Research Project
+- [Individual Research Project](/study/Imperial_mathematics/year_1/Individual_Research_Project/Individual_Research_Project_main)
 
-- UROP
+- [UROP(Undergraduate Research Opportunities Programme)](/study/Imperial_mathematics/year_1/UROP/UROP_main)
 
 ### Year 2
 
