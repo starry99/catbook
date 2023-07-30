@@ -16,7 +16,7 @@ order: 2
 
   - [Calculus and Applications](/study/year_1/Calculus_and_applications/Calculus_and_Application_main)
 
-  - Probability and Statistics
+  - [Probability and Statistics](/study/year_1/Probability_and_Statistics/Probability_and_Statistics_main)
 
   - [An Introduction to Applied Mathematics](/study/year_1/An_Introduction_to_Applied_math/AITAM)
 
