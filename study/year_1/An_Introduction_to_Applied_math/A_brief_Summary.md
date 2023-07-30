@@ -38,7 +38,8 @@ The vector of edge fluxeslcurrents (Ohm's law)
 $$
 \mathbf{w}=-C \mathbf{A} \mathbf{x}
 $$
-, where $C$ is the diagonal matrix of edge conductances.
+
+where $C$ is the diagonal matrix of edge conductances.
 
 The vector of fluxes out of each node(divergence) of fluxes at each node
  
@@ -50,8 +51,6 @@ $$
 
 - $\mathrm{w}=-\mathrm{e}=-A \mathrm{x}$
 - $\mathrm{f}=A^{T} A \mathrm{x}$
-
-
 #### Laplacian matrix
 
 $$
@@ -60,11 +59,9 @@ $$
 \mathbf{K} \mathbf{x}=\mathbf{f}
 \end{gathered}
 $$
-
 #### The linearity of the the voltage and current
 
 If we change the voltage source from $V$ to $V^{\prime}$ propotionally, then the voltage and current change propotionally.
-
 #### Definition (Effective conductance)
 
 The divergence of fluxes at the node with unit voltage source.
@@ -89,13 +86,13 @@ $p_{i}$ can be regraded as the potential of node $i$ with the node + and - as th
 
 #### Definition ( Escape probability )
 
-If the random walk starts at node $i, p_{e s c}$ is the probability that the random walk reaches the boundary node + before returning to node $i$. ( The nodes that he starts and the nodes that he don't want to return before reaching the target nodes )
+If the random walk starts at node $i, p_{e s c}$ is the probability that the random walk reaches the boundary node $+$ before returning to node $i$. ( The nodes that he starts and the nodes that he don't want to return before reaching the target nodes )
 
 $$
 p_{e s c}=\frac{C_{e f f}}{n}
 $$
 
-where $C_{e f f}$ is the effective conductance of node + (where he starts ) to the boundary node -( where he wants to reach ).
+where $C_{e f f}$ is the effective conductance of node $+$ (where he starts ) to the boundary node $-$( where he wants to reach ).
 
 $n$ is the total number of edges connected with the node he starts .
 
