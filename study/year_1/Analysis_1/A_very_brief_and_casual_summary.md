@@ -411,10 +411,6 @@ $$
 
 is convergent
 
-#### Definition
-
-For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is conditionally convergent if and only if the series $\sum_{n=1}^{\infty} a_{n}$ is convergent but it is not absolutely convergent (that is, $\sum_{n=1}^{\infty}|a_{n}|$ diverges to infinity).
-
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
 Let 
