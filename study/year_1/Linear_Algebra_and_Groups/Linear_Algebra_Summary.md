@@ -380,7 +380,7 @@ $$
 Suppose $$T: V \to V$$, $$\mathbb{F}$$ isa field. 
 
 $$
-\dim(V) = n,\; n\in mathbb{N}
+\dim(V) = n,\; n \in \mathbb{N}
 $$
 
 and $$B, C$$ are bases for $$V$$.
