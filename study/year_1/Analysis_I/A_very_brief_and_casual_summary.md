@@ -277,9 +277,11 @@ $$
 
 #### Definition （ Convergence for complex sequences ）
 
-$$a_{n} \in \mathbb{C}, \forall n \geq 1$$. We say $$a_{n} \to a \in \mathbb{C}$$ if and only if
+$$ a_{n} \in \mathbb{C}, \forall n \geq 1 $$. We say $$ a_n \to a \in \mathbb{C} $$ if and only if
 
-$$\forall \epsilon>0, \exists N \in \mathbb{N}_{>0}$$ such that $$ n \geq N \Longrightarrow |a_{n}-a|<\epsilon $$
+$$
+\forall \epsilon>0, \exists N \in \mathbb{N}_{>0} \text{ such that }  n \geq N \Longrightarrow |a_{n}-a|<\epsilon 
+$$
 
 ##### Theorem 3.14 ( Uniqueness of limits )
 
@@ -446,19 +448,27 @@ $$
 
 #### Definition ( Absolute convergence )
 
-For $$ a_{n} \in \mathbb{R} $$ or $$ \mathbb{C} $$, we say the series $$ \sum_{n=1}^{\infty} a_{n} $$ is absolutely convergent if and only if the series $$ \sum_{n=1}^{\infty}|a_{n}| $$ is convergent.
+For $$ a_{n} \in \mathbb{R} $$ or $$ \mathbb{C} $$, we say the series $$ \sum_{n=1}^{\infty} a_{n} $$ is absolutely convergent if and only if the series 
+
+$$ 
+\sum_{n=1}^{\infty}|a_n|
+$$
+
+is convergent.
 
 #### Definition
 
-For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is conditionally convergent if and only if the series $$\sum_{n=1}^{\infty} a_{n}$$ is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}|a_n|$$ diverges to infinity).
+For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is conditionally convergent if and only if the series 
+
+$$
+\sum_{n=1}^{\infty} a_n
+$$
+
+is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}|a_n|$$ diverges to infinity).
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
-Let $$\left(a_{n}\right)_{n \geq 0}$$ be a real or complex sequence. If $$\sum a_{n}$$ is absolutely convergent, then it is convergent.
-
-#### Example 4.15
-
-For $$ z \in \mathbb{C} $$ the power series $$ \sum_{n=1}^{\infty} z^n $$ is absolutely convergent for $$ |z|<1 $$ and divergent for $$ |z| \geq 1 $$.
+Let $$\{a_{n}_{n \geq 0}\}$$ be a real or complex sequence. If $$\sum a_n $$ is absolutely convergent, then it is convergent.
 
 ### 4.3 Test for convergence
 
@@ -478,7 +488,13 @@ Fix $$N \in \mathbb{N}_{>0}$$. Then $$\sum_{n \geq N} c_{n}$$ is convergent if a
 
 #### Theorem 4.20 ( Alternating series test )
 
-Suppose $$ a_n $$ is alternating with $$ |a_n| \to 0 $$ motonically. Then $$\sum a_{n}$$ converges.
+Suppose $$ a_n $$ is alternating with
+
+$$ 
+|a_n| \to 0
+$$
+
+motonically. Then $$ \sum a_{n} $$ converges.
 
 #### Exercise 4.22
 
@@ -487,11 +503,23 @@ It is alternating but $$\left|a_{n}\right|$$ is not monotonically decreasing, so
 
 #### Theorem 4.23 ( Ratio test )
 
-If $$ a_n $$ is a sequence such that $$ |\frac{a_{n+1}}{a_n}| \rightarrow r<1 $$, then $$ \sum a_{n} $$ is absolutely convergent.
+If $$ a_n $$ is a sequence such that 
+
+$$
+|\frac{a_{n+1}}{a_n}| \rightarrow r<1
+$$
+
+then $$ \sum a_{n} $$ is absolutely convergent.
 
 #### Theorem 4.24 ( Root test )
 
-If $$ |a_n|^{\frac{1}{n}} \rightarrow r<1 $$, then $$ \sum a_n $$ is absolutely convergent.
+If 
+
+$$
+|a_n|^{\frac{1}{n}} \rightarrow r<1
+$$
+
+then $$ \sum a_n $$ is absolutely convergent.
 
 ### 4.4 Rearrangement of Series
 
@@ -563,7 +591,13 @@ Then $$\exists R \in[0, \infty]$$ such that
 
   - $$ |z|>R \rightarrow \sum a_{n} z^{n} $$ is divergent.
   
-Proof. Let $$ S=\{|z|: a_{n} z^{n} \rightarrow 0\} $$, nonempty since $$0 \in S $$. Then define
+Proof. Let
+
+$$
+S=\{|z|: a_{n} z^{n} \rightarrow 0\}
+$$
+
+nonempty since $$0 \in S $$. Then define
 
 $$
 R= \begin{cases}\sup S & \text { if } S \text { bounded }, \\ \infty & \text { if } S \text { unbounded }\end{cases}
