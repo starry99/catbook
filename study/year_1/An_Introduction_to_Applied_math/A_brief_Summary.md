@@ -3,7 +3,7 @@ layout: simple
 title: A Brief Summary of Introduction to Applied Mathematics
 ---
 
-#### Based on the notes and lectures by [Prof. Darren Crowdy](https://www.ma.ic.ac.uk/~dgcrowdy/)
+#### Based on the notes and lectures by [Prof. Darren Crowdy](https://www.ma.ic.ac.uk/~dgcrowdy/).
 
 ## 1. Part I Graphs
 
