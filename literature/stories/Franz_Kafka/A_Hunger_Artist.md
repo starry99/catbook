@@ -63,6 +63,6 @@ Finally the cage caught the attention of a supervisor, and he asked the attendan
 “All right, tidy this up now,” said the supervisor. And they buried the hunger artist along with the straw. But in his cage they put a young panther. Even for a person with the dullest mind it was clearly refreshing to see this wild animal throwing itself around in this cage, which had been dreary for such a long time. It lacked nothing. Without thinking about it for any length of time, the guards brought the animal food. It enjoyed the taste and never seemed to miss its freedom. This noble body, equipped with everything necessary, almost to the point of bursting, also appeared to carry freedom around with it. That seem to be located somewhere or other in its teeth, and its joy in living came with such strong passion from its throat that it was not easy for spectators to keep watching. But they controlled themselves, kept pressing around the cage, and had no desire to move on.
 
 <div  align="center"> 
-<img src="/assets/img/hungerartistlast.jpeg" style="zoom:10%">
+<img src="/assets/img/hungerartistlast.jpeg" style="zoom:7.5%">
 </div>
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">The Hunger Artist and the Panther </center>

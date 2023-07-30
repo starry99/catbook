@@ -19,4 +19,6 @@ order: 2
 
  - Individual Research Project
 
+ - UROP of my first year
+
 

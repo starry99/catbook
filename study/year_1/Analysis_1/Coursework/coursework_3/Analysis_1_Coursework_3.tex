@@ -1,0 +1,244 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[top=3cm, bottom=4cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, fancyhdr, color, comment, graphicx, environ, pifont}
+\usepackage{float}
+\usepackage{mathrsfs}
+\usepackage[math-style=ISO]{unicode-math}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage{sectsty}
+\usepackage{thmtools}
+\usepackage{shadethm}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage[linguistics]{forest}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\mdfsetup{skipabove=\topskip,skipbelow=\topskip}
+\mdfdefinestyle{theoremstyle}{%
+linecolor=black,linewidth=1pt,%
+frametitlerule=true,%
+frametitlebackgroundcolor=gray!20,
+innertopmargin=\topskip,
+}
+\mdtheorem[style=theoremstyle]{Problem}{Problem}
+\newenvironment{Solution}{\textbf{Solution.}}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}     
+\newcommand\course{Analysis I}                            
+\newcommand\hwnumber{MATH40002}                                  
+\pagestyle{fancy}
+\headheight 35pt
+\lhead{\today}
+\rhead{\includegraphics[width=2.5cm]{icl_logo.png}}
+\lfoot{}
+\pagenumbering{arabic}
+\cfoot{\small\thepage}
+\rfoot{}
+\headsep 1.2em
+\renewcommand{\baselinestretch}{1.25}
+\renewcommand{\labelenumi}{\alph{enumi}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\PP}{\mathbb P}
+\DeclareMathOperator{\Mod}{Mod} 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem{case}{Case}
+\newcommand{\assign}{:=}
+\newcommand{\infixiff}{\text{ iff }}
+\newcommand{\nobracket}{}
+\newcommand{\backassign}{=:}
+\newcommand{\tmmathbf}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmtextbf}[1]{\text{{\bfseries{#1}}}}
+\newcommand{\tmtextit}[1]{\text{{\itshape{#1}}}}
+
+\newenvironment{itemizedot}{\begin{itemize} \renewcommand{\labelitemi}{$\bullet$}\renewcommand{\labelitemii}{$\bullet$}\renewcommand{\labelitemiii}{$\bullet$}\renewcommand{\labelitemiv}{$\bullet$}}{\end{itemize}}
+\catcode`\<=\active \def<{
+\fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
+\catcode`\>=\active \def>{
+\fontencoding{T1}\selectfont\symbol{62}\fontencoding{\encodingdefault}}
+\catcode`\<=\active \def<{
+\fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{3cm}
+            
+        \Huge
+        \textbf{
+        Coursework III}
+            
+            
+        \vspace{1.5cm}
+        \Large
+            
+        \textbf{
+        CID number: Oh, no. This number series seeems to lost to some space!}% <-- author
+        
+            
+        \vfill
+        
+MATH40002: Analysis I
+        \vspace{1cm}
+            
+        \includegraphics[width=0.4\textwidth]{icl_logo.png}
+        \\
+        
+        \Large
+        
+        \today
+            
+    \end{center}
+\end{titlepage}
+
+
+\newpage
+\begin{Problem}
+    Let $A$ and $B$ be non-empty subsets of $\mathbb{R}$ such that $a \leq b$ for all $a \in A$ and $b \in B$. Show that $\sup A \leq \inf B$ and that the equality holds if and only if for all $\varepsilon>0$, there are $a \in A$ and $b \in B$ such that $b-a<\varepsilon$.
+\end{Problem}
+\begin{Solution}
+    \begin{proof}
+    For the first part, "$\sup A \leq \inf B$" , we will prove this by contradiction. Let's assume that 
+    \begin{equation}
+    \sup A > \inf B
+    \end{equation}
+    Therefore, we can always find a number $c>0$, such that $\sup A = \inf B + c$, which is equivalent to $\inf B = \sup A - c$. By the definiton of $supreme$ and the proposition we learnt in the autumn term of Analysis I, we have
+    \begin{equation}
+        \exists \;a_0 \in A, \:\text{such that} \; a_0>\inf B.
+    \end{equation}
+    Now, by the definition given of the subsets  $A$ and $B$, we have
+    $$
+    \forall a \in A,\; \forall b \in B \Longrightarrow  a \leq b.
+    $$
+    Therefore, for every $a\in A$, $a$ is a lower bound of $B$. Hence, by the definiton of $infimum$, we have
+    $$
+    \forall a \in A,\; a\leq \inf B.
+    $$
+    which is a contradiction of $(2)$. Therefore, by the axiom of Trichotomy, we have 
+    \begin{equation*}
+        \sup A \leq \inf B.
+    \end{equation*}
+    For the second part, "$\sup A = \inf B$ $\Longleftrightarrow$ $\forall \varepsilon > 0,\: \exists a\in A,\: \exists b \in B,\: \text{such that}\: b-a<\varepsilon$" , we first prove the "$\Longrightarrow $" direction.\\
+        "$\Longrightarrow $":\\
+             We suppose that $\sup A = \inf B$ and let $\varepsilon>0$ be arbitrary. Then, we can choose a $a\in A$, such that
+             \begin{equation}
+                \sup A -\frac{\varepsilon}{2} < a \leq \sup A
+             \end{equation}
+             and $b\in B$, such that
+             \begin{equation}
+                \inf B \leq b < \inf B + \frac{\varepsilon}{2}
+             \end{equation}
+             This is possible since $\sup A$ and $\inf B$ are the least upper bound and the greatest lower bound of $A$ and $B$, respectively. Then, we combine $(3)$ and $(4)$, by the property of inequalities,
+             \begin{equation}
+                b-a< \inf B + \frac{\varepsilon}{2} - (\sup A - \frac{\varepsilon}{2}) = \inf B - \sup A + \varepsilon = \varepsilon
+             \end{equation}
+             since $\sup A = \inf B$, and we have proved the "$\Longrightarrow $" direction.\\
+        "$\Longleftarrow $":\\
+        For this, we will prove this by contradiction. We suppose that $\forall \varepsilon > 0,\: \exists a\in A,\: \exists b \in B,\: \text{such that}\: b-a<\varepsilon$. We have already proved that $\sup A \leq \inf B$, so we can only assume that $\sup A < \inf B$. Then, we set
+        \begin{equation*}
+            \varepsilon = \inf B - \sup A > 0
+        \end{equation*}
+        By the assumption, we can find $a\in A$ and $b\in B$, such that $b-a<\inf B - \sup A$. But this implies that
+        \begin{equation}
+            b < \inf B + a - \sup A.
+        \end{equation}
+        By the definition of $supreme$ and $infimum$, we have
+        \begin{align}
+            a \leq \sup A &\Longleftrightarrow  a-\sup A \leq 0\\
+            b \geq \inf B &\Longleftrightarrow  b-\inf B \geq 0
+        \end{align}
+        We combine $(6)$ and $(7)$ by the property of inequlities, we have
+        \begin{align*}
+            b < \inf B + a - \sup A &\leq \inf B +0  = \inf B\\
+        &\Downarrow  \\
+            b&<\inf B
+        \end{align*}
+        But this contradicts to $(8)$. Therefore, $\inf B$ could not be greater than $\sup A$, and we have proved the "$\Longleftarrow $" direction.\\
+    \end{proof}
+    \begin{Problem}
+        Using lower and upper sums, show that the function $t \mapsto t^{2}$ is integrable on $[0, x]$ for all $x>0$ and that $\int_{0}^{x} t^{2} d t=\frac{x^{3}}{3}$.
+    \end{Problem}
+    \begin{Solution}
+        \begin{proof}
+            To show that the function $t \mapsto t^{2}$ is integrable on $[0,x]$ for all $x>0$, we need to show that for any $\varepsilon>0$, there exists a partition $P$ of $[0,x]$ such that the upper sum $U(f,P)$ and the lower sum $L(f,P)$ satisfy 
+            $$
+            U(t^2,P)-L(t^2,P)<\varepsilon
+            $$ 
+            This is equivalent to showing that 
+            $$
+            \lim_{n \to \infty} U(t^2,P_n) = \lim_{n \to \infty} L(t^2,P_n)
+            $$
+            where $(P_n)$ is a sequence of partitions, i.e $P_n = \{t_0,t_1,\ldots,t_n\}$. To find the upper and lower sums, we need to find the maximum and minimum values of $t^2$ on each subinterval in $[0,x]$. Since $\frac{d(t^2)}{dt}=2t>0 \:\text{for}\: \forall t \in [0,x]$, $t^2$ is an increasing function on $[0,x]$. Hence, the maximum value on each subinterval is attained at the right endpoint. So if we divide $[0,x]$ into $n$ equal subintervals of length $\Delta t = x/n$, then for each $i=1,2,\dots,n$, we have 
+            \begin{equation}
+            M_i=\sup \{t^2: t \in [t_{i-1},t_i]\} = (t_i)^2 = \left(\frac{ix}{n}\right)^2
+            \end{equation}
+            The minimum value on each subinterval is attained at the left endpoint. So for each $i=1,2,\dots,n$, we have 
+            \begin{equation}
+            m_i=\inf\{t^2: t \in [t_{i-1},t_i]\} t^2 = (t_{i-1})^2 = \left(\frac{(i-1)x}{n}\right)^2
+            \end{equation}
+            Now, using $(9)$ and $(10)$, we can compute the upper and lower sums as follows. For the upper sum, we have
+            \begin{equation}
+                U(t^2,P_n) = \sum_{i=1}^{n} M_i(t_i-t_{i-1})= \sum_{i=1}^{n} \left(\frac{ix}{n}\right)^2 \frac{x}{n} = \frac{x^3}{n^3} \sum_{i=1}^n i^2
+            \end{equation}
+            and for the lower sum, we have
+            \begin{equation}
+                L(t^2,P_n) = \sum_{i=1}^{n} m_i (t_i-t_{i-1})  = \sum_{i=1}^{n}\left(\frac{(i-1)x}{n}\right)^2 \frac{x}{n} = \frac{x^3}{n^3} \sum_{i=1}^n (i-1)^2
+            \end{equation}
+            Using some formulas for sums of squares, we can simplify $(11)$ and $(12)$ as:
+            \begin{align}
+                U(t^2,P_n) &= \frac{x^3}{n^3} \sum_{i=1}^n i^2  = \frac{x^3}{n^3} \left(\frac{n(n+1)(2n+1)}{6}\right)=\frac{x^3}{6}\left(2+\frac{3}{n}+\frac{1}{n^2}\right)\\
+                L(t^2,P_n) &=\frac{x^3}{n^3} \sum_{i=1}^n (i-1)^2 = \frac{x^3}{n^3} \left(\frac{n(n-1)(2n-1)}{6}\right)=\frac{x^3}{6}\left(2-\frac{3}{n}+\frac{1}{n^2}\right)
+            \end{align}
+            Now we can see that as $n$ increases, both upper and lower sums converge to the same limit:
+            \begin{equation*}
+                \lim_{n \to \infty} U(t^2,P_n) = \lim_{n \to \infty} L(t^2,P_n) = \frac{x^3}{3}
+            \end{equation*}
+            Therefore, the function $t \mapsto t^2$ is integrable on $[0,x]$ for all $x>0$. Since the value of the limits of the upper and lower sums are the same as $\frac{x^3}{3}$, we can conclude that the definite integral of $t^2$ on $[0,x]$ is
+            \begin{equation*}
+                \int_{0}^{x} t^{2} d t=\frac{x^{3}}{3}
+            \end{equation*}
+        \end{proof}
+    \end{Solution}
+\end{Solution}
+\end{document}
