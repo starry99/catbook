@@ -3,15 +3,17 @@ layout: simple
 title: Probability Part Memory Sheet
 ---
 
+#### Based on the notes and lectures by [Prof. Almut Veraart](https://sites.google.com/view/almutveraart/home).
 ## 1. Sample Spaces and Probability
 
-### Definition ( Sample Space )
+### Definition (Sample Space)
 
 The sample space $$\Omega$$ is defined as the set of all possible outcomes of an experiment. The elements of $$\Omega$$ are typically denoted by $$\omega$$ and called sample points.
 
-### Definition ( Naive Definition of Probability )
+### Definition (Naive Definition of Probability)
 
  Suppose that the sample space $$\Omega$$ is finite, i.e. card $$(\Omega)<$$ $$\infty$$ and consider an event $$A \subseteq \Omega$$. Then the naive probability of $$A$$ is defined as
+
 $$
 \mathrm{P}_{\text {Naive }}(A)=\frac{\operatorname{card}(A)}{\operatorname{card}(\Omega)}
 $$
@@ -44,7 +46,7 @@ for $$k \leq n$$, and $$\left(\begin{array}{l}n \\ k\end{array}\right)=0$$ for $
 
 ## 3. Axiomatic Definition of Probability
 
-### Definition ( Event Space )
+### Definition (Event Space)
 
 The sample space $$\Omega$$ is defined as the set of all possible outcomes of an experiment. In our previous discussion we assigned (naive) probabilities to events which were subsets of $$\Omega$$. We typically denote by $$\mathcal{F}$$ the event space, which contains the events we are allowed to consider. In fact, in probability theory, we always require that the event space $$\mathcal{F}$$ is a so-called $$\sigma$$-algebra (which is the same as a $$\sigma$$-field).
 
@@ -78,17 +80,17 @@ $$
 
 [Note that by "disjoint events" we mean that $$A_{i} \cap A_{j}=\emptyset$$ for all $$i \neq j$$. ]
 
-### Definition ( Probability space )
+### Definition (Probability space)
 
 We define a probability space as the triplet $$(\Omega, \mathcal{F}, \mathrm{P})$$, where $$\Omega$$ is a set (the sample space), $$\mathcal{F}$$ is a $$\sigma$$-algebra (the event space) consisting of subsets of $$\Omega$$ and $$\mathrm{P}$$ is a probability measure on $$(\Omega, \mathcal{F})$$.
 
 ### Theorem
 
-1. $$\mathrm{P}\left(A^{c}\right)=1-\mathrm{P}(A)$$
+- $$\mathrm{P}\left(A^{c}\right)=1-\mathrm{P}(A)$$
 
-2. If $$A \subseteq B$$, then $$\mathrm{P}(A) \leq \mathrm{P}(B)$$.
+- If $$A \subseteq B$$, then $$\mathrm{P}(A) \leq \mathrm{P}(B)$$.
 
-3. $$\mathrm{P}(A \cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A \cap B)$$. (Inclusion-exclusion principle)
+- $$\mathrm{P}(A \cup B)=\mathrm{P}(A)+\mathrm{P}(B)-\mathrm{P}(A \cap B)$$. (Inclusion-exclusion principle)
 
 ## 4. Conditional Probability
 
@@ -123,7 +125,7 @@ $$
 
 ### Definition (Partition)
 
-A partition of the sample space $$\Omega$$ is a collection $$\left\{B_{i}: i \in \mathcal{I}\right\}$$ (for a countable index set $$\mathcal{I}$$ ) of disjoint events (meaning that $$B_{i} \in \mathcal{F}$$ and $$B_{i} \cap B_{j}=\emptyset$$ for $$i \neq j$$ ) such that $$\Omega=\bigcup_{i \in \mathcal{I}} B_{i}$$.
+A partition of the sample space $$\Omega$$ is a collection $$\left\{B_{i}: i \in \mathcal{I}\right\}$$ (for a countable index set $$\mathcal{I}$$) of disjoint events (meaning that $$B_{i} \in \mathcal{F}$$ and $$B_{i} \cap B_{j}=\emptyset$$ for $$i \neq j$$) such that $$\Omega=\bigcup_{i \in \mathcal{I}} B_{i}$$.
 
 ### Theorem (Law of total probability)
 
@@ -133,7 +135,7 @@ $$
 \mathrm{P}(A)=\sum_{i \in \mathcal{I}} \mathrm{P}\left(A \cap B_{i}\right)=\sum_{i \in \mathcal{I}} \mathrm{P}\left(A \mid B_{i}\right) \mathrm{P}\left(B_{i}\right)
 $$
 
-### Theorem( Bayes' rule with extra conditioning)
+### Theorem(Bayes' rule with extra conditioning)
 
  For events $$A, B, E$$ with $$\mathrm{P}(A \cap E)>0, \mathrm{P}(B \cap E)>$$ 0 , we have
 
@@ -283,7 +285,9 @@ which is typically abbreviated to $$F_{X}(x)=\mathrm{P}(X \leq x)$$.
 
 For $$a<b$$, we have $$\mathrm{P}(a<X \leq b)=F_{X}(b)-F_{X}(a)$$.
 
-### Definition (Continuous random variable and probability density function)A random variable $$X$$ is called continuous if its c.d.f. can be written as
+### Definition (Continuous random variable and probability density function) 
+
+A random variable $$X$$ is called continuous if its c.d.f. can be written as
 
 $$
 F_{X}(x)=\mathrm{P}(X \leq x)=\int_{-\infty}^{x} f_{X}(u) d u, \quad \text { for all } x \in \mathbb{R}
@@ -317,9 +321,9 @@ $$
 
 Then
 
-- $$X_{1}$$ determines whether $$Y$$ is in the first half $$\left[0, \frac{1}{2}\right)$$ (if $$X_{1}=0$$ ) or in the second half $$\left[\frac{1}{2}, 1\right]$$ (if $$\left.X_{1}=1\right)$$.
+- $$X_{1}$$ determines whether $$Y$$ is in the first half $$\left[0, \frac{1}{2}\right)$$ (if $$X_{1}=0$$) or in the second half $$\left[\frac{1}{2}, 1\right]$$ (if $$\left.X_{1}=1\right)$$.
 
-- $$X_{2}$$ determines whether $$Y$$ is in the first half (if $$X_{2}=0$$ ) (either in $$\left[0, \frac{1}{4}\right.$$ ) or in $$\left[\frac{1}{2}, \frac{3}{4}\right)$$ ) or in the second half (if $$X_{2}=1$$ ) (either in $$\left[\frac{1}{4}, \frac{1}{2}\right.$$ ) or in $$\left[\frac{3}{4}, 1\right]$$ ) of the previous half.
+- $$X_{2}$$ determines whether $$Y$$ is in the first half (if $$X_{2}=0$$) (either in $$\left[0, \frac{1}{4}\right.$$) or in $$\left[\frac{1}{2}, \frac{3}{4}\right)$$) or in the second half (if $$X_{2}=1$$) (either in $$\left[\frac{1}{4}, \frac{1}{2}\right.$$) or in $$\left[\frac{3}{4}, 1\right]$$) of the previous half.
 
 - etc.
 
@@ -400,7 +404,11 @@ $$
 \mathrm{E}(g(X))=\int_{-\infty}^{\infty} g(x) f_{X}(x) d x
 $$
 
-provided that $$\int_{-\infty}^{\infty}|g(x)| f_{X}(x) d x<\infty$$
+provided that 
+
+$$
+\int_{-\infty}^{\infty}|g(x)| f_{X}(x) d x<\infty
+$$
 
 Theorem 10.2.6. Consider a discrete/continuous random variable $$X$$ with finite expectation.
 
@@ -452,7 +460,7 @@ J(u, v)=\operatorname{det}\left(\frac{\partial(x, y)}{\partial(u, v)}\right)=\op
 \end{array}\right)=\frac{\partial x}{\partial u} \frac{\partial y}{\partial v}-\frac{\partial x}{\partial v} \frac{\partial y}{\partial u}
 $$
 
-The change of variable formula states that (under mild conditions $${ }^{1}$$ )
+The change of variable formula states that (under mild conditions $${ }^{1}$$)
 
 $$
 \iint_{D} f(x, y) d x d y=\iint_{S} f(x(u, v), y(u, v))|J(u, v)| d u d v
@@ -728,7 +736,7 @@ $$
 \mathrm{E}\left(X_{1} \cdots X_{n}\right)=\mathrm{E}\left(X_{1}\right) \cdots \mathrm{E}\left(X_{n}\right)
 $$
 
-### Theorem(Variance of a sum of random variables)
+### Theorem (Variance of a sum of random variables)
 
 Let $$X, Y$$ denote two jointly discrete/continuous random variables with finite variances. Then
 
@@ -791,7 +799,13 @@ $$
 M_{X}(t)=\mathrm{E}\left(e^{t X}\right)
 $$
 
-provided the expectation exists in some neighbourhood of zero, i.e. the expectation exists for all $$|t|<\epsilon$$ for some $$\epsilon>0$$.
+provided the expectation exists in some neighbourhood of zero, i.e. the expectation exists for
+
+$$ 
+\forall |t|<\epsilon 
+$$ 
+
+but for some $$\epsilon>0$$.
 
 We compute the m.g.f. as follows:
 

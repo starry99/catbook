@@ -140,14 +140,14 @@ $$
 
 ### Mean Value Theorem and Intermediate Value Theorem for Integrals
 
-- ( Mean Value Theorem for Integrals )
+- (Mean Value Theorem for Integrals)
  Let $$f$$ be continuous on $$[a, b]$$. Then there exists a point $$x_{0} \in(a, b)$$ such that
 
 $$
 f\left(x_{0}\right)=\frac{1}{b-a} \int_{a}^{b} f(x) \mathrm{d} x .
 $$
 
-- ( Integral mean value theorem )
+- (Integral mean value theorem)
   Let $$f$$ and $$g$$ be continuous on $$[a, b]$$ with $$g(x) \geq 0$$ for $$x \in[a, b]$$. Then there exists a $$c$$ between $$a$$ and $$b$$ with
 
 $$
@@ -410,7 +410,7 @@ with properties:
 
 ### Convolution
 
-#### Definition ( Convolution )
+#### Definition (Convolution)
 
 The convolution of two functions $$f(x)$$ and $$g(x)$$ is defined as
 
@@ -418,7 +418,7 @@ $$
 f(x) *g(x)=\int_{-\infty}^{\infty} f(x-y) g(y) d y
 $$
 
-#### Theorem ( Convolution Theorem )
+#### Theorem (Convolution Theorem)
 
 $$
 \text { If } f(x) * g(x)=\int_{-\infty}^{\infty} f(x-u) g(u) d u, \text { then } \mathcal{F}\{f * g\}=\hat{f}(\omega) \hat{g}(\omega)
@@ -488,7 +488,7 @@ $$u = \frac{dy}{dx}$$, transform the second order ODE into a first order ODE.
 
 ### Linear ODEs
 
-#### Definition ( Wronskian )
+#### Definition (Wronskian)
 
 The Wronskian $$\mathbf{W}_{k \times k}\left[\left\{y_{i}(x)\right\}_{i=1}^{k}\right]$$ is the determinant of the Wronskian matrix $$W$$, which is
 
@@ -505,7 +505,7 @@ If $$\mathbf{W}_{k \times k}\left[\left\{y_{i}(x)\right\}_{i=1}^{k}\right] \neq 
 
 #### Eurler - Cauchy Equation
 
-##### Definition ( Euler - Cauchy Equation )
+##### Definition (Euler - Cauchy Equation)
 
 $$
 \mathcal{L}[y]=\beta_k x^k \frac{d^k y}{d x^k}+\beta_{k-1} x^{k-1} \frac{d^{k-1} y}{d x^{k-1}}+\cdots+\beta_1 x \frac{d y}{d x}+\beta_0 y=f(x)

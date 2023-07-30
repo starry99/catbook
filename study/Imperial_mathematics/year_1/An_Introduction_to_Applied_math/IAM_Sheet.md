@@ -86,21 +86,21 @@ A harmonic potential is a potential at node $$i$$ that is the avarage of the pot
 
 ### 1.3 Random walks
 
-#### Definition ( $$p_{i}$$ Hitting Probability )
+#### Definition ($$p_{i}$$ Hitting Probability)
 
 $$p_{i}$$ is the probability that a random walk starting at node $$i$$ to reach the + node where $$p_{+}=1$$ before returning to node $$-$$ where $$p_{-}=0$$.
 
 $$p_{i}$$ can be regraded as the potential of node $$i$$ with the node + and - as the boundary nodes.
 
-#### Definition ( Escape probability )
+#### Definition (Escape probability)
 
-If the random walk starts at node $$i, p_{e s c}$$ is the probability that the random walk reaches the boundary node $$+$$ before returning to node $$i$$. ( The nodes that he starts and the nodes that he don't want to return before reaching the target nodes )
+If the random walk starts at node $$i, p_{e s c}$$ is the probability that the random walk reaches the boundary node $$+$$ before returning to node $$i$$. (The nodes that he starts and the nodes that he don't want to return before reaching the target nodes)
 
 $$
 p_{e s c}=\frac{C_{e f f}}{n}
 $$
 
-where $$C_{e f f}$$ is the effective conductance of node $$+$$ ( where he starts ) to the boundary node $$-$$ ( where he wants to reach ).
+where $$C_{e f f}$$ is the effective conductance of node $$+$$ (where he starts) to the boundary node $$-$$ (where he wants to reach).
 
 $$n$$ is the total number of edges connected with the node he starts .
 

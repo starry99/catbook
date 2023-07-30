@@ -143,7 +143,7 @@ $$
 
 Suppose $$\emptyset \neq S \subset \mathbb{R}$$ is bounded above. We say $$x \in \mathbb{R}$$ is a least upper bound of $$S$$ or supremum of $$S$$ if and only if
 
-- $$x$$ is an upper bound for $$S$$ (i.e. $$x \geq s \forall s \in S$$ ), and
+- $$x$$ is an upper bound for $$S$$ (i.e. $$x \geq s \forall s \in S$$), and
 
 - $$x \leq y$$ for any $$y$$ which is an upper bound for $$S(y \geq s \forall s \in S \Longrightarrow x \leq y)$$.
 
@@ -161,15 +161,15 @@ Then $$y=\sup S \Longleftrightarrow \forall \epsilon>0 \exists s \in S: s>y-\eps
 
 ### 2.5 Dedekind cuts
 
-#### Definition ( Dedekind cut )
+#### Definition (Dedekind cut)
 
 We say a nonempty subset $$S \subset \mathbb{Q}$$ is a Dedekind cut if it satisfies (i) and (ii) below.
 
-(i) If $$s \in S$$ and $$s>t \in \mathbb{Q}$$ then $$t \in S$$ ( $$S$$ is a semi-infinite interval to the left).
+(i) If $$s \in S$$ and $$s>t \in \mathbb{Q}$$ then $$t \in S$$ ($$S$$ is a semi-infinite interval to the left).
 
 (ii) $$S$$ is bounded above but has no maximum.
 
-#### Definition ( $$\mathbb{R}$$ as Dedekind cuts )
+#### Definition ($$\mathbb{R}$$ as Dedekind cuts)
 
 $$
 \mathbb{R}:=\{\text { Dedekind cuts } S \subset \mathbb{Q}\}
@@ -177,7 +177,7 @@ $$
 
 ### 2.6 Triangle inequalities
 
-##### Theorem 2.44 ( Triangle inequalities )
+##### Theorem 2.44 (Triangle inequalities)
 
 For all $$a, b \in \mathbb{R}$$ we have
 
@@ -226,7 +226,7 @@ $$
 
 ## 3 Sequences
 
-#### Definition ( Sequence )
+#### Definition (Sequence)
 
 Definition. A sequence is a function $$a: \mathbb{N}_{>0} \rightarrow \mathbb{R}$$
 
@@ -282,7 +282,7 @@ $$
 
 #### Definition （ Divergence ）
 
-We say that $$a_{n}$$ diverges if and only if $$a_{n}$$ does not converge( to any $$a \in \mathbb{R}$$ ),i.e.
+We say that $$a_{n}$$ diverges if and only if $$a_{n}$$ does not converge(to any $$a \in \mathbb{R}$$),i.e.
 
 $$
 \forall a \exists \epsilon>0 \text { such that } \forall N \in \mathbb{N}_{>0}, \exists n \geq N \text { such that }\left|a_{n}-a\right| \geq \epsilon
@@ -296,15 +296,15 @@ $$
 \forall \epsilon>0, \exists N \in \mathbb{N}_{>0} \text{ such that }  n \geq N \Longrightarrow |a_{n}-a|<\epsilon 
 $$
 
-##### Theorem 3.14 ( Uniqueness of limits )
+##### Theorem 3.14 (Uniqueness of limits)
 
 Limits are unique. If $$a_{n} \rightarrow a$$ and $$a_{n} \rightarrow b$$, then $$a=b$$
 
-#### Propositon 3.16 ( Convergent sequence must be bounded )
+#### Propositon 3.16 (Convergent sequence must be bounded)
 
 If $$\left(a_{n}\right)$$ is convergent, then it is bounded.
 
-#### Theorem 3.19 ( Algebra of limits )
+#### Theorem 3.19 (Algebra of limits)
 
 If $$a_{n} \rightarrow a$$ and $$b_{n} \rightarrow b$$ then:
 
@@ -314,7 +314,7 @@ If $$a_{n} \rightarrow a$$ and $$b_{n} \rightarrow b$$ then:
 
  - $$\frac{a_{n}}{b_n} \rightarrow \frac{a}{b}$$ if $$b \neq 0$$
 
-#### Theorem 3.21 ( Bounded and monotonic sequences must be convergent)
+#### Theorem 3.21 (Bounded and monotonic sequences must be convergent)
 
 If $$\left(a_{n}\right)$$ is bounded above and monotonically increasing then $$a_{n}$$ converges to $$a:=\sup \left\{a_{i}: i \in \mathbb{N}_{>0}\right\}$$. We write $$a_{n} \uparrow a$$.
 
@@ -334,7 +334,7 @@ then $$a_{n} \rightarrow 0$$
 
 ### 3.2 Cauchy Sequences
 
-#### Definition ( Cauchy sequence )
+#### Definition (Cauchy sequence)
 
 $$\left(a_{n}\right)_{n \geq 1}$$ is called a Cauchy sequence if and only if
 
@@ -346,11 +346,11 @@ $$
 
 If $$a_{n} \rightarrow$$ a then $$\left(a_{n}\right)$$ is Cauchy.
 
-#### Lemma 3.26 ( Cauchy sequences are bounded )
+#### Lemma 3.26 (Cauchy sequences are bounded)
 
 $$\left(a_{n}\right)$$ is Cauchy $$\Longrightarrow\left(a_{n}\right)$$ is bounded.
 
-#### Theorem 3.27 ( Cauchy sequences converge )
+#### Theorem 3.27 (Cauchy sequences converge)
 
 If $$\left(a_{n}\right)$$ is a Cauchy sequence of real numbers then $$a_{n}$$ converges.
 It is not ture in $$\mathbb{Q}$$: there i s a Cauchy sequence $$(a_n)$$ with $$a_n \ in \mathbb{Q}$$ with no limit in $$\mathbb{Q}$$
@@ -362,13 +362,13 @@ $$\left(a_{n}\right)$$ Cauchy $$\Longleftrightarrow\left(a_{n}\right)$$ converge
 
 ### 3.3 Subsequences
 
-#### Definition ( Subsequence )
+#### Definition (Subsequence)
 
 A subsequence of $$\left(a_{n}\right)$$ is a new sequence $$b_{i}=a_{n(i)} \forall i \in \mathbb{N}_{>0}$$, where  $$n(1)<n(2)<\cdots<n(i)<\ldots \forall i$$.
 
 Formally $$n(\cdot)$$ is a function $$\mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$$ sending $$i \mapsto n(i)$$ which is strictly monotonically increasing.
 
-#### Theorem 3.34 ( Bolzano-Weierstrass )
+#### Theorem 3.34 (Bolzano-Weierstrass)
 
 If $$\left(a_{n}\right)$$ is a bounded sequence of real numbers then it has a convergent subsequence.
 
@@ -398,7 +398,7 @@ Suppose $$a_{n}>0 \forall n$$.$$a_{n} \rightarrow 0 \Longleftrightarrow \frac{1}
 
 ## 4 Series
 
-#### Definition ( Series )
+#### Definition (Series)
 
 An (infinite) series is an expression
 
@@ -408,7 +408,7 @@ $$
 
 where $$\left(a_{i}\right)_{i \geq 1}$$ is a sequence.
 
-#### Definition ( Partial sum )
+#### Definition (Partial sum)
 
 Given a sequence $$a_{n}$$ we get a series (formal expression!) $$\sum_{n=1}^{\infty} a_{n}$$ and another sequence of partial sums
 
@@ -418,7 +418,7 @@ $$
 
 ### 4.1 Convergence of Series
 
-#### Definition ( Convergence of series )
+#### Definition (Convergence of series)
 
 We say that the series $$\sum a_{n}$$ "converges to $$A \in \mathbb{R}$$ " if and only if the sequence of partial sums converges to $$A$$ :
 
@@ -426,7 +426,7 @@ $$
 \sum_{n=1}^{\infty} a_{n}=A \Longleftrightarrow s_{n} \longrightarrow A .
 $$
 
-#### Theorem 4.2 ( Convergence of series implies convergence of sequence )
+#### Theorem 4.2 (Convergence of series implies convergence of sequence)
 
 $$
 \sum_{n=0}^{\infty} a_{n} \text { is convergent } \Longrightarrow a_{n} \rightarrow 0
@@ -441,7 +441,7 @@ Suppose $$a_{n} \geq 0 \forall n\left(\Longleftrightarrow s_{n}=\sum_{i=1}^{n} a
 
 2. Similarly $$\sum_{n=1}^{\infty} a_{n}$$ diverges to $$+\infty$$ (i.e. $$\forall M>0 \exists N \in \mathbb{N}$$ such that $$s_{n}>$$ $$M \forall n \geq N)$$ if and only if $$\left(s_{n}\right)$$ is unbounded.
 
-#### Theorem 4.7 ( Comparison test )
+#### Theorem 4.7 (Comparison test)
 
 If $$0 \leq a_{n} \leq b_{n}$$ and $$\sum b_{n}$$ converges, then $$\sum a_{n}$$ converges.
 
@@ -449,7 +449,7 @@ Moreover, $$0 \leq \sum_{n=1}^{\infty} a_{n} \leq \sum_{n=1}^{\infty} b_{n}$$.
 
  (Converse of Comparison Test.). If $$0 \leq a_{n} \leq b_{n}$$ then $$\sum a_{n}$$ diverges to $$+\infty \Longrightarrow \sum b_{n}$$ diverges to $$+\infty$$
 
-#### Theorem 4.11 ( Algebra of limits for series )
+#### Theorem 4.11 (Algebra of limits for series)
 
  If $$\sum a_{n}, \sum b_{n}$$ are convergent then so is $$\sum\left(\lambda a_{n}+\mu b_{n}\right)$$, to
 
@@ -459,7 +459,7 @@ $$
 
 ### 4.2 Absolute Convergence
 
-#### Definition ( Absolute convergence )
+#### Definition (Absolute convergence)
 
 For $$ a_{n} \in \mathbb{R} $$ or $$ \mathbb{C} $$, we say the series $$ \sum_{n=1}^{\infty} a_{n} $$ is absolutely convergent if and only if the series 
 
@@ -479,19 +479,19 @@ $$
 
 is convergent but it is not absolutely convergent.
 
-#### Theorem 4.14 ( Absolute convergence implies convergence )
+#### Theorem 4.14 (Absolute convergence implies convergence)
 
 Let $$\{a_{n}_{n \geq 0}\}$$ be a real or complex sequence. If $$\sum a_n $$ is absolutely convergent, then it is convergent.
 
 ### 4.3 Test for convergence
 
-#### Theorem 4.16 ( Comparison test II: Sandwich Test )
+#### Theorem 4.16 (Comparison test II: Sandwich Test)
 
 Suppose $$c_{n} \leq a_{n} \leq b_{n} \forall n$$ and $$\sum c_{n}, \quad \sum b_{n}$$ are both convergent.
 
 Then $$\sum a_{n}$$ is convergent.
 
-#### Theorem 4.17 ( Comparison test III: Limit test )
+#### Theorem 4.17 (Comparison test III: Limit test)
 
 If $$\frac{a_{n}}{b_{n}} \rightarrow L \in \mathbb{R}$$ and $$\sum b_{n}$$ is absolutely convergent, then $$\sum a_{n}$$ is absolutely convergent.
 
@@ -499,7 +499,7 @@ If $$\frac{a_{n}}{b_{n}} \rightarrow L \in \mathbb{R}$$ and $$\sum b_{n}$$ is ab
 
 Fix $$N \in \mathbb{N}_{>0}$$. Then $$\sum_{n \geq N} c_{n}$$ is convergent if and only if $$\sum_{n \geq 1} c_{n}$$ is convergent.
 
-#### Theorem 4.20 ( Alternating series test )
+#### Theorem 4.20 (Alternating series test)
 
 Suppose $$ a_n $$ is alternating with
 
@@ -514,7 +514,7 @@ motonically. Then $$ \sum a_{n} $$ converges.
 The alternating sequence $$a_{n}=\left\{\begin{array}{cc}\frac{1}{n^{2}}+\frac{1}{n} & n \text { even, } \\ -\frac{1}{n^{2}} & n \text { odd, }\end{array}\right.$$ has sum $$\sum a_{n}$$ which is divergent to $$+\infty$$.
 It is alternating but $$\left|a_{n}\right|$$ is not monotonically decreasing, so the alternating series test does not apply.
 
-#### Theorem 4.23 ( Ratio test )
+#### Theorem 4.23 (Ratio test)
 
 If $$ a_n $$ is a sequence such that 
 
@@ -524,7 +524,7 @@ $$
 
 then $$ \sum a_{n} $$ is absolutely convergent.
 
-#### Theorem 4.24 ( Root test )
+#### Theorem 4.24 (Root test)
 
 If 
 
@@ -593,7 +593,7 @@ $$\sum a_{n}$$ is absolutely convergent $$\Longleftrightarrow(1)+(2) \Longrighta
 
 ### 4.5 Power Series
 
-#### Theorem 4.35 ( Radius of convergence )
+#### Theorem 4.35 (Radius of convergence)
 
 Let $$[0, \infty]$$ denote the set $$ [0, \infty) \cup\{+\infty\} $$,
 Fix a real or complex series $$\left(a_{n}\right)$$ and consider the series $$\sum a_{n} z^{n}$$ for $$z \in \mathbb{C}$$.
@@ -627,11 +627,11 @@ $$
 
 ### 4.5.1 Products of Power Series
 
-#### Definition  ( Cauchy product )
+#### Definition  (Cauchy product)
 
 Given series $$\sum a_{n}, \sum b_{n}$$ their Cauchy Product is the series $$\sum c_{n}$$ where $$c_{n}:=\sum_{i=0}^{n} a_{i} b_{n-i}$$.
 
-#### Theorem 4.39 ( Cauchy product of power series )
+#### Theorem 4.39 (Cauchy product of power series)
 
 If $$\sum a_{n}, \sum b_{n}$$ are absolutely convergent, then their Cauchy product $$\sum c_{n}$$ is  absolutely convergent to $$\left(\sum a_{n}\right) \cdot\left(\sum b_{n}\right)$$.
 
@@ -647,7 +647,7 @@ Fix $$\alpha, \beta \in \mathbb{R}$$. Prove that if $$[x<\alpha \Longrightarrow 
 
 ### 5.1 Limits
 
-#### Definition ( Limit of a function )
+#### Definition (Limit of a function)
 
 Given $$a<x_0<b$$ and $$f:(a,b)-\{x_0\} \rightarrow \mathbb{R}$$, we define
 
@@ -660,11 +660,11 @@ $$
 
 If $$\lim _{x \to x_0} f(x) = y > 0$$, then there exists $$\delta > 0$$, such that $$x \in (x_0-\delta, x_0+\delta)-\{x_0\}$$ such that $$f(x) > 0$$.
 
-#### Proposition ( Limits mean bounded )
+#### Proposition (Limits mean bounded)
 
 If $$\lim_{x \to x_0} f(x)$$ exists then there is an open interval $$I$$ containing $$x_0$$ such that $$f$$ is bounded in $$I-\{x_0\}$$.
 
-#### Proposition ( Uniqueness of limits )
+#### Proposition (Uniqueness of limits)
 
 If $$\lim _{x \to x_0} f(x) = a$$ and $$\lim_{x \to x_0} f(x) = b$$, then $$a = b$$.
 
@@ -683,12 +683,12 @@ $$
 \lim _{x \to x_0} f(x)=\lim_{x \to x_0} g(x)=\lim _{x \to x_0} h(x)
 $$
 
-#### Exercise ( Limits of functions and sequences )
+#### Exercise (Limits of functions and sequences)
 
 - $$\lim_{n \ to infty} x_n = x$$ if and only if for every open interval $$I \subset \mathbb{R}$$ containing $$x$$, the sequence $$x_n$$ is eventually contained in $$I$$.
 - $$\lim {x \to x_0} f(x) = y$$ if and only if for every sequence $$x_n \in \mathbb{R}-\{x_0\}$$ such that $$x_n \to x_0$$ we also have $$f(x_n) \to y$$.
 
-#### Proposition ( Algebra of function limits )
+#### Proposition (Algebra of function limits)
 
 - $$\lim_{x \to x_0} (f(x) + g(x)) = \lim_{x \to x_0} f(x) + \lim_{x \to x_0} g(x)$$
 - $$\lim_{x \to x_0} (f(x) \cdot g(x)) = \lim_{x \to x_0} f(x) \cdot \lim_{x \to x_0} g(x)$$
@@ -699,14 +699,14 @@ $$
 
 ### 5.2 Continuity
 
-#### Definition ( Continuous at a point )
+#### Definition (Continuous at a point)
 
 We say that $$f: I \rightarrow \mathbb{R} $$ is continuous at $$x_0$$ if continous at $$a \in I$$ if
 $$
 \lim _{x \to a} f(x)=f(a)
 $$
 
-#### Theorem ( Algebra of continuous functions )
+#### Theorem (Algebra of continuous functions)
 
 If $$f, g: I \to \mathbb{R}$$ are continuous at $$a \in I$$, then
 
@@ -714,25 +714,25 @@ If $$f, g: I \to \mathbb{R}$$ are continuous at $$a \in I$$, then
 - $$f \cdot g$$ is continuous at $$a$$.
 - If $$g(a) \neq 0$$, then $$\frac{f}{g}$$ is continuous at $$a$$.
   
-#### Theorem ( Composition of continuous functions )
+#### Theorem (Composition of continuous functions)
 
 If $$g$$ is continous at $$a$$ and $$f$$ is continous at $$g(a)$$, then $$f \circ g$$ is continuous at $$a$$.
 
-#### Theorem ( Intermediate value theorem )
+#### Theorem (Intermediate value theorem)
 
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous at every point of the closed interval $$[a,b]$$, then $$f$$ attains all the value between $$f(a)$$ and $$f(b)$$.
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous at every point of the closed interval $$[a,b]$$, then for every $$y$$ between $$f(a)$$ and $$f(b)$$, there exists $$x \in [a,b]$$ such that $$f(x) = y$$.
 
-#### Theorem ( Extreme value theorem )
+#### Theorem (Extreme value theorem)
 
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous at every point of the closed interval $$[a,b]$$, then $$f$$ attains a maximum and a minimum on $$[a,b]$$.
 
-#### Exercise ( Continuity keeps sign )
+#### Exercise (Continuity keeps sign)
 
 If $$f$$ is continous at $$a$$ and $$f(a) > 0$$, then $$f(x)>0$$ for all $$x$$ close to $$a$$.
 Let $$f: I \to \mathbb{R}$$ be continuous at $$a \in I$$. If $$f(a) > 0$$, then there exists $$\delta > 0$$ such that $$f(x) > 0$$ for all $$x \in (a-\delta, a+\delta) \cap I$$.
 
-#### Definition ( Right and left limits )
+#### Definition (Right and left limits)
 
 We say that $$ f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the right if
 
@@ -748,7 +748,7 @@ $$
 \lim _{x \to a^{-}} f(x)=L
 $$
 
-#### Definition ( Continuity on closed intervals )
+#### Definition (Continuity on closed intervals)
 
 We say that $$f: [a, b] \to \mathbb{R}$$ is continuous on $$[a,b]$$ if
 
@@ -756,7 +756,7 @@ We say that $$f: [a, b] \to \mathbb{R}$$ is continuous on $$[a,b]$$ if
 - $$\lim_{x \to a^{+}} f(x) = f(a)$$
 - $$\lim_{x \to b^{-}} f(x) = f(b)$$
 
-#### Theorem ( Bolzano's theorem )
+#### Theorem (Bolzano's theorem)
 
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous on $$[a,b]$$ and assume
 $$
@@ -764,17 +764,17 @@ f(a)<0<f(b)
 $$
 Then there exists $$x \in (a,b)$$ such that $$f(x) = 0$$.
 
-#### Corollary ( Intermediate value theorem )
+#### Corollary (Intermediate value theorem)
 
 Let $$f: [a, b] \to \mathbb{R}$$ be continuous on $$[a,b]$$ and assume $$f(a) < f(b)$$. Then, $$\forall y \in (g(a),g(b))$$, there is $$x \in (a,b)$$ such that $$g(x) = y$$.
 
 ### 5.3 Open and closed sets
 
-#### Definition ( Open sets )
+#### Definition (Open sets)
 
 A set $$A \subset \mathbb{R} $$ is called open if for every $$a \in A$$ there exists $$\epsilon > 0$$ such that $$(a - \epsilon, a + \epsilon) \subset A$$.
 
-#### Definition ( Closed sets )
+#### Definition (Closed sets)
 
 A set $$A \subset \mathbb{R}$$ is called closed if its complement $$\mathbb{R} - A$$ is open.
 
@@ -789,7 +789,7 @@ $$
 \forall \{x_n\} \subset B \;\text{and}\; \lim_{n \to \infty} x_n = exists \implies \lim_{n \to \infty}x_n \in B
 $$
 
-#### Definition ( Compact sets )
+#### Definition (Compact sets)
 
 A set $$A \subset \mathbb{R}$$ is compact if and only if every sequence $$\{x_n\} \subset K$$ contains a convergent subsequence $$\{x_{n_i}\}$$ such that $$\lim_{i \to \infty} x_{n_k} \in K$$.
 
@@ -797,11 +797,11 @@ A set $$A \subset \mathbb{R}$$ is compact if and only if every sequence $$\{x_n\
 
 A set $$K \subset \mathbb{R}$$ is compact if and only if it is closed and bounded.
 
-### 5.4 The Extreme Value Theorem ( Countiuity in cloed intervals means bounded )
+### 5.4 The Extreme Value Theorem (Countiuity in cloed intervals means bounded)
 
 Let $$f: [a, b] \to mathbb{R}$$ be continuous on $$[a,b]$$. Then $$f$$ is bounded above in $$[a,b]$$.
 
-#### Corollary ( Extreme value theorem )
+#### Corollary (Extreme value theorem)
 
 Let $$f:[a,b] \to \mathbb{R}$$ be continous on $$[a,b]$$. Then there exists $$x \in [a,b]$$ such that
 $$
@@ -814,7 +814,7 @@ If $$f: X \subset \mathbb{R} \to \mathbb{R}$$ is continous and $$X$$ is compact,
 
 ### 5.4 Uniform continuity
 
-#### Definition ( Uniform continuity )
+#### Definition (Uniform continuity)
 
 We say that $$f: X \subset \mathbb{R} \to \mathbb{R}$$ is uniformly continuous on $$X$$ if
 $$
@@ -834,7 +834,7 @@ Let $$f: X \subset \mathbb{R} \to \mathbb{R}$$ be continuous on $$X$$, then
 
 ### 6.1 The derivative
 
-#### Definition ( Derivative and differentiability )
+#### Definition (Derivative and differentiability)
 
 We say that $$f$$ is differertiable at $$x_0$$ if $$\lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}$$ exists. In this case we use the notation:
 $$
@@ -844,13 +844,13 @@ and we call $$f'(x_0)$$ the derivative of $$f$$ at $$x_0$$.
 
 #### Remark Differertiability is a stronger condition than continuity
 
-#### Theorem: ( Differentiability implies continuity )
+#### Theorem: (Differentiability implies continuity)
 
 If $$f$$ is differentiable at $$a \in \mathbb{R} $$, then $$f$$ is continuous at $$a$$.
 
 ### 6.2 Higher order derivatives
 
-#### Definition ( Higher order derivatives )
+#### Definition (Higher order derivatives)
 
 If $$f$$ is differentiable at $$x_0$$, then we can consider the derivative of $$f'$$ at $$x_0$$:
 $$
@@ -864,14 +864,14 @@ $$
 
 ### 6.3 Properties of the derivative
 
-#### Proposition ( Linearity of the derivative )
+#### Proposition (Linearity of the derivative)
 
 If $$f$$ and $$g$$ are differentiable at $$x \in \mathbb{R}$$, then $$f+g$$ is differentiable at $$x$$ and
 $$
 (f+g)'(x) = f'(x) + g'(x)
 $$
 
-#### Proposition ( Leibniz rule )
+#### Proposition (Leibniz rule)
 
 If $$f$$ and $$g$$ are differentiable at $$x \in \mathbb{R}$$, then $$fg$$ is differentiable at $$x$$ and
 $$
@@ -914,7 +914,7 @@ Then, $$\frac{d}{dx}: C^1(I) \to C^0(I)$$ is a linear map. In fact, both $$C^0(I
 - $$(f+g)(x) = f + g$$
 - $$(cf)(x) = cf$$
 
-#### Theorem ( Chain rule )
+#### Theorem (Chain rule)
 
 If $$g$$ is differentiable at $$a \in \mathbb{R}$$ and $$f$$ is differentiable at $$g(a)$$, then $$f \circ g$$ is differentiable at $$a$$ and
 $$
@@ -923,13 +923,13 @@ $$
 
 ### 6.4 The Derivative of Elementary Functions
 
-#### Definition ( Logarithm )
+#### Definition (Logarithm)
 
 We define the logarithm function $$x \longmapsto \log(x)$$ as the inverse of the exponential function $$x \longmapsto e^x$$.
 
 ### 6.5 The Significance of the Derivative
 
-#### Proposition ( Monotonicity )
+#### Proposition (Monotonicity)
 
 If
 
@@ -937,24 +937,24 @@ If
 - $$f'(t)>0$$ for all $$t \in (a,b)$$,
 then $$f$$ is monotone increasing on $$(a,b)$$.
 
-#### Definition ( Local extremum )
+#### Definition (Local extremum)
 
 We say that $$f$$ attains a local maximum at $$c$$ if $$f(c) \leq f(x)$$, for all $$x \in (c-\delta, c+\delta)$$, for some $$\delta > 0$$. Similarly, we say that $$f$$ attains a local minimum at $$c$$ if $$f(c) \geq f(x)$$, for all $$x \in (c-\delta, c+\delta)$$, for some $$\delta > 0$$.
 
-#### Theorem ( Fermat's theorem )
+#### Theorem (Fermat's theorem)
 
 If $$f: [a,b] \to \mathbb{R}$$ attains an interior local maximum (or minimum) at c, i.e. $$a<t<b$$, and $$f$$ is differentiable at $$c$$, then $$f'(c) = 0$$.
 
 Remark that the converse is not true.
 
-#### Definition ( Critical point )
+#### Definition (Critical point)
 
 $$c$$ is a critical point of $$f$$ if $$f'(c) = 0$$
 $$Maximum \; ,\; minimum \;,\; saddle \Rightarrow \; critical \; point$$
 
 ### 6.6 Existence of Critical Points
 
-#### Theorem ( Rolle's theorem )
+#### Theorem (Rolle's theorem)
 
 Let $$f:[a.b] \to \mathbb{R}$$ continous on $$[a.b]$$ and differentiable on $$(a,b)$$. If $$f(a) = f(b)$$, then there exists $$t \in (a,b)$$ such that $$f'(t) = 0$$.
 
@@ -964,7 +964,7 @@ Let $$f:(a,b) \to \mathbb{R}$$ be differentiable on $$(a,b)$$. Assume $$x < y \i
 
 ### 6.7 Two Important Applications
 
-#### Theorem ( Cauchy's Mean value theorem )
+#### Theorem (Cauchy's Mean value theorem)
 
 Let $$f:[a,b] \to \mathbb{R}$$ be continous on $$[a,b]$$ and differentiable on $$(a,b)$$. Then, there exists $$t \in (a,b)$$ such that
 $$
@@ -977,7 +977,7 @@ Proof idea: Consider the function $$g(t) = \frac{f(b) - f(a)}{b-a}(t-a) +f(a) $$
 
 If $$f'(t) > 0$$ on $$(a,b)$$, then $$f$$ is strictly monotone increasing on $$(a,b)$$.
 
-#### Theorem ( The Intermediate Value Theorem for Derivatives )
+#### Theorem (The Intermediate Value Theorem for Derivatives)
 
 Let $$f:(a,b) \to \mathbb{R}$$ be differentiable on $$(a,b)$$. Then, $$f'(t)$$ satisfies the intermediate value property, i.e.
 $$
@@ -992,7 +992,7 @@ Proof idea : Consider the function $$g(s) = cs - f(s)$$ and apply the intermedia
 
 If $$f'(t) \leq 0$$ for all $$t \in (a,b)$$, implies that $$f$$ is strictly monotone on $$(a,b)$$.
 
-#### Theorem ( The extended mean value theorem )
+#### Theorem (The extended mean value theorem)
 
 If $$f$$ and $$g$$ are continous on $$[a,b]$$ and differentiable on $$(a,b)$$, then there exists $$x \in (a,b)$$ such that
 $$
@@ -1001,7 +1001,7 @@ $$
 
 Proof idea: Consider the function $$h(t) = (f(b) - f(a))g(t) - (g(b) - g(a))f(t)$$ and apply Rolle's theorem.
 
-#### Theorem ( L'Hospital's rule )
+#### Theorem (L'Hospital's rule)
 
 Assume that
 $$
@@ -1013,14 +1013,14 @@ Proof idea: Apply the extended mean value theorem to $$f$$ and $$g$$.
 
 ### 6.8 The Second Derivative
 
-#### Definition ( Second derivative )
+#### Definition (Second derivative)
 
 When we say "$$f''(x)$$ exists", we are assuming:
 
 - $$\lim_{y \to x} \frac{f'(y) - f'(x)}{y-x}$$ exists
 - $$f'(y)$$ exists for all $$ y \in (x-\delta, x+\delta) $$, for some $$\delta > 0$$.
 
-#### Theorem ( The second derivative test )
+#### Theorem (The second derivative test)
 
 Let $$a$$ be a critical point of $$f$$, i.e. $$f'(a) = 0$$. Then,
 
@@ -1033,15 +1033,15 @@ Assume $$f''(a)$$ exists and $$f$$ has a local minimu at $$a$$. Then, $$f''(a) \
 
 ### 6.9 Convexity
 
-#### Definition ( Convexity )
+#### Definition (Convexity)
 
 A set $$U \subset \mathbb{R}^n$$ is convex if for any two points $$p,q \in U$$, the straight line segment joining $$p$$ and $$q$$ is contained in $$U$$.
 
-#### Definition ( Convex function )
+#### Definition (Convex function)
 
 We say that a function $$f:(a,b) \to \mathbb{R}$$ is convex if the region above its graph is convex.
 
-#### Definition ( Strict convexity )
+#### Definition (Strict convexity)
 
 We say that $$f$$ is strictly convex on $$I$$ if: for all $$a, b \in I$$ and $$ t\in (0,1)$$, we have
 $$
@@ -1052,7 +1052,7 @@ $$
 f(x) < \frac{f(b) - f(a)}{b-a}(x-a) + f(a)
 $$
 
-#### Theorem ( The second derivative test for convexity )
+#### Theorem (The second derivative test for convexity)
 
 If $$f$$ is differentiable om $$I$$ and $$f'$$ is strictly monotone increasing on $$I$$, then $$f$$ is strictly convex on $$I$$.
 Which is equivalent to:
@@ -1067,7 +1067,7 @@ If $$f$$ is twice differentiable on $$I$$ and $$f''(x) > 0$$ for all $$x \in I$$
 
 ## 7. Integration
 
-#### Definition ( Partition )
+#### Definition (Partition)
 
 A partition of an interval $$[a,b]$$ is a finite set of points in $$[a,b] and containing both $$a$$ and $$b$$, i.e. a partition of $$[a,b]$$ is
 
@@ -1087,7 +1087,7 @@ $$
 P = \{t_0, t_1, \cdots, t_n\}
 $$
 
-#### Definition ( Lower and upper sum )
+#### Definition (Lower and upper sum)
 
 Let $$f:[a,b] \to \mathbb{R}$$ be a bounded function and given a partition $$P$$ of $$[a,b]$$. Let:
 
@@ -1137,7 +1137,7 @@ $$
 
 is not Riemann integrable.
 
-#### Definition ( Riemann integrable )
+#### Definition (Riemann integrable)
 
 We say that a bounded function $$f:[a,b] \to \mathbb{R}$$ is Riemann integrable if
 
@@ -1164,7 +1164,7 @@ U(f,P) - L(f,P) < \epsilon
 $$
 
 
-#### Theorem ( Continous implies Riemann integrable )
+#### Theorem (Continous implies Riemann integrable)
 
 If $$f$$ is continous on $$[a,b]$$, then $$f$$ is Riemann integrable on $$[a,b]$$.
 
@@ -1215,7 +1215,7 @@ $$
 
 If $$f$$ is integrable on $$[a,b]$$, then $$F(x) = \int_a^xf(t)dt$$ is continous on $$[a,b]$$
 
-#### Theorem (The Fundamental Theorem of Calculus ) ( Part 1 )
+#### Theorem (The Fundamental Theorem of Calculus) (Part 1)
 
 Let $$f$$ be integrable on $$[a,b]$$ and define $$F(x) = \int_a^x f(t) dt$$. If $$f$$ is continous at $$c \in [a,b]$$, then $$F$$ is differentiable at $$c$$ and $$F'(c) = f(c)$$.
 
@@ -1227,11 +1227,11 @@ $$
 \int_a^b f(x) dx = g(b) - g(a)
 $$
 
-#### Definition ( Primitive function )
+#### Definition (Primitive function)
 
 We say that $$F$$ is a primitive function for $$f$$ if $$F$$ is differentiable on $$[a,b]$$ and $$F' = f$$ on $$[a,b]$$.
 
-#### Theorem ( The Fundamental Theorem of Calculus ) ( Part 2 )
+#### Theorem (The Fundamental Theorem of Calculus) (Part 2)
 
 If $$g'$$ is integrable on $$[a,b]$$, then
 
@@ -1249,7 +1249,7 @@ $$
 \int_a^b f(x)g'(x) dx = f(b)g(b) - f(a)g(a) - \int_a^b f'(x)g(x) dx
 $$
 
-#### Exercise ( Change of variable formula )
+#### Exercise (Change of variable formula)
 
 Let $$\phi:[a, b] \to \mathbb{R}$$ and $$f: \mathbb{R} \to \mathbb{R}$$. Assume $$f$$ and $$\phi
 '$$ are continous, then
@@ -1258,7 +1258,7 @@ $$
 \int_a^b f(\phi(t))\phi'(t) dt = \int_{\phi(a)}^{\phi(b)} f(x) dx
 $$
 
-#### Definition ( Logarithmic and exponential function )
+#### Definition (Logarithmic and exponential function)
 
 We define the logarithmic function as, for $$x > 0$$,
 

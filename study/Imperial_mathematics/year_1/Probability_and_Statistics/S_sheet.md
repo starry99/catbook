@@ -5,7 +5,7 @@ title: Statistics Part Memory Sheet
 
 ## 1. Central tendency and dispersion
 
-### Theorem ( The minimum expected square deviation is the mean )
+### Theorem (The minimum expected square deviation is the mean)
 
 Given a random variable $$X$$, over all values $$a \in \mathbb{R}$$,
 
@@ -39,7 +39,7 @@ $$
 \end{aligned}
 $$
 
-### Definition ( Variance and standard deviation )
+### Definition (Variance and standard deviation)
 
 The variance of a random variable $$X$$ is defined as
 
@@ -77,7 +77,7 @@ $$
 \end{aligned}
 $$
 
-### Definition ( Sample Mean )
+### Definition (Sample Mean)
 
 Given the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$, the sample mean $$\bar{X}$$ is the statistic defined as the arithmetic mean of these variables,
 
@@ -85,7 +85,7 @@ $$
 \bar{X}=\frac{X_{1}+X_{2}+\cdots+X_{n}}{n}=\frac{1}{n} \sum_{i=1}^{n} X_{i} .
 $$
 
-### Definition ( Sample Variance )
+### Definition (Sample Variance)
 
 Given the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$, the sample variance $$S^{2}$$ is defined by
 
@@ -105,7 +105,7 @@ Suppose that the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$ are independen
 
 3. $$\mathrm{E}\left(S^{2}\right)=\sigma^{2}$$
 
-### Definition ( The Sample mean for a set of observations )
+### Definition (The Sample mean for a set of observations)
 
 For real values $$x_{1}, x_{2}, \ldots, x_{n}$$, the sample variance $$s^{2}$$ is defined as
 
@@ -179,31 +179,31 @@ $$
 \mathrm{P}(|X-\mu| \geq k \sigma) \leq \frac{1}{k^{2}}
 $$
 
-### Definition ( Parameter )
+### Definition (Parameter)
 
-In a problem of statisical inference, a characteristic or combination of characteristics that determine the (joint) distribution for the random variable(s) of interest is called a parameter of the distribution. i.e. ( mean, variance, etc. )
+In a problem of statisical inference, a characteristic or combination of characteristics that determine the (joint) distribution for the random variable(s) of interest is called a parameter of the distribution. i.e. (mean, variance, etc.)
 
-### Definition ( Statistic )
+### Definition (Statistic)
 
-Suppose that the observable random variables of interest are $$X_{1}, X_{2}, \ldots, X_{n}$$. Let $$r$$ be an arbitrary real-valued function of $$n$$ random variables. Then the random variable $$T=r\left(X_{1}, X_{2}, \ldots, X_{n}\right)=r(\mathbf{X}) ( T: X^n \to F)$$ is called a statistic.
+Suppose that the observable random variables of interest are $$X_{1}, X_{2}, \ldots, X_{n}$$. Let $$r$$ be an arbitrary real-valued function of $$n$$ random variables. Then the random variable $$T=r\left(X_{1}, X_{2}, \ldots, X_{n}\right)=r(\mathbf{X}) (T: X^n \to F)$$ is called a statistic.
 
-### Definition ( Point Estimator )
+### Definition (Point Estimator)
 
  Given a sample of random variables $$X_{1}, X_{2}, \ldots, X_{n}$$, a point estimator is any function $$\widehat{\Theta}\left(X_{1}, X_{2}, \ldots, X_{n}\right)$$.
 
-### Definition ( The stndard error of an estimator )
+### Definition (The stndard error of an estimator)
 
 The standard error of the estimator $$\widehat{\Theta}$$ is defined as the square root of its variance, i.e. $$\mathrm{SE}_{\widehat{\Theta}}=\sqrt{\operatorname{Var}(\widehat{\Theta})}$$.
 
-### Definition ( Interval Estimator )
+### Definition (Interval Estimator)
 
 An interval estimate of a real-valued parameter $$\theta$$ is any pair of functions $$L(\mathbf{x})$$ and $$U(\mathbf{x})$$ of a sample that satisfy $$L(\mathbf{x}) \leq U(\mathbf{x})$$, for all possible $$\mathbf{x}=\left(x_{1}, \ldots, x_{n}\right)$$. The random interval $$[L(\mathbf{X}), U(\mathbf{X})]$$ is called an interval estimator, and if $$\mathbf{X}=\mathbf{x}$$ is observed then the inference $$L(\mathbf{x}) \leq \theta \leq U(\mathbf{x})$$ is made.
 
-### Definitiion ( Confidence Probability )
+### Definitiion (Confidence Probability)
 
 For an interval estimator $$[L(\mathbf{X}), U(\mathbf{X})]$$ of a parameter $$\theta$$, the coverage probability of $$[L(\mathbf{X}), U(\mathbf{X})]$$ is the probability that the random interval $$[L(\mathbf{X}), U(\mathbf{X})]$$ covers the true parameter, $$\theta$$. In symbols, it is denoted by either $$\mathrm{P}(\theta \in[L(\mathbf{X}), U(\mathbf{X})] \mid \theta)$$ or $$\mathrm{P}_{\theta}(\theta \in[L(\mathbf{X}), U(\mathbf{X})])$$.
 
-### Definition ( Confidence Interval )
+### Definition (Confidence Interval)
 
 If the interval estimator $$[L(\mathbf{X}), U(\mathbf{X})]$$ is designed so that $$L(\mathbf{X}) \leq U(\mathbf{X})$$ and
 
@@ -213,11 +213,11 @@ $$
 
 for every possible value of $$\theta$$, and some $$\alpha \in(0,1)$$, then we call $$[L(\mathbf{X}), U(\mathbf{X})]$$ a $$1-\alpha$$ confidence interval.
 
-### Definition ( Estimation Error )
+### Definition (Estimation Error)
 
 The estimation error of the estimator $$\widehat{\Theta}$$ of a parameter $$\theta$$ is defined to be $$\widehat{\Theta}-\theta$$.
 
-### Definition ( Bias )
+### Definition (Bias)
 
 The bias of the estimator $$\widehat{\Theta}$$ of a parameter $$\theta$$, denoted by $$b_{\theta}(\widehat{\Theta})$$, is the expected value of the estimation error:
 
@@ -225,11 +225,11 @@ $$
 b_{\theta}(\widehat{\Theta})=\mathrm{E}[\hat{\Theta}]-\theta
 $$
 
-### Definition ( Unbiased Estimator )
+### Definition (Unbiased Estimator)
 
 The estimator $$\widehat{\Theta}$$ of a parameter $$\theta$$ is called unbiased if $$E[\widehat{\Theta}]=\theta$$, for every possible value of $$\theta$$.
 
-### Definition ( Mean Squared Error )
+### Definition (Mean Squared Error)
 
 The mean squared error of the estimator $$\widehat{\Theta}$$ of a parameter $$\theta$$ is defined as the quantity $$\mathrm{E}\left[(\widehat{\Theta}-\theta)^{2}\right]$$.
 
@@ -241,11 +241,11 @@ $$
 \mathrm{E}\left[(\widehat{\Theta}-\theta)^{2}\right]=\left[b_{\theta}(\widehat{\Theta})\right]^{2}+\operatorname{Var}(\widehat{\Theta}) .
 $$
 
-### Definition ( The Support of a function )
+### Definition (The Support of a function)
 
 The support of a function is the set of values in the domain that are not mapped to zero, i.e. the support of the function $$f: \mathbb{R} \rightarrow \mathbb{R}$$ is the set $$\{x \in \mathbb{R} \mid f(x) \neq 0\}$$.
 
-### Definition ( Mode )
+### Definition (Mode)
 
 For a random variable $$X$$ with probability density (or mass) function $$f_{X}$$, the mode of the distribution of $$X$$ is defined as
 
@@ -253,7 +253,7 @@ $$
 \operatorname{mode}(X)=\arg \underset{x}{\max } f_{X}(x)
 $$
 
-### Definition ( Median )
+### Definition (Median)
 
 For a random variable $$X$$, a median of the distribution of $$X$$ is defined as a value $$m$$ such that
 
@@ -271,7 +271,7 @@ $$
 \min _{a} \mathrm{E}(|X-a|)=\mathrm{E}(|X-m|)
 $$
 
-### Definition ( The Sample median )
+### Definition (The Sample median)
 
 Given a sample of observations $$x_{1}, x_{2}, \ldots, x_{n}$$, the sample median $$m$$ is defined as
 
@@ -289,15 +289,15 @@ $$
 \min _{a}\left(\sum_{i=1}^{n}\left|x_{i}-a\right|\right)=\sum_{i=1}^{n}\left|x_{i}-m\right|
 $$
 
-### Definition ( Quantile function )
+### Definition (Quantile function)
 
 Let the cumulative distribution function for the random variable $$X$$ be denoted by $$F_{X}$$. Then the function $$F_{X}^{-1}:(0,1) \rightarrow \mathbb{R}$$ is called the quantile function for the distribution $$X$$, for all $$p \in(0,1) F_{X}^{-1}(p)$$ is defined to be the smallest value $$x$$ such that $$F_{X}(x) \geq p$$.
 
-### Definition ( Lower and Upper Quantiles )
+### Definition (Lower and Upper Quantiles)
 
 Given a quantile function $$F_{X}^{-1}$$ for a random variable $$X$$, the lower quartile is defined as $$q_{0.25}=F_{X}^{-1}(0.25)$$ while the upper quartile is defined as $$q_{0.75}=$$ $$F_{X}^{-1}(0.75)$$
 
-### Definition ( Interquartile Range )
+### Definition (Interquartile Range)
 
  Given a quantile function $$F_{X}^{-1}$$ for a random variable $$X$$, the interquartile range is defined as IQR $$=F_{X}^{-1}(0.75)-F_{X}^{-1}(0.25)$$.
 
@@ -475,15 +475,15 @@ where
 
 ## 4. Hypothesis Testing
 
-### Definition ( Hypothesis )
+### Definition (Hypothesis)
 
 A hypothesis is a statement about a parameter (or parameters) of interest.
 
-### Definition ( Null Hypothesis and Alternative Hypothesis )
+### Definition (Null Hypothesis and Alternative Hypothesis)
 
 In a given experiment, there will always be at least two competing hypotheses. The null hypothesis, denoted $$H_{0}$$, is the so-called default position, which specifies the conditions under which the experiment is assumed to have taken place. The alternative hypothesis, denoted $$H_{1}$$, is the hypothesis that is complementary to the null hypothesis. A hypothesis test uses data from the experiment to decide which of these two competing hypotheses is supported given the data.
 
-### Definition ( P-value )
+### Definition (P-value)
 
 Suppose the data $$\mathbf{x}$$ is observed, and the test statistic $$t(\mathbf{x})$$ is computed. Then the $$\boldsymbol{p}$$-value is the probability of obtaining a test statistic at least as extreme as $$t(\mathbf{x})$$ under the assumption that the null hypothesis $$H_{0}$$ is true.
 
@@ -586,26 +586,26 @@ $$
 \end{aligned}
 $$
 
-### Theorem ( The random variabel as a Cumulative Distribution Function is uniformly distributed )
+### Theorem (The random variabel as a Cumulative Distribution Function is uniformly distributed)
 
 Let $$X$$ be a random variable with continous cumulative distribution function $$F_{X}$$, and let $$Y=F_{X}(X)$$. Then $$Y$$ is uniformly distributed on the interval $$[0,1]$$.
 
-### Corollary ( $$p$$-value is uniformly distributed)
+### Corollary ($$p$$-value is uniformly distributed)
 
 Assuming the null hypothesis is true, a $$p$$-value based on a continuous test statistic follows a $$\operatorname{Unif}(0,1)$$ distribution.
 
-### Definition ( Type I error and Type II error )
+### Definition (Type I error and Type II error)
 
 - $$\text{Type I error}$$ : If the null hypothesis has been rejected, when in fact the null hypothesis is true, then we say a Type I error has occurred.
 - $$\text{Type II error}$$ :If the null hypothesis fails to be rejected, when in fact the null hypothesis is false, then we say a Type II error has occurred.
 
-### Definition ( Power of a test )
+### Definition (Power of a test)
 
 The probability of correctly rejecting the null hypothesis, when in fact the null hypothesis is false, is defined as the power of the test, and is computed as $$\mathrm{P}$$ (Reject $$H_{0} \mid H_{0}$$ is false) $$=1-\beta$$, where $$\beta$$ is the probability of a Type II error occurring.
 
 [![Screenshot-2023-05-04-at-21-57-57.png](https://i.postimg.cc/J4Gp3JdP/Screenshot-2023-05-04-at-21-57-57.png)](https://postimg.cc/9rHPC427)
 
-### Definition ( Student's two sample test )
+### Definition (Student's two sample test)
 
 #### Assumptions
 
@@ -663,7 +663,7 @@ $$
 \mathrm{P}(\tilde{A})=\mathrm{P}\left(\bigcup_{i=1}^{n} \widetilde{A}_{i}\right) \leq \sum_{i=1}^{n} \mathrm{P}\left(\tilde{A}_{i}\right)=\sum_{i=1}^{n} \frac{\alpha}{n}=n \cdot \frac{\alpha}{n}=\alpha .
 $$
 
-#### Theorem ( Boole's inequality )
+#### Theorem (Boole's inequality)
 
 For a set of events $$A_{i}, i=1,2, \ldots n$$,
 
@@ -677,19 +677,19 @@ Correlation does not imply causation.
 
 ### Simpson's paradox
 
-#### Definition ( Simpson's paradox )
+#### Definition (Simpson's paradox)
 
 Simpson's paradox is a phenomenon that allows a statistical trend in groups of data to disappear or even reverse when these groups are combined.
 
 ### Anscombe's quartet
 
-#### Definition ( Anscombe's quartet )
+#### Definition (Anscombe's quartet)
 
 Even if several data sets in graph look very different, they can have the same summary statistics, such as mean, variance, correlation, and linear regression line.
 
 ## 6. Covariance and Correlation
 
-### Definition ( Covariance )
+### Definition (Covariance)
 
 The covariance of two random variables $$X$$ and $$Y$$, with means $$\mu_{X}$$ and $$\mu_{Y}$$, respectively, is the number defined by
 
@@ -723,7 +723,7 @@ $$
 |\operatorname{Cov}(X, Y)| \leq \sigma_{X} \sigma_{Y}
 $$
 
-### Definition ( Simple covariance and observed simple covariance )
+### Definition (Simple covariance and observed simple covariance)
 
 Suppose the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$ follow distribution $$F_{X}$$, and the random variables $$Y_{1}, Y_{2}, \ldots, Y_{n}$$ follow distribution $$F_{Y}$$. Then the sample covariance is defined as
 
@@ -737,7 +737,7 @@ $$
 \frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right) .
 $$
 
-### Definition ( Correlation )
+### Definition (Correlation)
 
 Definition 6.2. The correlation of the two random variables $$X$$ and $$Y$$, with variances $$\sigma_{X}^{2}$$ and $$\sigma_{Y}^{2}$$, respectively, is the number defined as
 
@@ -757,7 +757,7 @@ $$
 
 For any two random variables $$X$$ and $$Y,\left|\rho_{X Y}\right|=1$$ if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that $$\mathrm{P}(Y=a X+b)=1$$. If $$\rho_{X Y}=1$$, then $$a>0$$, and if $$\rho_{X Y}=-1$$, then $$a<0$$.
 
-### Definition ( Simple correlation and observed simple correlation )
+### Definition (Simple correlation and observed simple correlation)
 
 Suppose the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$ are observed as $$x_{1}, x_{2}, \ldots, x_{n}$$, respectively, and the random variables $$Y_{1}, Y_{2}, \ldots, Y_{n}$$ are observed as $$y_{1}, y_{2}, \ldots, y_{n}$$, respectively. Then the observed sample correlation is defined as
 
@@ -781,16 +781,16 @@ $$
 
 ## 7. Statistical models
 
-### Definition ( Realization )
+### Definition (Realization)
 
 Let $$\Omega$$ be the sample space for an experiment and let $$X$$ be a random variable defined on that sample space. Then for a particular elementary event $$\omega \in \Omega$$, the value $$x=X(\omega) \in \mathbb{R}$$ is called a realisation of the random variable $$X$$.
 A realisation of $$x$$ of $$X$$ is also called an observation of $$X$$.
 
-### Definition ( Parameter space )
+### Definition (Parameter space)
 
 The space containing all possible values of the parameter $$\theta$$ is called the parameter space and is denoted by $$\Theta$$, i.e. $$\theta \in \Theta$$.
 
-### Definition ( Statistical model )
+### Definition (Statistical model)
 
 A statistical model consists of
 
@@ -804,11 +804,11 @@ A statistical model consists of
 
 ## 8. Likelihood
 
-### Definition ( Likelihood function )
+### Definition (Likelihood function)
 
  Suppose we have a statistical model for the random variables $$\mathbf{X}$$ described by $$\left\{\mathrm{P}_{\theta} \mid \theta \in \Theta\right\}$$, and where each $$\mathrm{P}_{\theta}$$ is specified by the probability density function (or probability mass function) $$f_{\theta}$$. Having observed the data $$\mathbf{x}$$, the likelihood function $$L(\cdot \mid \mathbf{x}): \Theta \rightarrow \mathbb{R}$$ is defined by $$L(\theta \mid \mathbf{x})=f_{\theta}(\mathbf{x})$$ for any $$\theta \in \Theta$$.
 
-### Definition ( Likelihood )
+### Definition (Likelihood)
 
 For any $$\theta \in \Theta, L(\theta \mid \mathbf{x})$$ is called the likelihood of $$\theta$$ given the observed data $$\mathrm{x}$$.
 
@@ -818,7 +818,7 @@ $$
 L(\theta \mid \mathbf{x})=f(\mathbf{x} \mid \theta)=\prod_{i=1}^{n} f\left(x_{i} \mid \theta\right)
 $$
 
-#### Definition ( Likelihood ratios)
+#### Definition (Likelihood ratios)
 
 $$
 \frac{L\left(\theta_{1} \mid \mathbf{x}\right)}{L\left(\theta_{2} \mid \mathbf{x}\right)}=\frac{\mathrm{P}_{\theta_{1}}(\mathbf{X}=\mathbf{x})}{\mathrm{P}_{\theta_{2}}(\mathbf{X}=\mathbf{x})}, \quad \theta_{1}, \theta_{2} \in \Theta, \quad \mathbf{X} \text { is discrete. }
@@ -828,7 +828,7 @@ $$
 \frac{L\left(\theta_{1} \mid x\right)}{L\left(\theta_{2} \mid x\right)} \approx \frac{\mathrm{P}_{\theta_{1}}(x-\delta<X<x+\delta)}{\mathrm{P}_{\theta_{2}}(x-\delta<X<x+\delta)}, \quad \theta_{1}, \theta_{2} \in \Theta, \quad X \text { is continuous. }
 $$
 
-### Definition ( Equivalent likelihood functions )
+### Definition (Equivalent likelihood functions)
 
 Given the likelihood function $$L(\cdot \mid \mathbf{x})$$, any function $$L^{\prime}(\cdot \mid \mathbf{x})=c L(\cdot \mid \mathbf{x})$$ for $$c>0$$ is an equivalent likelihood function for the parameter $$\theta$$.
 
@@ -851,11 +851,11 @@ $$
 
 since $$\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)=\sum_{i=1}^{n} x_{i}-\sum_{i=1}^{n} \bar{x}=n \bar{x}-n \bar{x}=0$$.
 
-### Definition ( Maximum likelihood estimate )
+### Definition (Maximum likelihood estimate)
 
 Suppose $$L(\theta \mid \mathbf{x})$$ is the likelihood of the parameter $$\theta$$ given the observed data $$\mathbf{x}$$. Then the parameter value $$\widehat{\theta}(\mathbf{x})$$ at which $$L(\theta \mid \mathbf{x})$$ attains its maximum as a function of $$\theta$$, with $$\mathbf{x}$$ held fixed, is called the maximum likelihood estimate of $$\theta$$.
 
-### Definition ( Maximum likelihood estimator )
+### Definition (Maximum likelihood estimator)
 
 If $$L(\theta \mid \mathbf{x})$$ is the likelihood of the parameter $$\theta$$, given the observed data $$\mathbf{x}$$, with maximum likelihood estimate $$\hat{\theta}(\mathbf{x})$$, then a maximum likelihood estimator of the parameter $$\theta$$ based on the random sample $$\mathbf{X}$$ is $$\widehat{\theta}(\mathbf{X})$$.
 
@@ -868,11 +868,11 @@ Therefore, finding the value $$\widehat{\theta}$$ that maximises $$\log L(\theta
 
 ## 9. Simple Linear Regression
 
-### Definition ( Predictor and response variables )
+### Definition (Predictor and response variables)
 
 If $$X$$ and $$Y$$ are quantities and r.v.s, then if $$Y=f(X)$$ then $$X$$ is the predictor and $$Y$$ is the response
 
-### Definition ( Residual )
+### Definition (Residual)
 
 If we have $$\hat{\beta}_{0}$$ and $$\hat{\beta}_{1}$$ which are the best estimates of $$\beta_{0}$$ and $$\beta_{1}$$, then the residuals $$\hat{e}_{i}$$ are $$\hat{e}_{i}=y_{i}-\left(\hat{\beta}_{0}+\hat{\beta}_{i} x_{i}\right)$$
 
@@ -895,7 +895,7 @@ The $$\beta_{1}$$ that minimises the sum of squares is $$\hat{\beta}_{1}=\frac{S
 
 These apply if $$Y=F(X)$$
 
-### Definition ( Simple linear regression model )
+### Definition (Simple linear regression model)
 For $$i \in$$ $$\{1,2, \ldots, n\}$$
 
 $$
@@ -947,7 +947,7 @@ $$
 ### Remark
 If our model is correct the residuals $$\widehat{\epsilon}_{i}$$, when plotted, should appear to be independently distributed according to some $$\mathrm{N}\left(0, \sigma^{2}\right)$$.
 
-### Definition ( The $$R^2$$ statistic )
+### Definition (The $$R^2$$ statistic)
  The statistic $$R^{2}$$ (pronounced 'R-squared') is defined as
 
 ![](https://cdn.mathpix.com/cropped/2023_05_04_ad277764122c4c61e9f3g-169.jpg?height=136&width=356&top_left_y=1138&top_left_x=882)

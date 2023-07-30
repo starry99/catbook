@@ -122,7 +122,7 @@ A8 Identity for scalar mult: $$1 \odot \mathbf{v}=\mathbf{v}$$.
 
  A subset $$W$$ of a vector space $$V$$ is a subspace of $$V$$ if
 
-- $$W$$ is not empty (i.e. $$e \in W$$ )
+- $$W$$ is not empty (i.e. $$e \in W$$)
 
 - for $$\mathbf{v}, \mathbf{w} \in W$$, then $$\mathbf{v} \oplus \mathbf{w} \in W$$ closed under vector addition
 
@@ -189,7 +189,7 @@ Let $$V$$ be an $$F$$-vector space, let $$S=\left\{u_{1}, \ldots, u_{m}\right\} 
 
 ### Proposition  (Every spanning set contains a basis)
 
-Proposition 3.5.6. Let $$V$$ be a non-trivial (i.e. not $$\{0\}$$ ) $$F$$-vector space and suppose $$V$$ has a finite spanning set $$S$$ then $$S$$ contains a linearly independent spanning set.
+Proposition 3.5.6. Let $$V$$ be a non-trivial (i.e. not $$\{0\}$$) $$F$$-vector space and suppose $$V$$ has a finite spanning set $$S$$ then $$S$$ contains a linearly independent spanning set.
 
 ### Lemma (Steinitz Exchange Lemma)
 
@@ -359,7 +359,7 @@ For a homogeneous system $$Ax=0$$, the solution set is the kernel of the linear 
 
 Now the $$\operatorname{dim}(\operatorname{Im}(A))=\operatorname{rank}(A)$$ thus the we can work out how many solutions we have to a set of homogeneous equations with $$n$$ unknowns:
 
-- If $$\operatorname{rank}(A) \geq n$$ we get one solution (the trivial one i.e. $$0_{V}$$ )
+- If $$\operatorname{rank}(A) \geq n$$ we get one solution (the trivial one i.e. $$0_{V}$$)
 
 - If $$\operatorname{rank}(A)<n$$ we get infinitely many solutions (assuming $$F$$ is infinite)
 
@@ -600,7 +600,7 @@ Then:
 
 ## Theorem (Spectral Theorem)
 
-If a matrix $$A \in M_{n}(\mathbb{R})$$ is symmetric (that is, $$A=A^{T}$$ ), then it is diagonalisable over $$\mathbb{R}$$ by two orthogonal matrix, which consists of its eigenvectors . Moreover, there is an orthogonal basis of $$\mathbb{R}^{n}$$ consisting of eigenvectors of $$A$$.
+If a matrix $$A \in M_{n}(\mathbb{R})$$ is symmetric (that is, $$A=A^{T}$$), then it is diagonalisable over $$\mathbb{R}$$ by two orthogonal matrix, which consists of its eigenvectors . Moreover, there is an orthogonal basis of $$\mathbb{R}^{n}$$ consisting of eigenvectors of $$A$$.
 
 ## Theorem
 

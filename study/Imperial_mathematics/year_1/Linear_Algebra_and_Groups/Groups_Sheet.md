@@ -83,7 +83,7 @@ is a cyclic group of order $$n$$.
 
 ### Definition (Order of an element)
 
-Suppose $$G$$ is a group and $$g \in G$$. We say that $$g$$ has finite order if there is $$n \in \mathbb{N}$$ (with $$n \geq 1$$ ) such that $$g^{n}=e$$. In this case, the least such $$n$$ with $$g^{n}=e$$ is called the order of $$g$$, denoted by $$\operatorname{ord}(g)$$. If there is no such $$n \in \mathbb{N}$$, we say that $$g$$ has infinite order.
+Suppose $$G$$ is a group and $$g \in G$$. We say that $$g$$ has finite order if there is $$n \in \mathbb{N}$$ (with $$n \geq 1$$) such that $$g^{n}=e$$. In this case, the least such $$n$$ with $$g^{n}=e$$ is called the order of $$g$$, denoted by $$\operatorname{ord}(g)$$. If there is no such $$n \in \mathbb{N}$$, we say that $$g$$ has infinite order.
 
 ### Theorem
 
@@ -128,7 +128,7 @@ $$
 |G|=n
 $$
 
-(that is, $$g$$ has order $$n$$ ), and $$m \in \mathbb{Z}$$. Let
+(that is, $$g$$ has order $$n$$), and $$m \in \mathbb{Z}$$. Let
 
 $$
 d=\operatorname{gcd}(m, n)
@@ -274,7 +274,7 @@ $$
 (3) If the homomorphism $$\phi: G \rightarrow H$$ is a bijection, then we say that $$\phi$$ is an isomorphism. We say that groups $$G, H$$ are isomorphic if there exists an isomorphism $$\phi: G \rightarrow H$$. In this case we write $$G \cong H$$.
 
 ### Examples
-(1) (Trivial examples) Suppose $$G$$ is any group. The identity map $$i: G \rightarrow G$$ (with $$i(g)=g$$ for all $$g \in G$$ ) is an isomorphism.
+(1) (Trivial examples) Suppose $$G$$ is any group. The identity map $$i: G \rightarrow G$$ (with $$i(g)=g$$ for all $$g \in G$$) is an isomorphism.
 
 If $$G, H$$ are groups, the map $$\psi: G \rightarrow H$$ with $$\psi(g)=e_{H}$$ for all $$g \in G$$ is a homomorphism.
 
@@ -341,7 +341,7 @@ $$
 f\left(i_{1}\right)=i_{2} ; f\left(i_{2}\right)=i_{3} ; \ldots, f\left(i_{r-1}\right)=i_{r} ; f\left(i_{r}\right)=i_{1}
 $$
 
-then $$f$$ is called an $$r$$-cycle (or a cycle of length $$r$$ ) and we write $$f$$ as $$\left(i_{1}, i_{2}, i_{3}, \ldots, i_{r}\right)$$ or (missing out the commas) $$\left(i_{1} i_{2} i_{3} \ldots i_{r}\right)$$.
+then $$f$$ is called an $$r$$-cycle (or a cycle of length $$r$$) and we write $$f$$ as $$\left(i_{1}, i_{2}, i_{3}, \ldots, i_{r}\right)$$ or (missing out the commas) $$\left(i_{1} i_{2} i_{3} \ldots i_{r}\right)$$.
 
 ### Theorem (Every permutation is a product of disjoint cycles)
 If $$f \in S_{n}$$, then there exist cycles $$f_{1}, f_{2}, \ldots, f_{k} \in S_{n}$$ with disjoint supports such that $$f=f_{1} f_{2} \ldots f_{k}$$.
@@ -367,7 +367,7 @@ r
 $$
 
 ###Theorem
-Suppose $$g \in S_{n}$$ is written in disjoint cycle form as $$g=g_{1} g_{2} \ldots g_{k}$$ where $$g_{i}$$ is an $$r_{i}$$-cycle (for $$i=1, \ldots, k$$ ) and $$g_{1}, \ldots, g_{k}$$ are disjoint. If $$m \in \mathbb{N}$$, then:
+Suppose $$g \in S_{n}$$ is written in disjoint cycle form as $$g=g_{1} g_{2} \ldots g_{k}$$ where $$g_{i}$$ is an $$r_{i}$$-cycle (for $$i=1, \ldots, k$$) and $$g_{1}, \ldots, g_{k}$$ are disjoint. If $$m \in \mathbb{N}$$, then:
 
 (i) $$g^{m}=g_{1}^{m} g_{2}^{m} \ldots g_{k}^{m}$$;
 
