@@ -7,3 +7,4 @@ title: Linear Algebra and Groups
 
 
 - [Linear Algebre Part Summary](/study/year_1/Linear_Algebra_and_Groups/Linear_Algebra_Summary)
+- [Groups Part Summary](/study/year_1/Linear_Algebra_and_Groups/Groups_Summary)

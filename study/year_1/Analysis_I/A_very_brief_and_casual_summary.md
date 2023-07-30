@@ -474,7 +474,7 @@ $$
 \sum_{n=1}^{\infty} a_n
 $$
 
-is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}|a_n|$$ diverges to infinity).
+is convergent but it is not absolutely convergent.
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
@@ -597,9 +597,17 @@ Fix a real or complex series $$\left(a_{n}\right)$$ and consider the series $$\s
 
 Then $$\exists R \in[0, \infty]$$ such that
 
-  - $$ |z|<R \rightarrow \sum a_{n} z^{n} $$ is absolutely convergent, and
+  - $$ 
+|z|<R \rightarrow \sum a_{n} z^{n}
+$$ 
 
-  - $$ |z|>R \rightarrow \sum a_{n} z^{n} $$ is divergent.
+is absolutely convergent, and
+
+  - $$
+|z|>R \rightarrow \sum a_{n} z^{n}
+$$
+
+is divergent.
   
 Proof. Let
 
