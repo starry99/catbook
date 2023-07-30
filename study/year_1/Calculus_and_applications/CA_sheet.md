@@ -448,8 +448,7 @@ $$
 $$
 The Dirac delta function has the following properties:
 
-- Shifting
-$$
+- $$
   \int_{-\infty}^{\infty} g(x) \delta(x) d x=g(0), \quad \int_{-\infty}^{\infty} g(x) \delta(x-a) d x=g(a)
 $$
 - $$f(x) \delta(x-x_0)=f(x_0) \delta(x-x_0)$$
