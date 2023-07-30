@@ -17,21 +17,23 @@ Let $G$ be a graph with $n$ nodes and $m$ edges. The incidence matrix $A$ of $G$
 
 For an $m \times n$ incidence matrix $A$, we have
 
-- $\dim\text{(right null space)} +\rank (A)=n \text{(the number of nodes)}$
-- $\dim\text{(left null space)} +\rank (A)=m \text{(the number of edges)}$
+- $\dim\text{(right null space)} + \text{rank} (A)=n \text{(the number of nodes)}$
+- $\dim\text{(left null space)} + \text{rank} (A)=m \text{(the number of edges)}$
 
 
 ####  The geometric interpretation of the rank nullity theorem
 
-- $\operatorname{dim}$ (right null space) is the number of connected components in the graph. Therefore, for a connected graph, dim (right null space) $=1$.
-- $\operatorname{dim}$ (left null space) is the number of independent loops in the graph.
+- $\dim\text{(right null space)}$ is the number of connected components in the graph. Therefore, for a connected graph, $\dim\text{(right null space)}=1$.
+- $\dim\text{(left null space)}$ is the number of independent loops in the graph.
 
 
 ### 1.2 Circuits
 
 The vector of potential differences
 
-$\mathbf{e}=\mathbf{A x}$
+$$
+\mathbf{e}=\mathbf{A x}
+$$
 
 The vector of edge fluxeslcurrents (Ohm's law)
 
@@ -49,8 +51,14 @@ $$
 
 ####  If the conductance is unit
 
-- $\mathrm{w}=-\mathrm{e}=-A \mathrm{x}$
-- $\mathrm{f}=A^{T} A \mathrm{x}$
+$$
+\mathrm{w}=-\mathrm{e}=-A \mathrm{x}
+$$
+
+$$
+\mathrm{f}=A^{T} A \mathrm{x}
+$$
+
 #### Laplacian matrix
 
 $$
@@ -80,7 +88,7 @@ A harmonic potential is a potential at node $i$ that is the avarage of the poten
 
 #### Definition ( $p_{i}$ Hitting Probability )
 
-$p_{i}$ is the probability that a random walk starting at node $i$ to reach the + node where $p_{+}=1$ before returning to node - where $p_{-}=0$.
+$p_{i}$ is the probability that a random walk starting at node $i$ to reach the + node where $p_{+}=1$ before returning to node $-$ where $p_{-}=0$.
 
 $p_{i}$ can be regraded as the potential of node $i$ with the node + and - as the boundary nodes.
 
