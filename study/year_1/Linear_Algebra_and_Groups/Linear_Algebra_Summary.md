@@ -130,7 +130,7 @@ A8 Identity for scalar mult: $$1 \odot \mathbf{v}=\mathbf{v}$$.
 
 Let $$U, W$$ be subspaces of $$V$$. Then $$U \cap W$$ is a subspace of V. In general, the intersection of any set of subspaces of a vector space $$V$$ is a subspace of $$V$$.
 
-### Example ( The  union of subspaces may not be a subspace )
+### Example (The  union of subspaces may not be a subspace)
 
 $$
 U=\left\{\left(\begin{array}{l}
@@ -214,7 +214,7 @@ So $$\operatorname{Span}(Y) \subseteq \operatorname{Span}(X)$$
 
 Similarly we have that if $$w \in \operatorname{Span}(X)$$ the $$w$$ is a linear combination of elements of $$X$$, now we can replace $$v_{n}$$ with $$\frac{1}{\alpha_{n}}\left(u-\alpha_{1} v_{1} \ldots-\alpha_{n-1} v_{n-1}\right.$$ so we can express $$w$$ as a linear combination of elements of $$Y$$. So $$\operatorname{Span}(X) \subseteq \operatorname{Span}(Y)$$, thus $$\operatorname{Span}(Y)=\operatorname{Span}(X)$$.
 
-### Theorem ( Linear independent sets are at most as big as spanning sets )
+### Theorem (Linear independent sets are at most as big as spanning sets)
 
 Let $$V$$ be a finite dimensional vector space over $$F$$. Let $$S, T$$ be finte subsets of $$V$$. If $$S$$ is LI and $$T$$ spans $$V$$ then 
 
@@ -306,7 +306,7 @@ Let $$A$$ be an $$m \times n$$ matrix. Let $$T: F^{n} \rightarrow F^{m}$$ be giv
 
 3. $$\operatorname{dim}(\operatorname{Im} T)=\operatorname{rankA}$$.
 
-### Theorem ( The rank nulity theorem )
+### Theorem (The rank-nulity theorem)
 
 We've seen that when $$T v=A v, \operatorname{rank}(A)=$$ $$\operatorname{dim}(\operatorname{Im} T)$$. An old fashioned name for $$\operatorname{dim}(\operatorname{Ker} T)$$ is the nulity of $$A$$
 
@@ -420,7 +420,7 @@ $$
 - If $$A$$ is invertible, then $$\operatorname{det}(A B)=\operatorname{det}(A) \operatorname{det}(B)$$.
 - If $$A$$ is invertible, then $$\operatorname{det}\left(A^{T}\right)=\operatorname{det}(A)$$.
 
-### Definiton ( Sigular matrix)
+### Definiton (Sigular matrix)
 
 A matrix $$A \in M_{n}(F)$$ is said to be singular if there is a non-zero $$v \in F^{n}$$ with $$A v=0$$. Otherwise, it is called non-singular.
 
@@ -438,7 +438,7 @@ Suppose $$A \in M_{n}(F)$$. Then the following are equivalent:
 
 (5) $$\operatorname{det}(A) \neq 0$$
 
-(6) rank$$(A) = n$$
+(6) $$\rank(A) = n$$
 
 ### Vandermonde determinant
 
@@ -453,7 +453,7 @@ $$
 \end{array}\right)=\prod_{1 \leq i<j \leq n}\left(x_{j}-x_{i}\right)
 $$
 
-## Definition (Cofactor)
+### Definition (Cofactor)
 
 Let $$A=\left(a_{i j}\right) \in M_{n}(F)$$. If $$1 \leq i, j \leq n$$, the $$i j^{\text {th }}$$ cofactor of $$A$$ is
 
