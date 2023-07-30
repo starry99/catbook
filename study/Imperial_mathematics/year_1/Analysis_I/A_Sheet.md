@@ -1,20 +1,21 @@
 ---
 layout: simple
-title: A Very Brief and Casual Summary
+title: Analysis I Memory Sheet
 ---
 
 #### Based on the notes and lectures by [Prof. Richard Thomas](https://www.ma.imperial.ac.uk/~rpwt/?_gl=1*4lska7*_ga*NTkyNDQ0MjkxLjE2OTA0NTE4MjA.*_ga_LME5ZDDFS0*MTY5MDcxMTMzNS4yNS4wLjE2OTA3MTEzMzUuNjAuMC4w), [Dr. Ajay Chandra](https://sites.google.com/view/ajaychandra/home) and [Dr. Marco Guaraco](https://www.imperial.ac.uk/people/guaraco).
+
 ## 1. Logic
 
-#### Definition 1.1 ( Injective )
+#### Definition 1.1 (Injective)
 
 A function $$f: A \rightarrow B$$ is injective if for all $$a_1, a_2 \in A$$, $$f(a_1) = f(a_2)$$ implies $$a_1 = a_2$$.
 
-#### Definition 1.2 ( Surjective )
+#### Definition 1.2 (Surjective)
 
 A function $$f: A \rightarrow B$$ is surjective if for all $$b \in B$$, there exists $$a \in A$$ such that $$f(a) = b$$.
 
-#### Definition 1.3 ( Bijective )
+#### Definition 1.3 (Bijective)
 
 A function $$f: A \rightarrow B$$ is bijective if it is both injective and surjective.
 
