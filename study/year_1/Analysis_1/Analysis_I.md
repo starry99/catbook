@@ -14,5 +14,5 @@ title: Analysis I
 
 - Coursework II ([pdf](/study/year_1/Analysis_1/Coursework/Coursework_2/Analysis_1_Cousework_2.pdf), [tex](/study/year_1/Analysis_1/Coursework/Coursework_2/Analysis_1_Cousework_2.tex))
 
-- Coursework III ([pdf](/year_1/Analysis_1/Coursework/coursework_3/Analysis_1_Coursework_3.pdf), [tex](/study/year_1/Analysis_1/Coursework/coursework_3/Analysis_1_Coursework_3.tex))
+- Coursework III ([pdf](/study/year_1/Analysis_1/Coursework/coursework_3/Analysis_1_Coursework_3.pdf), [tex](/study/year_1/Analysis_1/Coursework/coursework_3/Analysis_1_Coursework_3.tex))
   
