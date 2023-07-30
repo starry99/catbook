@@ -14,7 +14,7 @@ order: 2
 
   - [Linear Algebra and Groups](/study/year_1/Linear_Algebra_and_Groups/Linear_Algebra_and_Groups_main)
 
-  - Calculus and Applications
+  - [Calculus and Applications](/study/year_1/Calculus_and_applications/Calculus_and_Application_main)
 
   - Probability and Statistics
 
@@ -22,7 +22,7 @@ order: 2
 
   - Individual Research Project
 
-  - UROP of my first year
+  - UROP
 
 - Year 2
 - Year 3
