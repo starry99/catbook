@@ -18,7 +18,7 @@ $$
 f^{\prime}(c)=\frac{f(b)-f(a)}{b-a}
 $$
 
-- ( Intermediate Value Theorem)
+- (Intermediate Value Theorem)
   Let $$f$$ be continuous on the closed interval $$a \leq x \leq b$$. Given any number $$y^{*}$$ between $$f(a)$$ and $$f(b)$$, there exists a point $$x^{*}$$ between $$a$$ and $$b$$ such that $$f\left(x^{*}\right)=$$ $$y^{*}$$.
 
 ### Some special derivatives
@@ -111,7 +111,12 @@ $$
 
 Suppose $$f$$ and $$g$$ satisfy:
 
-(i) $$|f(x)| \leq g(x)$$ for all $$x \geq a$$
+(i) 
+$$
+ |f(x)| \leq g(x) 
+$$
+
+for all $$ x \geq a $$
 
 (ii) $$\int_{a}^{b} f(x) \mathrm{d} x$$ and $$\int_{a}^{b} g(x) \mathrm{d} x$$ exist for every $$b>a$$.
 
@@ -165,28 +170,35 @@ $$
 #### Volume of Revolution
 
 - Rotation about the x-axis
-  $$
+- 
+$$
 V=\int_{a}^{b} \pi(f(x))^{2} \mathrm{~d} x .
 $$
+
 - Rotation about the y-axis
-  $$
+  
+$$
 \begin{gathered}
 \underbrace{2 \pi x}_{\text {(a) }} \overbrace{f(x)}^{(\mathrm{b})} \underbrace{\mathrm{d} x}_{\text {(c) }} \\
 \Rightarrow V=\int_{a}^{b} 2 \pi x f(x) \mathrm{d} x .
 \end{gathered}
 $$
-  $$
+
+$$
 V=\int_{c}^{d} \pi(f^{-1}(y))^{2} \mathrm{~d} y .
 $$
 
 #### Surface Area of Revolution
 
 - Rotation about the x-axis
-  $$
+  
+$$
 S=\int_{a}^{b} 2 \pi f(x) \sqrt{1+\left(f^{\prime}(x)\right)^{2}} \mathrm{~d} x
 $$
+
 - Rotation about the y-axis
-  $$
+  
+$$
 S=\int_{c}^{d} 2 \pi y \sqrt{1+\left(f^{\prime}(y)\right)^{2}} \mathrm{~d} y
 $$
 
@@ -206,15 +218,18 @@ Then $$V=A d$$
 #### Length of curves and areas using polar coordinates
 
 - Length of a curve
-  $$
+  
+$$
 \begin{aligned}
 L & =\int_{\theta=\alpha}^{\beta}\left[\left(f^{\prime} \cos (\theta)-f \sin (\theta)\right)^{2}+\left(f^{\prime} \sin (\theta)+f \cos (\theta)\right)^{2}\right]^{1 / 2} \mathrm{~d} \theta \\
 & =\int_{\alpha}^{\beta} \sqrt{\left(f^{\prime}(\theta)\right)^{2}+(f(\theta))^{2}} \mathrm{~d} \theta \\
 & =\int_{\alpha}^{\beta}\left[\left(\frac{\mathrm{d} r}{\mathrm{~d} \theta}\right)^{2}+r^{2}\right]^{1 / 2} \mathrm{~d} \theta
 \end{aligned}
 $$
+
 - Area
-  $$
+  
+$$
 \begin{aligned}
 \Delta A & =\frac{1}{2}\left(f\left(\theta_{i}\right)\right)^{2} \Delta \theta_{i} \\
 \Rightarrow A & =\frac{1}{2} \int_{\alpha}^{\beta} f(\theta)^{2} \mathrm{~d} \theta=\frac{1}{2} \int_{\alpha}^{\beta} r^{2} \mathrm{~d} \theta
@@ -228,11 +243,13 @@ $$
 ##### The integral test
 
 Let $$f(x)$$ be a function which is defined for all $$x \geq 1$$, and is positive and decreasing. Then the series
+
 $$
 \sum_{n=1}^{\infty} f(n)
 $$
 
 converges if and only if the improper integral
+
 $$
 \int_{1}^{\infty} f(x) \mathrm{d} x
 $$ converges.
@@ -242,7 +259,8 @@ $$ converges.
 - $$a_{n}  =\frac{f^{(n)}\left(x_{0}\right)}{n !}$$
 - $$f(x)  =\sum_{n=0}^{\infty} \frac{f^{(n)}\left(x_{0}\right)}{n !}\left(x-x_{0}\right)^{n}$$
 - Maclaurin series
-  $$
+  
+$$
 f(x)=\sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n !} x^{n}
 $$
 
@@ -349,17 +367,19 @@ If $$f(x)$$ is even then $$\hat{f}(\omega)=2 \hat{f}_{c}(\omega)$$
 
 ### Properties of Fourier Transform
 
-- $$\mathcal{F}\{a f(x)+b g(x)\}=a \hat{f}(\omega)+b \hat{g}(\omega) ; \quad \mathcal{F}^{-1}\{a \hat{f}(\omega)+b \hat{g}(\omega)\}=a f(x)+b g(x)$$
+- $$\mathcal{F}\{a f(x)+b g(x)\}=a \hat{f}(\omega)+b \hat{g}(\omega)$$
+
+- $$\mathcal{F}^{-1}\{a \hat{f}(\omega)+b \hat{g}(\omega)\}=a f(x)+b g(x)$$
 
 - If $$a>0 ; \mathcal{F}\{f(a x)\}=\frac{1}{a} \hat{f}\left(\frac{\omega}{a}\right)$$
 
 - $$\mathcal{F}\{f(-x)\}=\hat{f}(-\omega)$$
 
-- ( Shifted )
+- (Shifted)
   $$\mathcal{F}\left\{f\left(x-x_{0}\right)\right\}=e^{-i \omega x_{0}}   \hat{f}(\omega)$$
  $$\mathcal{F}\left\{e^{i \omega_{0} x} f(x)\right\}=\hat{f}\left(\omega-\omega_{0}\right)$$
 
-- ( Symmetry Formula )
+- (Symmetry Formula)
   $$\mathcal{F}\{\hat{f}(x)\}=2 \pi f(-\omega)$$
 
 - $$\mathcal{F}\left\{\frac{d^{n} f}{d x^{n}}(x)\right\}=(i \omega)^{n} \hat{f}(\omega)$$
@@ -370,6 +390,7 @@ If $$f(x)$$ is even then $$\hat{f}(\omega)=2 \hat{f}_{c}(\omega)$$
 $$
 \mathcal{F}\left\{[f(x)]^{*}\right\}=[\hat{f}(-\omega)]^{*}
 $$
+
 There is also the Fourier sine $$\mathcal{F}_{s}\{f(x)\}$$ and Fourier cosine $$\mathcal{F}_{c}\{f(x)\}$$ transforms:
 
 $$
@@ -391,6 +412,7 @@ with properties:
 #### Definition ( Convolution )
 
 The convolution of two functions $$f(x)$$ and $$g(x)$$ is defined as
+
 $$
 f(x) *g(x)=\int_{-\infty}^{\infty} f(x-y) g(y) d y
 $$
@@ -551,21 +573,73 @@ In 1D, oscillations cannot occur as we are flowing on the real line and thus can
 
 #### Linear Stability Analysis
 
-If $$y=y^{*}+\epsilon$$, where $$\epsilon$$ is a small perturbation from $$y^{*}$$ then $$\frac{d y}{d t}=f(y)=\frac{d \epsilon}{d t}=f\left(y^{*}+\epsilon\right)=f\left(y^{*}\right)+\left.\epsilon_{d f}^{d y}\right|_{y=y^{*}}+$$ HOT's, so we can approximate $$\frac{d y}{d t}=\frac{d \epsilon}{d t}=\left.\frac{d f}{d y}\right|_{y=y^{*}}$$, so if $$\left.\frac{d f}{d y}\right|_{y=y^{*}}>0$$ then $$y^{*}$$ unstable, and if $$\left.\frac{d f}{d y}\right|_{y=y^{*}}<0$$ then $$y^{*}$$ stable
+If
+
+$$
+y=y^{*}+\epsilon
+$$
+
+where $$\epsilon$$ is a small perturbation from $$y^{*}$$
+then
+
+$$\frac{d y}{d t}=f(y)=\frac{d \epsilon}{d t}=f\left(y^{*}+\epsilon\right)=f\left(y^{*}\right)+\left.\epsilon_{d f}^{d y}\right|_{y=y^{*}}+
+$$
+
+HOT's, so we can approximate
+
+$$
+\frac{d y}{d t}=\frac{d \epsilon}{d t}=\left.\frac{d f}{d y}\right|_{y=y^{*}}
+$$
+
+so if
+$$\left.\frac{d f}{d y}\right|_{y=y^{*}}>0
+$$
+
+then $$y^{*}$$ is unstable, and if
+
+$$
+\left.\frac{d f}{d y}\right|_{y=y^{*}}<0
+$$
+
+then $$y^{*}$$ is stable
 
 ## 6. Multivariable Calculus
 
 ### Total Derivative
 
-The total derivative $$d f$$ of a function $$f\left(x_{1}, \ldots, x_{n}\right)$$ is $$d f=\sum_{i=1}^{n} \frac{\partial f}{\partial x_{i}} d x_{i}=\frac{\partial f}{\partial x_{1}} d x_{1}+\frac{\partial f}{\partial x_{2}} d x_{2}+\cdots+\frac{\partial f}{\partial x_{n}} d x_{n}$$
+The total derivative $$d f$$ of a function
+$$
+ f\left(x_{1}, \ldots, x_{n}\right) \textbf{ is } d f=\sum_{i=1}^{n} \frac{\partial f}{\partial x_{i}} d x_{i}=\frac{\partial f}{\partial x_{1}} d x_{1}+\frac{\partial f}{\partial x_{2}} d x_{2}+\cdots+\frac{\partial f}{\partial x_{n}} d x_{n}
+$$
 
-If $$u=u(x, y)$$ and $$x=x(t), y=y(t), t \in \mathbb{R}$$ then by the total derivative $$\frac{d u}{d t}=\left(\frac{\partial u}{\partial x}\right)_{y}\left(\frac{d x}{d t}\right)+\left(\frac{\partial u}{\partial y}\right)_{x}\left(\frac{d y}{d t}\right)$$
+If $$u=u(x, y)$$ and $$x=x(t), y=y(t), t \in \mathbb{R}$$ then by the total derivative
 
-If $$u=u(x, y)$$ and $$x=x(t), y=y(t), t \in \mathbb{R}$$ then by the total derivative $$\frac{d u}{d t}=\left(\frac{\partial u}{\partial x}\right)_{y}\left(\frac{d x}{d t}\right)+\left(\frac{\partial u}{\partial y}\right)_{x}\left(\frac{d y}{d t}\right)$$
+$$
+\frac{d u}{d t}=\left(\frac{\partial u}{\partial x}\right)_{y}\left(\frac{d x}{d t}\right)+\left(\frac{\partial u}{\partial y}\right)_{x}\left(\frac{d y}{d t}\right)
+$$
 
-If $$u=\left(x_{1}, \ldots, x_{n}\right)$$ and $$x_{i}=x_{i}(t), t \in \mathbb{R} \forall i$$ then $$\frac{d u}{d t}=\sum_{i=1}^{n}\left(\frac{\partial u}{\partial x_{i}}\right) \frac{d x_{i}}{d t}$$
+If $$u=u(x, y)$$ and $$x=x(t), y=y(t), t \in \mathbb{R}$$ then by the total derivative
 
-If $$h=h(x, y)$$ with $$x=x(u, v)$$ and $$y=y(u, v)$$ then using the total derivative, $$\left(\frac{\partial h}{\partial u}\right)_{v}=\left(\frac{\partial h}{\partial y}\right)_{x}\left(\frac{\partial y}{\partial u}\right)_{v}+\left(\frac{\partial h}{\partial x}\right)_{y}\left(\frac{\partial x}{\partial u}\right)_{v}$$ and $$\left(\frac{\partial h}{\partial v}\right)_{u}=\left(\frac{\partial h}{\partial y}\right)_{x}\left(\frac{\partial y}{\partial v}\right)_{u}+\left(\frac{\partial h}{\partial x}\right)_{y}\left(\frac{\partial x}{\partial v}\right)_{u}$$
+$$
+\frac{d u}{d t}=\left(\frac{\partial u}{\partial x}\right)_{y}\left(\frac{d x}{d t}\right)+\left(\frac{\partial u}{\partial y}\right)_{x}\left(\frac{d y}{d t}\right)
+$$
+
+If $$u=\left(x_{1}, \ldots, x_{n}\right)$$ and $$x_{i}=x_{i}(t), t \in \mathbb{R} \forall i$$ then 
+
+$$
+\frac{d u}{d t}=\sum_{i=1}^{n}\left(\frac{\partial u}{\partial x_{i}}\right) \frac{d x_{i}}{d t}
+$$
+
+If $$h=h(x, y)$$ with $$x=x(u, v)$$ and $$y=y(u, v)$$ then using the total derivative,
+
+$$
+\left(\frac{\partial h}{\partial u}\right)_{v}=\left(\frac{\partial h}{\partial y}\right)_{x}\left(\frac{\partial y}{\partial u}\right)_{v}+\left(\frac{\partial h}{\partial x}\right)_{y}\left(\frac{\partial x}{\partial u}\right)_{v}
+$$
+
+and
+
+$$\left(\frac{\partial h}{\partial v}\right)_{u}=\left(\frac{\partial h}{\partial y}\right)_{x}\left(\frac{\partial y}{\partial v}\right)_{u}+\left(\frac{\partial h}{\partial x}\right)_{y}\left(\frac{\partial x}{\partial v}\right)_{u}
+$$
 
 ### Implicit Function
 
@@ -579,14 +653,27 @@ $$
 
 ### Gradient
 
-The gradient of a function $$f(x, y)$$ is $$\nabla f=\left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)$$
+The gradient of a function $$f(x, y)$$ is
+
+$$
+ \nabla f=\left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)
+$$
 
 ### Taylor Series
 
 If $$\vec{x}_{0}=\left(\begin{array}{l}x_{0} \\ y_{0}\end{array}\right), \overrightarrow{\Delta x}=\left(\begin{array}{c}\Delta x \\ \Delta y\end{array}\right)$$ and $$\vec{\nabla} f\left(\overrightarrow{x_{0}}\right)=\left(\begin{array}{c}\frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y}\end{array}\right)_{\overrightarrow{x_{0}}}$$, then the 2D Taylor expansion up to 2nd order is
+
 $$
 f\left(\vec{x}_{0}+\overrightarrow{\Delta x}\right)=f\left(\vec{x}_{0}\right)+\vec{\nabla} f\left(\vec{x}_{0}\right)^{T} \overrightarrow{\Delta x}+\frac{1}{2} \overrightarrow{\Delta x}^{T} H\left(\vec{x}_{0}\right) \overrightarrow{\Delta x}
-$$, where $$H\left(\vec{x}_{0}\right)$$ is the Hessian matrix, defined as
+$$
+
+where 
+
+$$
+H\left(\vec{x}_{0}\right)
+$$ 
+
+is the Hessian matrix, defined as
 
 #### Haessian Matrix
 
