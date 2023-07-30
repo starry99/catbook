@@ -22,9 +22,11 @@ $$
 & =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]+(\mathrm{E}[X]-a)^{2},
 \end{aligned}
 $$
+
 $$
 \mathrm{E}[X-\mathrm{E}[X]]=\mathrm{E}[X]-\mathrm{E}[\mathrm{E}[X]]=\mathrm{E}[X]-\mathrm{E}[X]=0,
 $$
+
 $$
 \begin{aligned}
 2 \mathrm{E}[(X-\mathrm{E}[X])(\mathrm{E}[X]-a)] & =2(\mathrm{E}[X]-a) \mathrm{E}[X-\mathrm{E}[X]] \\
@@ -32,6 +34,7 @@ $$
 & =0 .
 \end{aligned}
 $$
+
 $$
 \begin{aligned}
 \mathrm{E}\left[(X-a)^{2}\right] & =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]+(\mathrm{E}[X]-a)^{2} \\
@@ -575,7 +578,13 @@ Therefore, computing the $$(1-\alpha)$$-confidence interval allows us to decide 
 
 Our test statistic $$Z=\frac{\theta_{0}-\bar{X}}{\sigma / \sqrt{n}}$$ is assumed to follow a $$N(0,1)$$ distribution, and we would compute a 'p-value' as $$\widetilde{p}=1-F_{Z}(z)$$, where $$z=\frac{\theta_{0}-\bar{x}}{\sigma / \sqrt{n}}$$ is the realization of $$Z$$ after observing the data $$\mathbf{x}$$. Above we showed that $$\theta_{0} \notin\left(\bar{x}+z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}, \bar{x}+z_{1-\alpha / 2} \frac{\sigma}{\sqrt{n}},\right)$$ will result in $$H_{0}$$ being rejected. We see that
 
-$$\theta_{0}<\bar{x}+z_{\alpha / 2} \frac{\sigma}{\sqrt{n}} \Rightarrow \frac{\theta_{0}-\bar{x}}{\sigma / \sqrt{n}}<z_{\alpha / 2} \Rightarrow z<z_{\alpha / 2}, \Rightarrow F_{Z}(z)<\frac{\alpha}{2} \Rightarrow \widetilde{p}=1-F_{Z}(z)>1-\frac{\alpha}{2}$$
+$$
+\theta_{0}<\bar{x}+z_{\alpha / 2} \frac{\sigma}{\sqrt{n}} \Rightarrow \frac{\theta_{0}-\bar{x}}{\sigma / \sqrt{n}}<z_{\alpha / 2} \Rightarrow z<z_{\alpha / 2}, \Rightarrow F_{Z}(z)<\frac{\alpha}{2} \Rightarrow 
+$$
+
+$$
+\widetilde{p}=1-F_{Z}(z)>1-\frac{\alpha}{2}
+$$
 
 or
 
@@ -615,6 +624,7 @@ The probability of correctly rejecting the null hypothesis, when in fact the nul
 
 - The variances of the two samples are unknown but are assumed to be equal, i.e. $$\sigma_{1}^{2}=\sigma_{2}^{2}$$.
 Define the null hypothesis $$H_{0}$$ and alternative hypothesis $$H_{1}$$ to be
+
 $$
 \begin{aligned}
 & H_{0}: \theta_{1}=\theta_{2}, \\
@@ -702,15 +712,19 @@ $$
 $$
 \operatorname{Cov}(X, X)=\mathrm{E}\left[\left(X-\mu_{X}\right)^{2}\right]=\operatorname{Var}(X)
 $$
+
 $$
 \operatorname{Cov}(Y, X)=\operatorname{Cov}(X, Y)
 $$
+
 $$
 \operatorname{Var}(X+Y)=\operatorname{Var}(X)+\operatorname{Var}(Y)+2 \operatorname{Cov}(X, Y) .
 $$
+
 $$
 \operatorname{Var}(a X+b Y)=a^{2} \operatorname{Var}(X)+b^{2} \operatorname{Var}(Y)+2 a b \operatorname{Cov}(X, Y) \text {. }
 $$
+
 $$
 \mathrm{E}(a X+b Y)=a \mathrm{E}(X)+b \mathrm{E}(Y)=a \mu_{X}+b \mu_{Y}=\mu_{a X+b Y} .
 $$
@@ -755,7 +769,19 @@ $$
 
 ### Corollary
 
-For any two random variables $$X$$ and $$Y,\left|\rho_{X Y}\right|=1$$ if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that $$\mathrm{P}(Y=a X+b)=1$$. If $$\rho_{X Y}=1$$, then $$a>0$$, and if $$\rho_{X Y}=-1$$, then $$a<0$$.
+For any two random variables $$X$$ and $$Y$$
+
+$$
+|\rho_{X Y}\right|=1
+$$
+
+if and only if there exist numbers $$a \neq 0$$ and $$b$$ such that
+
+$$
+\mathrm{P}(Y=a X+b)=1
+$$
+
+If $$\rho_{X Y}=1$$, then $$a>0$$, and if $$\rho_{X Y}=-1$$, then $$a<0$$.
 
 ### Definition (Simple correlation and observed simple correlation)
 
