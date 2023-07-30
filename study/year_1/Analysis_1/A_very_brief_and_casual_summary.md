@@ -7,7 +7,7 @@ title: A Very Brief and Casual Summary
 
 #### Definition 1.1 ( Injective )
 
-A function $f: A \rightarrow B$ is injective if for all $a_1, a_2 \in A$, $f(a_1) = f(a_2)$ implies $a_1 = a_2$.
+A function $f: A \rightarrow B$ is injective if for all $a_1, a_2 \in A$, $f(a_1) = f(a_2)$ implies $$a_1 = a_2$$.
 
 #### Definition 1.2 ( Surjective )
 
