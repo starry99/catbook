@@ -31,7 +31,7 @@ A function $f: A \rightarrow B$ is bijective if it is both injective and surject
 6. $\exists 0 \in \mathbb{Q}: a+0 = a$
 7. $\exists 1 \in \mathbb{Q}: 0 \neq 1, a \times 1 = a$
 8. $\forall a \in \mathbb{Q}, \exists (-a) \in \mathbb{Q}$ such that $a+(-a) = 0$
-9. $\forall a \in \mathbb{Q} \backslash\{0\} \exists a^{-1} \in \mathbb{Q}$ such that $a \times\left(a^{-1}\right)=1$
+9. $\forall a \in \mathbb{Q} \backslash\{0\} \exists a^{-1} \in \mathbb{Q}$ such that $a \times (a^{-1})=1$
 
 #### Axioms 2.2
 
@@ -175,14 +175,27 @@ For all $a, b \in \mathbb{R}$ we have
 $$
 |a+b| \leq|a|+|b|
 $$
-
-- $|x+y| \leq|x|+|y|$
-- $|x| \leq|y|+|x-y|$ 
-- $|x+y| \geq|x|-|y|$
-- $|x| \geq|y|-|x-y|$
-- $|x+y| \geq|y|-|x|$
-- $|x-y| \leq|x-z|+|y-z|$
-- $|x-y| \geq|| x|-| y||$
+$$
+|x+y| \leq|x|+|y|
+$$
+$$
+|x| \leq|y|+|x-y|
+$$ 
+$$
+|x+y| \geq|x|-|y|
+$$
+$$
+|x| \geq|y|-|x-y|
+$$
+$$
+|x+y| \geq|y|-|x|
+$$
+$$
+|x-y| \leq|x-z|+|y-z|
+$$
+$$
+|x-y| \geq|| x|-| y||
+$$
 
 #### Exercise 2.46
 
@@ -215,23 +228,6 @@ $$
 
 $N$ depends on $\epsilon$ ! For a while we will sometimes denote it $N_{\epsilon}$, as a reminder.
 
-#### How to prove $a_{n} \rightarrow a$
-
-$$
-\forall \epsilon>0 \exists N_{\epsilon} \in \mathbb{N}_{>0} \text { such that }\left|a_{n}-a\right|<\epsilon \forall n \geq N
-$$
-
-(I) $\operatorname{Fix} \epsilon>0$.
-
-(II) Calculate $\left|a_{n}-a\right|$.
-
-(II') Find a good estimate $\left|a_{n}-a\right| \leq b_{n}$.
-
-(III) Try to solve $b_{n}<\epsilon$
-
-(IV) Find $ N_{\epsilon} \in \mathbb{N}_{>0}$ such that $(*)$ holds whenever $n \geq N_{\epsilon}$.
-
-(V) Put everything together into a logical proof.
 
 #### Definition （ Convergence ）
 
@@ -249,7 +245,7 @@ $$
 \forall a \exists \epsilon>0 \text { such that } \forall N \in \mathbb{N}_{>0}, \exists n \geq N \text { such that }\left|a_{n}-a\right| \geq \epsilon
 $$
 
-##### Theorem 3.14 ( Uniqueness of limits )
+#### Theorem 3.14 ( Uniqueness of limits )
 
 Limits are unique. If $a_{n} \rightarrow a$ and $a_{n} \rightarrow b$, then $a=b$
 
@@ -407,7 +403,13 @@ $$
 
 #### Definition ( Absolute convergence )
 
-For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is absolutely convergent if and only if the series $\sum_{n=1}^{\infty}|a_{n}|$ is convergent.
+For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\infty} a_{n}$ is absolutely convergent if and only if the series 
+
+$$
+\sum_{n=1}^{\infty}|a_n|
+$$ 
+
+is convergent
 
 #### Definition
 
@@ -415,7 +417,17 @@ For $a_{n} \in \mathbb{R}$ or $\mathbb{C}$, we say the series $\sum_{n=1}^{\inft
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
-Let $\left(a_{n}\right)_{n \geq 0}$ be a real or complex sequence. If $\sum a_{n}$ is absolutely convergent, then it is convergent.
+Let 
+$$
+\left(a_{n}\right)_{n \geq 0}
+$$
+ be a real or complex sequence. If
+
+$$
+\sum a_{n}
+$$
+ 
+is absolutely convergent, then it is convergent.
 
 
 ### 4.3 Test for convergence
@@ -432,11 +444,29 @@ If $\frac{a_{n}}{b_{n}} \rightarrow L \in \mathbb{R}$ and $\sum b_{n}$ is absolu
 
 #### Theorem 4.20 ( Alternating series test )
 
-Suppose $a_{n}$ is alternating with $\left|a_{n}\right| \downarrow 0$. Then $\sum a_{n}$ converges.
+Suppose
+
+$$
+a_{n}
+$$ 
+
+is alternating with
+
+$$
+|a_{n}| \downarrow 0
+$$ 
+
+Then $\sum a_{n}$ converges.
 
 #### Theorem 4.23 ( Ratio test )
 
-If $a_{n}$ is a sequence such that $|\frac{a_{n+1}}{a_{n}}| \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent.
+If $a_{n}$ is a sequence such that 
+
+$$
+|\frac{a_{n+1}}{a_{n}}| \rightarrow r<1
+$$
+
+then $\sum a_{n}$ is absolutely convergent.
 
 #### Theorem 4.24 ( Root test )
 
@@ -446,7 +476,30 @@ If $|a_{n}|^{1 / n} \rightarrow r<1$, then $\sum a_{n}$ is absolutely convergent
 
 #### Definition (Rearrangement of a sequence)
 
- Given a bijection $n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$, define $b_{i}:=a_{n(i)}$. Then $(b_{i})_{i \geq 1}$ is a rearrangement or reordering of $(a_{n})_{n \geq 1}$.
+ Given a bijection 
+ 
+$$
+n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}
+$$
+ 
+define 
+
+$$
+b_{i}:=a_{n(i)}
+
+$$
+
+Then 
+
+$$
+(b_{i})_{i \geq 1}
+$$ 
+
+is a rearrangement or reordering of 
+
+$$
+(a_{n})_{n \geq 1}
+$$
 
 #### Example 4.31
 
@@ -508,14 +561,15 @@ Fix a real or complex series $\left(a_{n}\right)$ and consider the series $\sum 
 
 Then $\exists R \in[0, \infty]$ such that
 
-- $|z|<R \Longrightarrow \sum a_{n} z^{n}$ is absolutely convergent, and
+- $$
+|z|<R \Longrightarrow \sum a_{n} z^{n}
+$$ is absolutely convergent, and
 
-- $|z|>R \Longrightarrow \sum a_{n} z^{n}$ is divergent.
-Proof. Let $S=\{|z|: a_{n} z^{n} \rightarrow 0\}$, nonempty since $0 \in S$. Then define
+- $$
+|z|>R \Longrightarrow \sum a_{n} z^{n}
+$$ 
 
-$$
-R= \begin{cases}\sup S & \text { if } S \text { bounded }, \\ \infty & \text { if } S \text { unbounded }\end{cases}
-$$
+is divergent.
 
 #### Exercise 4.38
 
