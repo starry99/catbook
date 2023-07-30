@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: A Brief Summary of Introduction to Applied Mathematics
+title: An Introduction to Applied Mathematics Memory Sheet
 ---
 
 #### Based on the notes and lectures by [Prof. Darren Crowdy](https://www.ma.ic.ac.uk/~dgcrowdy/).
