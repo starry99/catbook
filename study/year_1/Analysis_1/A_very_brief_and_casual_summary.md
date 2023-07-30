@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: page
 title: A Very Brief and Casual Summary
 ---
 
