@@ -5,7 +5,7 @@ title: Analysis I
 
 ### Contents
 
-- [A Very Brief and Casual Summary](/study/year_1/Analysis_1/A_very_brief_and_casual_summary)
+- [A Very Brief and Casual Summary](/study/year_1/Analysis_I/A_very_brief_and_casual_summary)
 
 - Autumn Term Notes written by me, completely not completed ([pdf](/study/year_1/Analysis_I/Analysis_I.pdf), [tex](https://github.com/EinHungerkuenstler/Analysis_I_Notes_Not_Completed))
 
