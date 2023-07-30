@@ -567,9 +567,6 @@ $$
 
 is divergent.
 
-#### Exercise 4.38
-
-Suppose $|\frac{a_{n+1}}{a_{n}}| \rightarrow a \in[0, \infty]$ as $n \rightarrow \infty$, then $R=\frac{1}{a}$ is the radius of convergence of $\sum a_{n} z^{n}$.
 
 ### 4.5.1 Products of Power Series
 
