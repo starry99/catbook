@@ -101,6 +101,7 @@ $$\mathbb{Q}$$ is countable.
 #### Theorem 2.21
 
 $$\mathbb{R}$$ is uncountable.
+
 Proof : (Cantor's Diagonal Argument)
 
 ### 2.4 The Completeness Axiom
@@ -534,9 +535,9 @@ then $$ \sum a_n $$ is absolutely convergent.
 
 ### 4.4 Rearrangement of Series
 
-#### Definition
+#### Definition(Rearrangement of a sequence) 
 
-Definition (Rearrangement of a sequence) Given a bijection $$n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$$, define $$b_{i}:=a_{n(i)}$$. Then $$\left(b_{i}\right)_{i \geq 1}$$ is a rearrangement or reordering of $$\left(a_{n}\right)_{n \geq 1}$$.
+Given a bijection $$n: \mathbb{N}_{>0} \rightarrow \mathbb{N}_{>0}$$, define $$b_{i}:=a_{n(i)}$$. Then $$\left(b_{i}\right)_{i \geq 1}$$ is a rearrangement or reordering of $$\left(a_{n}\right)_{n \geq 1}$$.
 
 #### Example 4.31
 
@@ -795,11 +796,9 @@ A set $$A \subset \mathbb{R}$$ is compact if and only if every sequence $$\{x_n\
 
 A set $$K \subset \mathbb{R}$$ is compact if and only if it is closed and bounded.
 
-### 5.4 The Extreme Value Theorem
+### 5.4 The Extreme Value Theorem ( Countiuity in cloed intervals means bounded )
 
-Theorem ( Countiuity in cloed intervals means bounded )
-
-Let $$f: [a, b] \to \mathbb{R}$$ be continuous on $$[a,b]$$. Then $$f$$ is bounded above in $$[a,b]$$.
+Let $$f: [a, b] \to mathbb{R}$$ be continuous on $$[a,b]$$. Then $$f$$ is bounded above in $$[a,b]$$.
 
 #### Corollary ( Extreme value theorem )
 

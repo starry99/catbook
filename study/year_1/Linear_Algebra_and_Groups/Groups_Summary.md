@@ -7,11 +7,26 @@ title: Groups Part Summary
 
 ### Definition (Order of a group)
 
-We say that a group $$(G,.)$$ is a finite group if the set $$G$$ is a finite set. In this case, the order of $$(G,.)$$ is $$|G|$$, the number of elements in the group.
+We say that a group 
+
+$$
+(G,.)
+$$
+is a finite group if the set $$G$$ is a finite set. In this case, the order of $$(G,.)$$ is
+
+$$
+|G|
+$$
+
+the number of elements in the group.
 
 ### Theorem (The order of a symmetric group)
 
-If $$n \in \mathbb{N}$$, then $$\left|S_{n}\right|=n$$ !
+If $$ n \in \mathbb{N} $$, then
+
+$$
+|S_{n}|=n!
+$$
 
 ### Theorem 1.16. (Test for a subgroup)
 
@@ -84,7 +99,8 @@ $$
 
 So $$\operatorname{ord}(g)=|\langle g\rangle|$$.
 
-###Theorem
+### Theorem
+
 Suppose $$G$$ is a finite group.
 
 (1) Every element of $$G$$ has finite order.
@@ -96,7 +112,19 @@ Suppose $$(G,.)$$ is a cyclic group and $$G=\langle g\rangle$$.
 
 (1) If $$H \leq G$$, then $$H$$ is cyclic.
 
-(2) Suppose $$|G|=n$$ (that is, $$g$$ has order $$n$$ ), and $$m \in \mathbb{Z}$$. Let $$d=\operatorname{gcd}(m, n)$$, the greatest common divisor of $$m$$ and $$n$$. Then
+(2) Suppose
+
+$$
+|G|=n
+$$
+
+(that is, $$g$$ has order $$n$$ ), and $$m \in \mathbb{Z}$$. Let
+
+$$
+d=\operatorname{gcd}(m, n)
+$$
+
+the greatest common divisor of $$m$$ and $$n$$. Then
 
 $$
 \left\langle g^{m}\right\rangle=\left\langle g^{d}\right\rangle \text { and }\left|\left\langle g^{d}\right\rangle\right|=n / d
@@ -108,9 +136,13 @@ $$
 \left\langle g^{m}\right\rangle=G \Leftrightarrow \operatorname{gcd}(m, n)=1
 $$
 
-(3) If $$|G|=n$$ and $$k \leq n$$, then $$G$$ has a subgroup of order $$k$$ if and only if $$k \mid n$$. In this case, the subgroup is $$\left\langle g^{n / k}\right\rangle$$.
+(3) If $$|G|=n$$ and $$k \leq n$$, then $$G$$ has a subgroup of order $$k$$ if and only if $$k \mid n$$. In this case, the subgroup is
 
-###Definition (Euler totient function)
+$$
+\langle g^{n / k}\rangle
+$$.
+
+### Definition (Euler totient function)
 For $$n \in \mathbb{N}$$, the Euler totient function $$\phi(n)$$ is
 
 $$
@@ -127,10 +159,13 @@ $$
 If $$p$$ is a prime number, then $$\phi(p)=p-1$$.
 
 ## Lagrange's Theorem and Cosets
-###Theorem(Lagrange's Theorem) 
+
+### Theorem(Lagrange's Theorem) 
+
 Suppose $$(G,.)$$ is a finite group and $$H$$ is a subgroup of $$G$$. Then $$|H|$$ divides $$|G|$$.
 
 ### Theorem
+
 Suppose $$G$$ is a finite group of order $$n$$. Let $$g \in G$$. Then:
 
 (1) The order of $$g$$ divides $$n$$. i.e. $$k \:ord($$g$$) = n$$ for some $$k \in \mathbb{N}$$ with $$k \mid n$$.
@@ -139,11 +174,13 @@ Suppose $$G$$ is a finite group of order $$n$$. Let $$g \in G$$. Then:
 
 (3) $$g^{n}=e$$.
 
-###Theorem (The group with prime order is cyclic)
+### Theorem (The group with prime order is cyclic)
+
 Suppose $$p$$ is a prime and $$G$$ is group of order $$p$$. Then $$G$$ is cyclic. In fact, if $$e \neq g \in G$$, then $$\langle g\rangle=G$$.
 
-Definition (Left coset)
-Suppose $$(G,$$.$$) is a group and H \leq G$$. Let $$g \in G$$. The subset
+### Definition (Left coset)
+
+Suppose $$(G,.)$$ is a group and $$ H \leq G $$. Let $$g \in G$$. The subset
 
 $$
 g H=\{g h: h \in H\} \subseteq G
@@ -151,25 +188,30 @@ $$
 
 is called a left coset of $$H$$ in $$G$$. (Sometimes we will say 'left $$H$$-coset.')
 
-###Lemma
+### Lemma
+
 Suppose $$(G,$$.$$) is a group and H \leq G$$.
 
 (1) If $$g_{1}, g_{2} \in G$$ and $$g_{2} \in g_{1} H$$, then $$g_{2} H=g_{1} H$$.
 
 (2) If $$g, k \in G$$ and $$g H \cap k H \neq \emptyset$$, then $$g H=k H$$.
 
-###Definition (Index of a subgroup)
+### Definition (Index of a subgroup)
+
 The number of left cosets of $$H$$ in $$G$$ is called the index of $$H$$ in $$G$$.
 
-###Theorem (Lagrange's Theorem)
-Suppose $$(G,$$.$$) is a finite group, $$|G : H| means the number of distinct left cosets of $$H$$ in $$G$$, and $$|G|$$ is the order of $$G$$. Then
+### Theorem (Lagrange's Theorem)
+
+Suppose $$(G,.)$$ is a finite group, $$|G : H|$$ means the number of distinct left cosets of $$H$$ in $$G$$, and $$|G|$$ is the order of $$G$$, then
+
 $$
 |G|=|G : H| \cdot|H|
 $$
 
 ## 3. Homomorphisms and Isomorphisms
-###Definition (Homomorphism)
-Suppose $$(G,$$.$$) and (H,$$.$$) are groups.$$
+### Definition (Homomorphism)
+
+Suppose $$(G,.)$$ and $$(H,.)$$ are groups.
 
 (1) A function $$\phi: G \rightarrow H$$ is a homomorphism if for all $$g_{1}, g_{2} \in G$$ we have
 
@@ -212,7 +254,7 @@ $$
 \phi(m+n)=h^{m+n}=h^{m} h^{n}=\phi(m) \phi(n)
 $$
 
-so $$\phi$$ is a homomorphism. The image of $$\phi$$ is $$\langle h\rangle$$. If $$h$$ has infinite order, then ker $$\phi=\{0\}$$. If $$h$$ has finite order $$n$$, then $$\operatorname{ker} \phi=n \mathbb{Z}$$, by $$1.20(2)$$.
+so $$\phi$$ is a homomorphism. The image of $$\phi$$ is $$\langle h\rangle$$. If $$h$$ has infinite order, then ker $$\phi=\{0\}$$. If $$h$$ has finite order $$n$$, then $$\operatorname{ker} \phi=n \mathbb{Z}$$.
 
 (4) The exponential map
 
@@ -220,11 +262,12 @@ $$
 \exp :(\mathbb{R},+) \rightarrow\left(\mathbb{R}^{>0}, .\right)
 $$
 
-is a homomorphism as $$\exp (x+y)=\exp (x) \exp (y)$$. As exp here is also a bijection, we have that it is an isomorphism (which may be a bit of a surprise as we would not normally think of the groups $$(\mathbb{R},+)$$ and $$\left(\mathbb{R}^{>0},.\right)$$ as being 'the same group').
+is a homomorphism as $$\exp (x+y)=\exp (x) \exp (y)$$. As exp here is also a bijection, we have that it is an isomorphism (which may be a bit of a surprise as we would not normally think of the groups $$(\mathbb{R},+)$$ and $$(\mathbb{R}^{>0},.)$$ as being 'the same group').
 
-(5) The modulus map $$|\cdot|:\left(\mathbb{C}^{\times},.\right) \rightarrow\left(\mathbb{R}^{\times},.\right)$$is a homomorphism with kernel $$\left\{z \in \mathbb{C}^{\times}:|z|=1\right\}$$
+(5) The modulus map $$|\cdot|:(\mathbb{C}^{\times},.) \rightarrow(\mathbb{R}^{\times},.)$$is a homomorphism with kernel $$\{z \in \mathbb{C}^{\times}:|z|=1\}$$
 
-###Lemma
+### Lemma
+
 Suppose $$G, H, K$$ are groups.
 
 (i) A homomorphism $$\phi: G \rightarrow H$$ is injective if and only if $$\operatorname{ker} \phi=e_{G}$$.
@@ -234,6 +277,7 @@ Suppose $$G, H, K$$ are groups.
 (iii) If $$\phi: G \rightarrow H$$ is an isomorphism, then the inverse map $$\phi^{-1}: H \rightarrow G$$ is also an isomorphism. (So if $$G \cong H$$, then $$H \cong G$$.)
 
 ### Theorem
+
 (1) Suppose $$G, H$$ are cyclic groups of the same order. Then there is an isomorphism $$\alpha: G \rightarrow H$$.
 
 (2) If $$V_{1}, V_{2}$$ are non-cyclic groups of order 4 , then $$V_{1} \cong V_{2}$$. 
