@@ -17,7 +17,6 @@ $$
 \begin{aligned}
 \mathrm{E}\left[(X-a)^{2}\right] & =\mathrm{E}\left[(X-\mathrm{E}[X]+\mathrm{E}[X]-a)^{2}\right] \\
 & =\mathrm{E}\left[([X-\mathrm{E}[X]]+[\mathrm{E}[X]-a])^{2}\right] \\
-& =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]+2 \mathrm{E}[(X-\mathrm{E}[X])(\mathrm{E}[X]-a)]+\mathrm{E}\left[(\mathrm{E}[X]-a)^{2}\right] \\
 & =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]+0+\mathrm{E}\left[(\mathrm{E}[X]-a)^{2}\right] \\
 & =\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]+(\mathrm{E}[X]-a)^{2},
 \end{aligned}
@@ -102,11 +101,11 @@ The sample standard deviation is the statistic defined by $$S=\sqrt{S^{2}}$$.
 
 Suppose that the random variables $$X_{1}, X_{2}, \ldots, X_{n}$$ are independently sampled from a distribution $$F_{X}$$ that has mean $$\mu$$ and finite variance $$\sigma^{2}$$. Then
 
-1. $$\mathrm{E}(\bar{X})=\mu$$
+ $$\mathrm{E}(\bar{X})=\mu$$
 
-2. $$\operatorname{Var}(\bar{X})=\frac{\sigma^{2}}{n}$$
+ $$\operatorname{Var}(\bar{X})=\frac{\sigma^{2}}{n}$$
 
-3. $$\mathrm{E}\left(S^{2}\right)=\sigma^{2}$$
+ $$\mathrm{E}\left(S^{2}\right)=\sigma^{2}$$
 
 ### Definition (The Sample mean for a set of observations)
 
@@ -119,7 +118,6 @@ Proof:
 $$
 \begin{aligned}
 \sum_{i=1}^{n}\left(x_{i}-a\right)^{2} & =\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)+(\bar{x}-a)\right]^{2}=\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)^{2}+2\left(x_{i}-\bar{x}\right)(\bar{x}-a)+(\bar{x}-a)^{2}\right] \\
-& =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+2(\bar{x}-a) \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)+\sum_{i=1}^{n}(\bar{x}-a)^{2} \\
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+2(\bar{x}-a) \cdot 0+n(\bar{x}-a)^{2} \\
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+n(\bar{x}-a)^{2}
 \end{aligned}
@@ -564,6 +562,7 @@ $$
 \Rightarrow & \mathrm{P}\left(\theta_{0} \notin\left(\bar{X}+z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}, \bar{X}+z_{1-\alpha / 2} \frac{\sigma}{\sqrt{n}}\right)\right)=\alpha
 \end{aligned}
 $$
+
 Then, suppose that the random variables $$\mathbf{X}=\left(X_{1}, X_{2}, \ldots, X_{n}\right)$$ are observed as the data $$\mathbf{x}=\left(x_{1}, x_{2}, \ldots, x_{n}\right)$$, we can compute the sample mean $$\bar{x}$$ and then the realization of the interval as
 
 $$
@@ -637,10 +636,13 @@ Then, since under the null hypothesis $$\theta_{1}-\theta_{2}=0$$, the $$t$$-sta
 $$
 T=\frac{\bar{X}-\bar{Y}}{S_{p} \sqrt{\frac{1}{n}+\frac{1}{m}}}
 $$
+
 where
+
 $$
 S_{X}^{2}=\frac{1}{n-1} \sum_{i=1}^{n}\left(X_{i}-\bar{X}\right)^{2}, \quad S_{Y}^{2}=\frac{1}{m-1} \sum_{j=1}^{m}\left(Y_{j}-\bar{Y}\right)^{2}
 $$
+
 $$
 S_{p}^{2}=\frac{1}{n+m-2}\left((n-1) S_{X}^{2}+(m-1) S_{Y}^{2}\right),
 $$
@@ -802,7 +804,11 @@ $$
 for some $$a, b, c, d \in \mathbb{R}$$ with $$a>0$$ and $$c>0$$. Then
 
 $$
-r_{X Y}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}} \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}}}=\frac{\sum_{i=1}^{n}\left(u_{i}-\bar{u}\right)\left(v_{i}-\bar{v}\right)}{\sqrt{\sum_{i=1}^{n}\left(u_{i}-\bar{u}\right)^{2}} \sqrt{\sum_{i=1}^{n}\left(v_{i}-\bar{v}\right)^{2}}}=r_{U V} .
+\begin{align*}
+r_{X Y}&=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}} \sqrt{\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}}}\\
+&=\frac{\sum_{i=1}^{n}\left(u_{i}-\bar{u}\right)\left(v_{i}-\bar{v}\right)}{\sqrt{\sum_{i=1}^{n}\left(u_{i}-\bar{u}\right)^{2}} \sqrt{\sum_{i=1}^{n}\left(v_{i}-\bar{v}\right)^{2}}}\\
+&=r_{U V} .
+\end{align*}
 $$
 
 ## 7. Statistical models
@@ -869,7 +875,7 @@ where $$\bar{x}$$ and $$s^{2}$$ are defined in terms of $$x_{1}, x_{2}, \ldots, 
 
 $$
 \begin{aligned}
-\sum_{i=1}^{n}\left(x_{i}-\theta\right)^{2} & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}+\bar{x}-\theta\right)^{2}=\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)^{2}+2(\bar{x}-\theta)\left(x_{i}-\bar{x}\right)+(\bar{x}-\theta)^{2}\right] \\
+\sum_{i=1}^{n}\left(x_{i}-\theta\right)^{2} & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}+\bar{x}-\theta\right)^{2} \\
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+2(\bar{x}-\theta) \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)+\sum_{i=1}^{n}(\bar{x}-\theta)^{2} \\
 & =(n-1) s^{2}+2(\bar{x}-\theta) \cdot 0+n(\bar{x}-\theta)^{2}=(n-1) s^{2}+n(\bar{x}-\theta)^{2},
 \end{aligned}
@@ -976,9 +982,12 @@ If our model is correct the residuals $$\widehat{\epsilon}_{i}$$, when plotted, 
 ### Definition (The $$R^2$$ statistic)
  The statistic $$R^{2}$$ (pronounced 'R-squared') is defined as
 
-![](https://cdn.mathpix.com/cropped/2023_05_04_ad277764122c4c61e9f3g-169.jpg?height=136&width=356&top_left_y=1138&top_left_x=882)
+$$
+R^{2}=\frac{S_{yy}-\widehat{\mathrm{RSS}}_{x y} }{S_{y y}}
+$$
 
 ### Remark
+
 Interpreting the definition of $$R^{2}$$, it measures the difference between the sum of squares and the estimated residual sum of squares, normalised by the sum of squares.
 
 As $$\widehat{\mathrm{RSS}}_{x y}=S_{y y}-\frac{\left(S_{x y}\right)^{2}}{S_{x x}}$$, then $$R^{2}=\frac{\left(S_{x y}^{2}\right)}{S_{x x} S_{y y}}=r_{X Y}^{2}$$, so $$R^{2} \in[0,1]$$
