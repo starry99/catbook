@@ -8,6 +8,7 @@ title: Linear Algebra Part Summary
 ### The product of two matrices
 
  Let $$\mathrm{A}=\left(a_{i j}\right)_{p \times q}$$ and $$\mathrm{B}=\left(b_{i j}\right)_{q \times r}$$. Then the matrix product of $$\mathrm{A}$$ and $$\mathrm{B}$$,
+
 $$
 \mathrm{C}=\left(c_{i j}\right)_{p \times r}, \quad \text { where } \quad c_{i j}=\sum_{k=1}^{q} a_{i k} b_{k j}
 $$
@@ -26,6 +27,7 @@ We say a matrix is in row reduced echelon form (rref) if it is in echelon form a
 
 - The first non-zero entry in row $$i$$ appears in column $$j$$, then every other element in column $$j$$ is zero.
 EF
+
 $$
 \left(\begin{array}{ccc|c}
 1 & 1 & 2 & 2 \\
@@ -34,7 +36,9 @@ $$
 0 & 0 & 0 & 0
 \end{array}\right)
 $$
+
 RREF
+
 $$
 \left(\begin{array}{ccc|c}
 1 & 1 & 0 & 0 \\
@@ -212,7 +216,13 @@ Similarly we have that if $$w \in \operatorname{Span}(X)$$ the $$w$$ is a linear
 
 ### Theorem ( Linear independent sets are at most as big as spanning sets )
 
-Let $$V$$ be a finite dimensional vector space over $$F$$. Let $$S, T$$ be finte subsets of $$V$$. If $$S$$ is LI and $$T$$ spans $$V$$ then $$|S| \leq|T|$$. That is, LI sets are at most as big as spanning sets.
+Let $$V$$ be a finite dimensional vector space over $$F$$. Let $$S, T$$ be finte subsets of $$V$$. If $$S$$ is LI and $$T$$ spans $$V$$ then 
+
+$$
+|S| \leq|T|
+$$
+
+That is, LI sets are at most as big as spanning sets.
 
 ### Lemma
 
@@ -351,15 +361,34 @@ Now the $$\operatorname{dim}(\operatorname{Im}(A))=\operatorname{rank}(A)$$ thus
 
 Let $$A$$ be an $$m \times n$$ matrix with entries in $$F$$ and let $$b \in F^{m}$$. Then the following statements are equivalent:
 
-1. rank($$A$$) = rank($$A|b$$) $$=n$$ $$\longrightarrow$$ the system $$Ax=b$$ has a unique solution
-2. rank($$A$$) = rank($$A|b$$) $$<n$$ $$\longrightarrow$$ the system $$Ax=b$$ has infinitely many solutions
-3. rank($$A$$) $$<$$ rank($$A|b$$) $$\longrightarrow$$ the system $$Ax=b$$ has no solutions
+- $$
+rank(A) = rank(A|b) =n \longrightarrow  \text{ the system } Ax=b \text{ has a unique solution }
+$$
+
+- $$
+rank(A) = rank(A|b) < n \longrightarrow \text{ the system }Ax=b \text{ has infinitely many solutions }
+$$
+
+- $$
+rank(A) < rank (A|b) \longrightarrow \text{ the system }Ax=b \text{ has no solutions }
+$$
 
 ### Basis change matrix
 
-Suppose $$T: V \to V$$, $$\mathbb{F}$$ isa field. $$\dim(V) = n,\; n\in mathbb{N}$$ and $$B, C$$ are bases for $$V$$.
-$$B =  \{b_1, \ldots, b_n \}$$,
+Suppose $$T: V \to V$$, $$\mathbb{F}$$ isa field. 
+
+$$
+\dim(V) = n,\; n\in mathbb{N}
+$$
+
+and $$B, C$$ are bases for $$V$$.
+
+$$
+B =  \{b_1, \ldots, b_n \}
+$$
+
 then $$[T]_B = (T(b_1), \ldots, T(b_n))$$.
+
 $$
 [T]_{C}={ }_{C}[i d]_{B} \cdot[T]_{B} \cdot{ }_{B}[i d]_{C}
 $$
@@ -502,11 +531,27 @@ The method to do this is:
 
 (1) Compute the characteristic polynomial $$\chi_{T}(x)$$ and find the (distinct) eigenvalues $$\lambda_{1}, \ldots, \lambda_{r} \in$$ $$F$$
 
-(2) For each $$i \leq r$$, find a basis $$B_{i}$$ for the eigenspace $$E_{\lambda_{i}}=\left\{v \in V: T(v)=\lambda_{i} v\right\}$$.
+(2) For each $$i \leq r$$, find a basis $$B_{i}$$ for the eigenspace
 
-(3) If $$\sum_{i=1}^{r}\left|B_{i}\right|<\operatorname{dim}(V)$$, then $$T$$ is not diagonalisable.
+$$
+ E_{\lambda_{i}}={v \in V: T(v)=\lambda_{i} v}
+$$
 
-(4) If $$\sum_{i=1}^{r}\left|B_{i}\right|=\operatorname{dim}(V)$$, then the union $$B=B_{1} \cup \ldots \cup B_{r}$$ is a basis of $$V$$ consisting of eigenvectors and so $$T$$ is diagonalisable.
+(3) If
+
+$$
+\sum_{i=1}^{r}|B_{i}|<\operatorname{dim}(V)
+$$
+
+then $$T$$ is not diagonalisable.
+
+(4) If
+
+$$
+\sum_{i=1}^{r}\left|B_{i}\right|=\operatorname{dim}(V)
+$$
+
+then the union $$B=B_{1} \cup \ldots \cup B_{r}$$ is a basis of $$V$$ consisting of eigenvectors and so $$T$$ is diagonalisable.
 
 As a special case, if $$T$$ has $$n$$ distinct eigenvalues, then it is diagonalisable.
 
@@ -550,9 +595,11 @@ Then:
 (iii) For $$i \leq r$$ we have $$\operatorname{Span}\left(v_{1}, \ldots, v_{i}\right)=\operatorname{Span}\left(w_{1}, \ldots, w_{i}\right)=\operatorname{Span}\left(u_{1}, \ldots, u_{i}\right)$$.
 
 ## Theorem (Spectral Theorem)
+
 If a matrix $$A \in M_{n}(\mathbb{R})$$ is symmetric (that is, $$A=A^{T}$$ ), then it is diagonalisable over $$\mathbb{R}$$ by two orthogonal matrix, which consists of its eigenvectors . Moreover, there is an orthogonal basis of $$\mathbb{R}^{n}$$ consisting of eigenvectors of $$A$$.
 
 ## Theorem
+
 If $$A \in M_{n}(\mathbb{R})$$ is symmetric and $$u, v \in \mathbb{R}^{n}$$, then
 
 $$
