@@ -114,7 +114,9 @@ For real values $$x_{1}, x_{2}, \ldots, x_{n}$$, the sample variance $$s^{2}$$ i
 $$
 s^{2}=\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}, \quad \text { where } \quad \bar{x}=\frac{1}{n} \sum_{j=1}^{n} x_{j} .
 $$
+
 Proof:
+
 $$
 \begin{aligned}
 \sum_{i=1}^{n}\left(x_{i}-a\right)^{2} & =\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)+(\bar{x}-a)\right]^{2}=\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)^{2}+2\left(x_{i}-\bar{x}\right)(\bar{x}-a)+(\bar{x}-a)^{2}\right] \\
@@ -122,6 +124,7 @@ $$
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+n(\bar{x}-a)^{2}
 \end{aligned}
 $$
+
 $$
 \sum_{i=1}^{n}\left(x_{i}-a\right)^{2} \geq \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}
 $$
@@ -913,6 +916,7 @@ If we have $$\hat{\beta}_{0}$$ and $$\hat{\beta}_{1}$$ which are the best estima
 The residual sum of squares $$\mathbf{R S S}$$ is $$\sum_{i=1}^{n}\left(\hat{e}_{i}\right)^{2}$$. If we minimise the $$\mathbf{R S S}$$ then we have optimal estimates
 
 ### Solving the least squares problem
+
 Given pairs of observations $$\left(x_{1}, y_{1}\right), \ldots,\left(x_{n}, y_{n}\right)$$ with $$\bar{x}=\frac{1}{n} \sum_{i=1}^{n} x_{i}$$ and $$\bar{y}=\frac{1}{n} \sum_{i=1}^{n} y_{i}$$ then:
 
 - The sum of squares $$S_{x x}, S_{y y}$$ are $$S_{x x}=\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}$$ and $$S_{y y}=\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^{2}$$
@@ -928,6 +932,7 @@ The $$\beta_{1}$$ that minimises the sum of squares is $$\hat{\beta}_{1}=\frac{S
 These apply if $$Y=F(X)$$
 
 ### Definition (Simple linear regression model)
+
 For $$i \in$$ $$\{1,2, \ldots, n\}$$
 
 $$
@@ -960,6 +965,7 @@ $$
 with the parameters $$\beta_{0}, \beta_{1}$$ and $$\sigma^{2}$$ unknown.
 
 ### Summary
+
 Given the simple linear regression (conditional normal) model,
 
 $$
@@ -977,9 +983,11 @@ $$
 $$
 
 ### Remark
+
 If our model is correct the residuals $$\widehat{\epsilon}_{i}$$, when plotted, should appear to be independently distributed according to some $$\mathrm{N}\left(0, \sigma^{2}\right)$$.
 
 ### Definition (The $$R^2$$ statistic)
+
  The statistic $$R^{2}$$ (pronounced 'R-squared') is defined as
 
 $$
@@ -995,6 +1003,7 @@ As $$\widehat{\mathrm{RSS}}_{x y}=S_{y y}-\frac{\left(S_{x y}\right)^{2}}{S_{x x
 Sometimes the $$R^{2}$$ statistic is quoted as evidence that a model fits the data well. This usually happens when the $$R^{2}$$ statistic is close to 1 . While an $$R^{2}$$ value close to 1 does indicate that the fitted line is 'close' to the data, we must remember that it $$R^{2}$$ is only the square of the correlation. The next section explores this further. 
 
 ### Exercise
+
 Show that
 
 $$
@@ -1014,5 +1023,6 @@ $$
 as required.
 
 ### Evaluating the fit of a model
+
 Model 1 is more suitable as fitting the data well because its $$R^{2}$$ value is close to 1 . However, the residual plot for Model 1 has a ' $$\mathrm{U}$$ 'shape, and clearly shows that Model 1 does not fit the data well.
 
