@@ -182,13 +182,32 @@ $$
 |a+b| \leq|a|+|b|
 $$
 
-(a) $$|x+y| \leq|x|+|y|$$
-(e) $$|x| \leq|y|+|x-y|$$
-(b) $$|x+y| \geq|x|-|y|$$
-(f) $$|x| \geq|y|-|x-y|$$
-(c) $$|x+y| \geq|y|-|x|$$
-(g) $$|x-y| \leq|x-z|+|y-z|$$
-(d) $$|x-y| \geq|| x|-| y||$$
+$$ 
+|x+y| \leq|x|+|y| 
+$$
+
+$$
+|x| \leq|y|+|x-y| 
+$$
+
+$$
+|x+y| \geq|x|-|y| 
+$$
+
+$$
+|x| \geq|y|-|x-y|
+$$
+
+$$
+|x+y| \geq|y|-|x|
+$$
+
+$$
+|x-y| \leq|x-z|+|y-z|
+$$
+
+$$
+|x-y| \geq|| x|-| y||$$
 
 #### Exercise 2.46
 
@@ -230,11 +249,11 @@ $$
 \forall \epsilon>0 \exists N_{\epsilon} \in \mathbb{N}_{>0} \text { such that }\left|a_{n}-a\right|<\epsilon \forall n \geq N
 $$
 
-(I) $$\operatorname{Fix} \epsilon>0$$.
+(I) Fix $$\epsilon>0$$.
 
-(II) Calculate $$\left|a_{n}-a\right|$$.
+(II) Calculate $$|a_{n} - a|$$.
 
-(II') Find a good estimate $$\left|a_{n}-a\right| \leq b_{n}$$.
+(II') Find a good estimate $$|a_{n}-a| \leq b_{n}$$.
 
 (III) Try to solve $$b_{n}<\epsilon$$
 
@@ -246,7 +265,7 @@ $$
 
 We say that $$a_{n}$$ converges if and only if $$\exists a \in \mathbb{R}$$ such that $$a_{n} \rightarrow a$$, i.e.
 
-$$\exists a$$ such that $$\forall \epsilon>0 \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$$
+$$\exists a$$ such that $$\forall \epsilon>0 \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow |a_{n}-a|<\epsilon$$
 
 #### Definition （ Divergence ）
 
@@ -260,7 +279,7 @@ $$
 
 $$a_{n} \in \mathbb{C}, \forall n \geq 1$$. We say $$a_{n} \rightarrow a \in \mathbb{C}$$ if and only if
 
-$$\forall \epsilon>0, \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow\left|a_{n}-a\right|<\epsilon$$
+$$\forall \epsilon>0, \exists N \in \mathbb{N}_{>0}$$ such that $$n \geq N \Longrightarrow |a_{n}-a|<\epsilon$$
 
 ##### Theorem 3.14 ( Uniqueness of limits )
 
@@ -274,11 +293,11 @@ If $$\left(a_{n}\right)$$ is convergent, then it is bounded.
 
 If $$a_{n} \rightarrow a$$ and $$b_{n} \rightarrow b$$ then:
 
-1. $$a_{n}+b_{n} \rightarrow a+b$$
+ - $$a_{n}+b_{n} \rightarrow a+b$$
 
-2. $$a_{n} b_{n} \rightarrow a b$$
+ - $$a_{n} b_{n} \rightarrow a b$$
 
-3. $$\frac{a_{n}}{b_{n}} \rightarrow \frac{a}{b}$$ if $$b \neq 0$$
+ - $$\frac{a_{n}}{b_n} \rightarrow \frac{a}{b}$$ if $$b \neq 0$$
 
 #### Theorem 3.21 ( Bounded and monotonic sequences must be convergent)
 
@@ -422,7 +441,7 @@ $$
 s_{2^{k+1}-1}>1+\underbrace{\frac{1}{2}+\cdots+\frac{1}{2}}_{k \text { terms }}=1+\frac{k}{2}
 $$
 
-is arbitrarily large. But if $$s_{n}$$ converged, it would be bounded: $$\left|s_{n}\right| \leq C \;\forall n$$. So we get the contradiction (to the Archimedean property) $$1+\frac{k}{2} \leq C \; \forall k \in \mathbb{N}$$.
+is arbitrarily large. But if $$s_n$$ converged, it would be bounded: $$|s_n| \leq C \;\forall n$$. So we get the contradiction (to the Archimedean property) $$1+\frac{k}{2} \leq C \; \forall k \in \mathbb{N}$$.
 
 #### Proposition 4.6
 
@@ -456,7 +475,7 @@ For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{
 
 #### Definition
 
-For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is conditionally convergent if and only if the series $$\sum_{n=1}^{\infty} a_{n}$$ is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}\left|a_{n}\right|$$ diverges to infinity).
+For $$a_{n} \in \mathbb{R}$$ or $$\mathbb{C}$$, we say the series $$\sum_{n=1}^{\infty} a_{n}$$ is conditionally convergent if and only if the series $$\sum_{n=1}^{\infty} a_{n}$$ is convergent but it is not absolutely convergent (that is, $$\sum_{n=1}^{\infty}|a_n|$$ diverges to infinity).
 
 #### Theorem 4.14 ( Absolute convergence implies convergence )
 
@@ -464,7 +483,7 @@ Let $$\left(a_{n}\right)_{n \geq 0}$$ be a real or complex sequence. If $$\sum a
 
 #### Example 4.15
 
- For $$z \in \mathbb{C}$$ the power series $$\sum_{n=1}^{\infty} z^{n}$$ is absolutely convergent for $$|z|<1$$ and divergent for $$|z| \geq 1$$.
+ For $$ z \in \mathbb{C} $$ the power series $$ \sum_{n=1}^{\infty} z^n $$ is absolutely convergent for $$ |z|<1 $$ and divergent for $$ |z| \geq 1 $$.
 
 ### 4.3 Test for convergence
 
@@ -484,7 +503,7 @@ Fix $$N \in \mathbb{N}_{>0}$$. Then $$\sum_{n \geq N} c_{n}$$ is convergent if a
 
 #### Theorem 4.20 ( Alternating series test )
 
-Suppose $$a_{n}$$ is alternating with $$\left|a_{n}\right| \downarrow 0$$. Then $$\sum a_{n}$$ converges.
+Suppose $$ a_n $$ is alternating with $$ |a_n| \downarrow 0 $$. Then $$\sum a_{n}$$ converges.
 
 #### Exercise 4.22
 
@@ -493,11 +512,11 @@ It is alternating but $$\left|a_{n}\right|$$ is not monotonically decreasing, so
 
 #### Theorem 4.23 ( Ratio test )
 
-If $$a_{n}$$ is a sequence such that $$\left|\frac{a_{n+1}}{a_{n}}\right| \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
+If $$a_{n}$$ is a sequence such that $$|\frac{a_{n+1}}{a_n}| \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
 
 #### Theorem 4.24 ( Root test )
 
-If $$\left|a_{n}\right|^{1 / n} \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
+If $$|a_n|^{1 / n} \rightarrow r<1$$, then $$\sum a_{n}$$ is absolutely convergent.
 
 ### 4.4 Rearrangement of Series
 
@@ -565,9 +584,9 @@ Fix a real or complex series $$\left(a_{n}\right)$$ and consider the series $$\s
 
 Then $$\exists R \in[0, \infty]$$ such that
 
-- $$|z|<R \Longrightarrow \sum a_{n} z^{n}$$ is absolutely convergent, and
+- $$ |z|<R \rightarrow \sum a_{n} z^{n} $$ is absolutely convergent, and
 
-- $$|z|>R \Longrightarrow \sum a_{n} z^{n}$$ is divergent.
+- $$ |z|>R \rightarrow \sum a_{n} z^{n} $$ is divergent.
 Proof. Let $$S=\left\{|z|: a_{n} z^{n} \rightarrow 0\right\}$$, nonempty since $$0 \in S$$. Then define
 
 $$
@@ -605,7 +624,7 @@ Fix $$\alpha, \beta \in \mathbb{R}$$. Prove that if $$[x<\alpha \Longrightarrow 
 Given $$a<x_0<b$$ and $$f:(a,b)-\{x_0\} \rightarrow \mathbb{R}$$, we define
 
 $$
-\lim _{x \rightarrow x_{0}} f(x)=y \Longleftrightarrow \forall \epsilon>0 \exists \delta>0 \text { such that } 0<|x-x_{0}|<\delta \Longrightarrow|f(x)-y|<\epsilon
+\lim _{x \rightarrow x_{0}} f(x)=y \leftrightarrow \forall \epsilon>0 \exists \delta>0 \text { such that } 0<|x-x_{0}|<\delta \rightarrow|f(x)-y|<\epsilon
 $$
 
 as for every $$\epsilon >0 $$, there exists a $$\delta = \delta(\epsilon) > 0$$ such that $$|x - x_0|<\delta$$ and $$x \neq x_0$$ implies $$|f(x) - y|<\epsilon$$.
@@ -659,9 +678,6 @@ We say that $$f: I \rightarrow \mathbb{R} $$ is continuous at $$x_0$$ if contino
 $$
 \lim _{x \to a} f(x)=f(a)
 $$
-which means, $$f: I \to \mathbb{R}$$ is continuous at $$a$$ if:
-
-for every $$\epsilon > 0$$, there exists $$\delta = \delta(\epsilon) > 0$$ such that $$|x - a| < \delta$$ implies $$|f(x) - f(a)| < \epsilon$$.
 
 #### Theorem ( Algebra of continuous functions )
 
@@ -691,19 +707,20 @@ Let $$f: I \to \mathbb{R}$$ be continuous at $$a \in I$$. If $$f(a) > 0$$, then 
 
 #### Definition ( Right and left limits )
 
-We say that $$f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the right if
+We say that $$ f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the right if
 
-For all $$\epsilon > 0$$, there exists $$\delta > 0$$ such that $$a < x  <a+ \delta$$ implies $$|f(x) - L| < \epsilon$$.
+For all $$\epsilon > 0$$, there exists $$\delta > 0$$ such that $$a < x  <a + \delta$$ implies $$|f(x) - L| < \epsilon$$.
 
-In this case, we write:
 $$
 \lim _{x \to a^{+}} f(x)=L
 $$
 
 Similarly, we say that $$f(x)$$ tends to $$L$$ as $$x$$ approaches $$a$$ from the left if
+
 For all $$\epsilon > 0$$, there exists $$\delta > 0$$ such that $$a - \delta < x  <a$$ implies $$|f(x) - L| < \epsilon$$.
 
 In this case, we write:
+
 $$
 \lim _{x \to a^{-}} f(x)=L
 $$
@@ -790,9 +807,7 @@ Let $$f: X \subset \mathbb{R} \to \mathbb{R}$$ be continuous on $$X$$, then
 - If $$X = [a,b]$$, then $$f$$ is uniformly continuous on $$X$$.
 - If $$X$$ is compact, then $$f$$ is uniformly continuous on $$X$$.
 
-#### Exercise
 
-We say that $$\lim_{x \to a} = \infty$$ if for all $$N > 0$$, there exists a $$\delta > 0$$ such that $$f(x) > N$$ for all $$|x-a|<\delta$$. Then, if $$f:(a,b) \to \mathbb{R}$$ is continous on $$(a,b)$$ and $$\lim_{x \to a^+}f(x) = \lim_{x \to b^-}f(x) = \infty$$, then $$f$$ attains a minimum on $$(a,b)$$.
 
 ## 6. Differentiation
 
@@ -875,8 +890,8 @@ Let $$I = [a,b]$$. We denota by
 - $$C^0(I): = \{f:[a,b] \to \mathbb{R}: f \;\text{is continous on} \;[a,b]\}$$
 - $$C^1(I): = \{f:[a,b] \to \mathbb{R}: f \; \text{is differentiable on} \;(a,b)\; \text{and}\; f' \; \text{is continous on} \;[a,b]\}$$
 Then, $$\frac{d}{dx}: C^1(I) \to C^0(I)$$ is a linear map. In fact, both $$C^0(I)$$ and $$C^1(I)$$ are real vector spaces.
-- (f+g)(x) = f + g
-- (cf)(x) = cf
+- $$(f+g)(x) = f + g$$
+- $$(cf)(x) = cf$$
 
 #### Theorem ( Chain rule )
 
@@ -1034,16 +1049,22 @@ If $$f$$ is twice differentiable on $$I$$ and $$f''(x) > 0$$ for all $$x \in I$$
 #### Definition ( Partition )
 
 A partition of an interval $$[a,b]$$ is a finite set of points in $$[a,b] and containing both $$a$$ and $$b$$, i.e. a partition of $$[a,b]$$ is
+
 $$
 a = t_0 < t_1 < \cdots < t_n = b
 $$
+
 We usually denote a partition $$P$$ as
+
 $$
 P = a = t_0 < t_1 < \cdots < t_n = b
 $$
+
 or
+
 $$
 P = \{t_0, t_1, \cdots, t_n\}
+$$
 
 #### Definition ( Lower and upper sum )
 
@@ -1053,10 +1074,13 @@ Let $$f:[a,b] \to \mathbb{R}$$ be a bounded function and given a partition $$P$$
 - $$M_i = \sup\{f(x): x \in [t_{i-1},t_i] \}$$
 
 - Then, the lower sum of $$f$$ for $$P$$ as
+
 $$
 L(f,P) = \sum_{i=1}^n m_i(t_i - t_{i-1})
 $$
+
 - Then, the upper sum of $$f$$ for $$P$$ as
+
 $$
 U(f,P) = \sum_{i=1}^n M_i(t_i - t_{i-1})
 $$
@@ -1064,10 +1088,13 @@ $$
 #### Lemma
 
 Given $$P$$ and $$Q$$ partitions of $$[a,b]$$, we have
+
 $$
 L(f,P) \leq U(f,Q)
 $$
+
 In particular:
+
 $$
 \sup\{L(f,P): P \text{ is a partition of } [a,b]\} \leq \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
 $$
@@ -1075,21 +1102,26 @@ $$
 #### Example
 
 The function $$f:[0,1] \to \mathbb{R}$$ defined by
+
 $$
 f(x) = \begin{cases}
 1 & \text{ if } x \in \mathbb{Q} \\
 0 & \text{ if } x \notin \mathbb{Q}
 \end{cases}
 $$
+
 is not Riemann integrable.
 
 #### Definition ( Riemann integrable )
 
 We say that a bounded function $$f:[a,b] \to \mathbb{R}$$ is Riemann integrable if
+
 $$
 \sup\{L(f,P): P \text{ is a partition of } [a,b]\} = \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
 $$
+
 and we denote this common value as
+
 $$
 \int_a^b f(x) dx
 $$
@@ -1097,9 +1129,11 @@ $$
 #### Theorem
 
 If f is bounded on $$[a,b]$$, then $$f$$ is Riemann integrable if and only if for all $$\epsilon > 0$$, there exists a partition $$P$$ of $$[a,b]$$ such that
+
 $$
 U(f,P) - L(f,P) < \epsilon
 $$
+
 
 #### Theorem ( Continous implies Riemann integrable )
 
@@ -1108,6 +1142,7 @@ If $$f$$ is continous on $$[a,b]$$, then $$f$$ is Riemann integrable on $$[a,b]$
 #### Theorem
 
 Let $$a<b<c$$ and $$f:[a,c] \to \mathbb{R}$$ be a bounded function. If $$f$$ is Riemann integrable on $$[a,b]$$ and $$[b,c]$$, then $$f$$ is Riemann integrable on $$[a,c]$$. Moreover, in such a case
+
 $$
 \int_a^c f(x) dx = \int_a^b f(x) dx + \int_b^c f(x) dx
 $$
@@ -1115,6 +1150,7 @@ $$
 #### Theorem
 
 $$f$$ and $$g$$ are Riemann integrable on $$[a,b]$$, then $$f+g$$ is Riemann integrable on $$[a,b]$$. Moreover, in such a case:
+
 $$
 \int_a^b (f(x) + g(x)) dx = \int_a^b f(x) dx + \int_a^b g(x) dx
 $$
@@ -1122,6 +1158,7 @@ $$
 #### Theorem
 
 Let $$f$$ be integrable on $$[a,b]$$ and assume $$m \leq f(x) \leq M$$ for all $$x \in [a,b]$$. Then
+
 $$
 m(b-a) \leq \int_a^b f(x) dx \leq M(b-a)
 $$
@@ -1129,6 +1166,7 @@ $$
 #### Theorem
 
 If $$f(x) \geq g(x)$$ $$ \forall x \in [a,b]$$ and both functions are integrable on $$[a,b]$$, then
+
 $$
 \int_a^b f(x) dx \geq \int_a^b g(x) dx
 $$
@@ -1155,6 +1193,7 @@ Let $$f$$ be integrable on $$[a,b]$$ and define $$F(x) = \int_a^x f(t) dt$$. If 
 #### Corollary
 
 If $$f$$ is continous on $$[a,b]$$ and $$f = g'$$ for some function $$g$$ on $$[a,b]$$, then
+
 $$
 \int_a^b f(x) dx = g(b) - g(a)
 $$
@@ -1166,14 +1205,17 @@ We say that $$F$$ is a primitive function for $$f$$ if $$F$$ is differentiable o
 #### Theorem ( The Fundamental Theorem of Calculus ) ( Part 2 )
 
 If $$g'$$ is integrable on $$[a,b]$$, then
+
 $$
 \int_a^b g'(x) dx = g(b) - g(a)
 $$
+
 Remark: $$g'(x)$$ dose not need to be continous. Therefore, continutiy means intergrability but not vice versa.
 
 #### Exercise (Integration by parts)
 
 If $$f$$ and $$g$$ are continous on $$[a,b]$$, then
+
 $$
 \int_a^b f(x)g'(x) dx = f(b)g(b) - f(a)g(a) - \int_a^b f'(x)g(x) dx
 $$
@@ -1182,6 +1224,7 @@ $$
 
 Let $$\phi:[a, b] \to \mathbb{R}$$ and $$f: \mathbb{R} \to \mathbb{R}$$. Assume $$f$$ and $$\phi
 '$$ are continous, then
+
 $$
 \int_a^b f(\phi(t))\phi'(t) dt = \int_{\phi(a)}^{\phi(b)} f(x) dx
 $$
@@ -1189,8 +1232,10 @@ $$
 #### Definition ( Logarithmic and exponential function )
 
 We define the logarithmic function as, for $$x > 0$$,
+
 $$
 \log(x) = \int_1^x \frac{1}{t} dt
 $$
+
 and $$exp(y) = \log^{-1} (y)$$  $$\forall y \in \mathbb{R}$$.
 
