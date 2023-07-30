@@ -7,7 +7,7 @@ order: 2
 ### Surviving the mathematics major at Imperial College London
 #### Year 1
 
- - [Analysis I](/study/year_1/Analysis_1/Analysis_1)
+ - [Analysis I](/study/year_1/Analysis_1/Analysis_I)
 
  - Linear Algebra and Groups
 
