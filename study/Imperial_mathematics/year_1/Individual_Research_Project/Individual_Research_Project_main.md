@@ -12,9 +12,7 @@ title: Individual Research Project
    2. [*Morse theory by Shintaro Fushida-Hardy*](https://stanford.edu/~sfh/morse.pdf)
    3. [*Morse Theory and Floer Homology by Michèle Audin and Mihai Damian*](https://link.springer.com/book/10.1007/978-1-4471-5496-9)
    4. [*Algebrc Topology by Allen Hacher*](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf)
-   5. [*An Introduction to Manifolds by Loring W. Tu*](hhttps://im0.p.lodz.pl/~kubarski/AnalizaIV/Wyklady/L-Tu-1441973990.pdf)
-  
-  - 
+   5. [*An Introduction to Manifolds by Loring W. Tu*](https://www.springer.com/gp/book/9781441973993)
   
   
 
