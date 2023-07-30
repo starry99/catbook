@@ -1141,7 +1141,11 @@ is not Riemann integrable.
 We say that a bounded function $$f:[a,b] \to \mathbb{R}$$ is Riemann integrable if
 
 $$
-\sup\{L(f,P): P \text{ is a partition of } [a,b]\} = \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
+\sup\{L(f,P): P \text{ is a partition of } [a,b]\} =
+$$
+
+$$
+ \inf\{U(f,P): P \text{ is a partition of } [a,b]\}
 $$
 
 and we denote this common value as
