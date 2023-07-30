@@ -364,15 +364,15 @@ Now the $$\operatorname{dim}(\operatorname{Im}(A))=\operatorname{rank}(A)$$ thus
 Let $$A$$ be an $$m \times n$$ matrix with entries in $$F$$ and let $$b \in F^{m}$$. Then the following statements are equivalent:
 
 - $$
-rank(A) = rank(A|b) =n \longrightarrow  \text{ the system } Ax=b \text{ has a unique solution }
+\rank(A) = \rank(A|b) =n \longrightarrow  \text{ the system } Ax=b \text{ has a unique solution }
 $$
 
 - $$
-rank(A) = rank(A|b) < n \longrightarrow \text{ the system }Ax=b \text{ has infinitely many solutions }
+\rank(A) = \rank(A|b) < n \longrightarrow \text{ the system }Ax=b \text{ has infinitely many solutions }
 $$
 
 - $$
-rank(A) < rank (A|b) \longrightarrow \text{ the system }Ax=b \text{ has no solutions }
+\rank(A) < \rank (A|b) \longrightarrow \text{ the system }Ax=b \text{ has no solutions }
 $$
 
 ### Basis change matrix
