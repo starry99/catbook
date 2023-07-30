@@ -95,9 +95,16 @@ $$
 
 (2) In particular, $$g^{m}=e \Leftrightarrow n \mid m$$.
 
-(3) We have $$\langle g\rangle=\left\{e, g, g^{2}, \ldots, g^{n-1}\right\}$$ and $$|\langle g\rangle|=n$$.
+(3) We have 
+$$
+ \langle g\rangle=\{e, g, g^{2}, \ldots, g^{n-1}\}$$ and $$|\langle g\rangle|=n
+$$.
 
-So $$\operatorname{ord}(g)=|\langle g\rangle|$$.
+So 
+
+$$
+\operatorname{ord}(g)=|\langle g\rangle|
+$$
 
 ### Theorem
 
@@ -107,7 +114,8 @@ Suppose $$G$$ is a finite group.
 
 (2) If $$H \subseteq G$$ is a non-empty subset of $$G$$ and for all $$h_{1}, h_{2} \in H$$ we have $$h_{1} h_{2} \in H$$, then $$H$$ is a subgroup of $$G$$.
 
-###Theorem 
+### Theorem 
+
 Suppose $$(G,.)$$ is a cyclic group and $$G=\langle g\rangle$$.
 
 (1) If $$H \leq G$$, then $$H$$ is cyclic.
@@ -136,13 +144,25 @@ $$
 \left\langle g^{m}\right\rangle=G \Leftrightarrow \operatorname{gcd}(m, n)=1
 $$
 
-(3) If $$|G|=n$$ and $$k \leq n$$, then $$G$$ has a subgroup of order $$k$$ if and only if $$k \mid n$$. In this case, the subgroup is
+(3) If
+
+$$
+|G|=n
+$$
+and 
+
+$$
+k \leq n
+$$
+
+then $$G$$ has a subgroup of order $$k$$ if and only if $$ k \mid n $$. In this case, the subgroup is
 
 $$
 \langle g^{n / k}\rangle
 $$.
 
 ### Definition (Euler totient function)
+
 For $$n \in \mathbb{N}$$, the Euler totient function $$\phi(n)$$ is
 
 $$
@@ -162,7 +182,11 @@ If $$p$$ is a prime number, then $$\phi(p)=p-1$$.
 
 ### Theorem(Lagrange's Theorem) 
 
-Suppose $$(G,.)$$ is a finite group and $$H$$ is a subgroup of $$G$$. Then $$|H|$$ divides $$|G|$$.
+Suppose $$(G,.)$$ is a finite group and $$H$$ is a subgroup of $$G$$. Then
+
+$$
+|H| \text { divides }|G|
+$$
 
 ### Theorem
 
@@ -202,7 +226,19 @@ The number of left cosets of $$H$$ in $$G$$ is called the index of $$H$$ in $$G$
 
 ### Theorem (Lagrange's Theorem)
 
-Suppose $$(G,.)$$ is a finite group, $$|G : H|$$ means the number of distinct left cosets of $$H$$ in $$G$$, and $$|G|$$ is the order of $$G$$, then
+Suppose $$(G,.)$$ is a finite group,
+
+$$
+|G : H|
+$$
+
+means the number of distinct left cosets of $$H$$ in $$G$$, and
+
+$$
+|G|
+$$
+
+is the order of $$G$$, then
 
 $$
 |G|=|G : H| \cdot|H|
@@ -264,7 +300,17 @@ $$
 
 is a homomorphism as $$\exp (x+y)=\exp (x) \exp (y)$$. As exp here is also a bijection, we have that it is an isomorphism (which may be a bit of a surprise as we would not normally think of the groups $$(\mathbb{R},+)$$ and $$(\mathbb{R}^{>0},.)$$ as being 'the same group').
 
-(5) The modulus map $$|\cdot|:(\mathbb{C}^{\times},.) \rightarrow(\mathbb{R}^{\times},.)$$is a homomorphism with kernel $$\{z \in \mathbb{C}^{\times}:|z|=1\}$$
+(5) The modulus map
+
+$$
+|\cdot|:(\mathbb{C}^{\times},.) \rightarrow(\mathbb{R}^{\times},.)
+$$
+
+is a homomorphism with kernel 
+
+$$
+\{z \in \mathbb{C}^{\times}:|z|=1\}
+$$
 
 ### Lemma
 
@@ -295,7 +341,7 @@ $$
 
 then $$f$$ is called an $$r$$-cycle (or a cycle of length $$r$$ ) and we write $$f$$ as $$\left(i_{1}, i_{2}, i_{3}, \ldots, i_{r}\right)$$ or (missing out the commas) $$\left(i_{1} i_{2} i_{3} \ldots i_{r}\right)$$.
 
-###Theorem (Every permutation is a product of disjoint cycles)
+### Theorem (Every permutation is a product of disjoint cycles)
 If $$f \in S_{n}$$, then there exist cycles $$f_{1}, f_{2}, \ldots, f_{k} \in S_{n}$$ with disjoint supports such that $$f=f_{1} f_{2} \ldots f_{k}$$.
 
 The factorisation is not unique in general. For example, if $$n=3$$, then $$\left(1,2,3\right)=\left(1,2\right)\left(2,3\right)=\left(1,3\right)\left(1,2\right)\left(2,3\right)$$.
