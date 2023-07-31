@@ -16,7 +16,7 @@ order: 3
 > 
 > *Humphrey Appleby: We didn't raise it to enable them to learn more. We raised it to keep teenagers off the job market and hold down the unemployment figures.*
 >  
-> *<p align="right">--Yes, Prime Minister, S2. E7</p>*
+><p align="right">--Yes, Prime Minister, S2. E7</p>
 >
 >
 > *吉姆·哈克： 汉弗莱，我简直难以置信。你是受传统严格的书院式的学术教育长大的，但你现在是在否认它的价值吗？*
@@ -31,4 +31,4 @@ order: 3
 > 
 > *汉弗莱·阿普比：我们提高毕业年龄又不是为了让他们学到更多，我们是为了把青少年拦在就业市场外，这样失业率就降低了。*
 > 
-> *<p align="right">--《是，首相》 第二季，第七集</p>*
+><p align="right">--《是，首相》 第二季，第七集</p>
