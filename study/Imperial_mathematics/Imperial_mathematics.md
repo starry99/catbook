@@ -5,7 +5,7 @@ title: Surviving the mathematics major at Imperial College London
 
 > *Maths is not a spectator sport. How well you do comes down solely to the time you spend doing maths.*
 > 
-> *<p align="right">--Prof. Richard Thomas, Imperial College London</p>*
+> <p align="right">--Prof. Richard Thomas, Imperial College London</p>
 
 
 ### Year 1
