@@ -120,7 +120,8 @@ Proof:
 
 $$
 \begin{aligned}
-\sum_{i=1}^{n}\left(x_{i}-a\right)^{2} & =\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)+(\bar{x}-a)\right]^{2}=\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)^{2}+2\left(x_{i}-\bar{x}\right)(\bar{x}-a)+(\bar{x}-a)^{2}\right] \\
+\sum_{i=1}^{n}\left(x_{i}-a\right)^{2} & =\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)+(\bar{x}-a)\right]^{2}\\
+&=\sum_{i=1}^{n}\left[\left(x_{i}-\bar{x}\right)^{2}+2\left(x_{i}-\bar{x}\right)(\bar{x}-a)+(\bar{x}-a)^{2}\right] \\
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+2(\bar{x}-a) \cdot 0+n(\bar{x}-a)^{2} \\
 & =\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}+n(\bar{x}-a)^{2}
 \end{aligned}
