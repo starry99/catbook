@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<div class="post">
+  <div>
+    {% if page.title %}
+    <p class="post_title">{{ page.title }}</p>
+    {% endif %}
+  </div>
+  <div class="post_content">
+    {{ content }}
+  </div>
+</div>

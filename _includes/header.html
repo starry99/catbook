@@ -16,16 +16,25 @@
       {% if site.user.aboutme %}
       <ul class="nav_list">
         <li class="nav_item">
-          <a href="{{ site.baseurl }}/aboutme.html">about</a>
+          <a href="{{ site.baseurl }}/aboutme.html">About me</a>
         </li>
       </ul>
       {% endif %}
+      {% assign sorted_additional_pages = site.additional_pages | sort: 'order' %}
+      {% for page in sorted_additional_pages %}
+      <ul class="nav_list">
+        <li class="nav_item">
+          <a href="{{ page.url }}" id="aaa">{{ page.title }}</a>
+        </li>
+      </ul>
+      {% endfor %}
       {% for category in site.categories %}
       {% capture cat_name %}{{ category | first }}{% endcapture %}
       <ul class="nav_list">
         <li class="nav_item">
           <a href="{{ site.baseurl }}/categories/{{ cat_name }}" id="aa">{{ cat_name }}
-            ({{ category | last | size }})</a>
+            <!-- ({{ category | last | size }}) -->
+          </a>
         </li>
       </ul>
       {% endfor %}
