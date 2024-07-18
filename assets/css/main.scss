@@ -1,6 +1,6 @@
 --- 
-# do not remove 
 --- 
+// do not delete two dashed lines
 
 @import 'normalize';
 @import 'code_style';
@@ -178,14 +178,13 @@ img {
             float: none;
         }
     }
-    }
-
+    
     @include mobile-only {
         margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
-
+}
     
 
 ::-webkit-scrollbar {
