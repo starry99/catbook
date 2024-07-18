@@ -1,15 +1,16 @@
-title: An Exhibition of A Hunger Artist #Your awesome title
-email: annabellee123456@outlook.com
+
+title: Catbook #Your awesome title
+email: #youremail@domain.com
 description: > # this means to ignore newlines until "baseurl"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-baseurl:  # the subpath of the site
-url: https://github.com/EinHungerkuenstler/EinHungerkuenstler.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of the site
+url: http://starry99.github.io/catbook # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
-timezone: GMT+1
+timezone:
 
 favicon: /assets/img/favicon.ico
 
@@ -19,11 +20,11 @@ cusdis:
     app_id: #your cusdis app_id
 
 user:
-  name: WHY
-  pic: /assets/img/profile.jpg
-  picAlt: "An Exhibition of A Hunger Artist"
-  job: Muss es sein? Es muss sein!
-  # aboutme: true # comment this out if you don't need the 'about' page.
+  name: Catbook
+  pic: /assets/img/cat.jpg
+  picAlt: "catbook"
+  job: a category-centric theme
+  aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
   - README.md
@@ -37,10 +38,6 @@ defaults:
     values:
       layout: post
       comment: true   
-
-collections:
-  additional_pages:
-    output: true
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown 
