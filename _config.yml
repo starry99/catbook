@@ -21,7 +21,7 @@ cusdis:
 
 user:
   name: Whikiss
-  pic: /assets/img/cat1.jpg
+  pic: /assets/img/belike.jpg
   picAlt: "catbook"
   job:write down my path
   aboutme: true # comment this out if you don't need the 'about' page.
